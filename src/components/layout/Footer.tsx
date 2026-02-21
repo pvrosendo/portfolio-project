@@ -5,13 +5,13 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="border-t border-[#1e3a4a] bg-[#0a0d14] py-10 mt-20">
+    <footer className="border-t border-[#1e3a4a] bg-abyss py-10 mt-20">
       <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="text-center md:text-left">
-          <span className="font-display text-lg font-bold text-[#c9a84c] tracking-widest">
+          <span className="font-display text-lg font-bold text-witcher tracking-widest">
             PV
           </span>
-          <p className="text-xs text-[#8899aa] mt-1">
+          <p className="text-xs text-fog mt-1">
             Compartilhando tudo aquilo que foi compartilhado comigo.
           </p>
         </div>
@@ -19,14 +19,14 @@ export function Footer() {
         <nav className="flex items-center gap-4">
           <Link
             to="/blog"
-            className="text-xs text-[#8899aa] hover:text-[#e8dcc8] transition-colors"
+            className="text-xs text-fog hover:text-parchment transition-colors"
           >
             As Crônicas
           </Link>
           <span className="text-[#1e3a4a]">·</span>
           <Link
             to="/projects"
-            className="text-xs text-[#8899aa] hover:text-[#e8dcc8] transition-colors"
+            className="text-xs text-fog hover:text-parchment transition-colors"
           >
             Os Contratos
           </Link>
@@ -38,7 +38,7 @@ export function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="text-[#8899aa] hover:text-[#c9a84c] transition-colors"
+            className="text-fog hover:text-witcher transition-colors"
           >
             <Github size={18} />
           </a>
@@ -47,14 +47,14 @@ export function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="text-[#8899aa] hover:text-[#c9a84c] transition-colors"
+            className="text-fog hover:text-witcher transition-colors"
           >
             <Linkedin size={18} />
           </a>
           <a
             href="mailto:contato@pvgrs.dev"
             aria-label="Email"
-            className="text-[#8899aa] hover:text-[#c9a84c] transition-colors"
+            className="text-fog hover:text-witcher transition-colors"
           >
             <Mail size={18} />
           </a>

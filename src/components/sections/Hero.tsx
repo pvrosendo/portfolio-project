@@ -85,7 +85,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0a0d14]"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-abyss"
     >
       {/* Particle Canvas */}
       <canvas
@@ -115,15 +115,15 @@ export function Hero() {
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-3xl">
         {/* Pré-título em monospace */}
-        <p className="font-mono text-sm text-[#4dd9ac] mb-4 tracking-widest uppercase">
-          <span className="text-[#c9a84c]">&gt;</span> desenvolvedor back-end
+        <p className="font-mono text-sm text-biolum mb-4 tracking-widest uppercase">
+          <span className="text-witcher">&gt;</span> desenvolvedor back-end
         </p>
 
         {/* main title */}
-        <h1 className="font-display text-5xl md:text-7xl font-black text-[#e8dcc8] leading-none tracking-tight mb-6">
+        <h1 className="font-display text-5xl md:text-7xl font-black text-parchment leading-none tracking-tight mb-6">
           Paulo{" "}
           <span
-            className="text-[#c9a84c]"
+            className="text-witcher"
             style={{
               textShadow: "0 0 40px rgba(201,168,76,0.4)",
             }}
@@ -133,7 +133,7 @@ export function Hero() {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-[#8899aa] text-lg md:text-xl max-w-xl mx-auto leading-relaxed mb-10">
+        <p className="text-fog text-lg md:text-xl max-w-xl mx-auto leading-relaxed mb-10">
           Explorando as profundezas da engenharia de software.
           <br />
           Compartilhando tudo aquilo que foi compartilhado comigo.
@@ -143,13 +143,13 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
             to="/blog"
-            className="px-8 py-3 bg-[#c9a84c] text-[#0a0d14] font-semibold rounded-sm hover:bg-[#e8dcc8] transition-colors font-display tracking-wider text-sm uppercase"
+            className="px-8 py-3 bg-witcher text-abyss font-semibold rounded-sm hover:bg-parchment transition-colors font-display tracking-wider text-sm uppercase"
           >
             As Crônicas
           </Link>
           <Link
             to="/projects"
-            className="px-8 py-3 border border-[#1e3a4a] text-[#8899aa] hover:text-[#e8dcc8] hover:border-[#c9a84c] transition-colors font-display tracking-wider text-sm uppercase rounded-sm"
+            className="px-8 py-3 border border-[#1e3a4a] text-fog hover:text-parchment hover:border-witcher transition-colors font-display tracking-wider text-sm uppercase rounded-sm"
           >
             Os Contratos
           </Link>
@@ -157,7 +157,7 @@ export function Hero() {
 
         {/* Scroll indicator */}
         <div className="mt-16 flex flex-col items-center gap-2 text-[#1e3a4a]">
-          <div className="w-px h-12 bg-gradient-to-b from-transparent to-[#1e3a4a]" />
+          <div className="w-px h-12 bg-linear-to-b from-transparent to-[#1e3a4a]" />
           <span className="text-xs tracking-widest uppercase font-mono">
             role
           </span>

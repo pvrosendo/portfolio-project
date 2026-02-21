@@ -28,7 +28,7 @@ export function Navbar() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
-          ? "bg-[#0a0d14]/90 backdrop-blur-md border-b border-[#1e3a4a]"
+          ? "bg-abyss/90 backdrop-blur-md border-b border-[#1e3a4a]"
           : "bg-transparent",
       )}
     >
@@ -38,7 +38,7 @@ export function Navbar() {
             <button
               type="button"
               onClick={() => scrollTo("hero")}
-              className="font-display text-xl font-bold text-[#c9a84c] hover:text-[#e8dcc8] transition-colors tracking-widest cursor-pointer"
+              className="font-display text-xl font-bold text-witcher hover:text-parchment transition-colors tracking-widest cursor-pointer"
             >
               PV
             </button>
@@ -49,14 +49,14 @@ export function Navbar() {
                     <button
                       type="button"
                       onClick={() => scrollTo(link.scrollId)}
-                      className="text-sm text-[#8899aa] hover:text-[#e8dcc8] transition-colors font-medium tracking-wide cursor-pointer"
+                      className="text-sm text-fog hover:text-parchment transition-colors font-medium tracking-wide cursor-pointer"
                     >
                       {link.label}
                     </button>
                   ) : (
                     <Link
                       to={link.href}
-                      className="text-sm text-[#8899aa] hover:text-[#e8dcc8] transition-colors font-medium tracking-wide cursor-pointer"
+                      className="text-sm text-fog hover:text-parchment transition-colors font-medium tracking-wide cursor-pointer"
                     >
                       {link.label}
                     </Link>
@@ -70,14 +70,14 @@ export function Navbar() {
             <button
               type="button"
               onClick={() => window.history.back()}
-              className="flex items-center gap-2 text-sm text-[#8899aa] hover:text-[#e8dcc8] transition-colors cursor-pointer"
+              className="flex items-center gap-2 text-sm text-fog hover:text-parchment transition-colors cursor-pointer"
             >
               <span>←</span>
               <span>Voltar</span>
             </button>
             <Link
               to="/"
-              className="font-display text-xl font-bold text-[#c9a84c] hover:text-[#e8dcc8] transition-colors tracking-widest absolute left-1/2 -translate-x-1/2"
+              className="font-display text-xl font-bold text-witcher hover:text-parchment transition-colors tracking-widest absolute left-1/2 -translate-x-1/2"
             >
               PV
             </Link>

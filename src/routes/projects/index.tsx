@@ -24,13 +24,13 @@ function ProjectsPage() {
     <div className="min-h-screen pt-24 pb-20 px-6 max-w-5xl mx-auto">
       {/* Header */}
       <div className="mb-12">
-        <p className="font-mono text-xs text-[#4dd9ac] tracking-widest uppercase mb-3">
-          <span className="text-[#c9a84c]">//</span> os contratos
+        <p className="font-mono text-xs text-biolum tracking-widest uppercase mb-3">
+          <span className="text-witcher">//</span> os contratos
         </p>
-        <h1 className="font-display text-4xl md:text-5xl font-black text-[#e8dcc8] mb-4">
+        <h1 className="font-display text-4xl md:text-5xl font-black text-parchment mb-4">
           Registro de Contratos
         </h1>
-        <p className="text-[#8899aa] max-w-xl">
+        <p className="text-fog max-w-xl">
           Projetos aceitos e concluídos. Cada um com seus desafios, sua stack e
           seus aprendizados.
         </p>
@@ -43,8 +43,8 @@ function ProjectsPage() {
           onClick={() => setActiveStatus(null)}
           className={`px-3 py-1 text-xs font-mono rounded-sm transition-colors ${
             activeStatus === null
-              ? "bg-[#c9a84c] text-[#0a0d14]"
-              : "border border-[#1e3a4a] text-[#8899aa] hover:text-[#e8dcc8]"
+              ? "bg-witcher text-abyss"
+              : "border border-[#1e3a4a] text-fog hover:text-parchment"
           }`}
         >
           todos
@@ -56,8 +56,8 @@ function ProjectsPage() {
             onClick={() => setActiveStatus(status)}
             className={`px-3 py-1 text-xs font-mono rounded-sm transition-colors ${
               activeStatus === status
-                ? "bg-[#c9a84c] text-[#0a0d14]"
-                : "border border-[#1e3a4a] text-[#8899aa] hover:text-[#e8dcc8]"
+                ? "bg-witcher text-abyss"
+                : "border border-[#1e3a4a] text-fog hover:text-parchment"
             }`}
           >
             {statusLabels[status]}
@@ -71,7 +71,7 @@ function ProjectsPage() {
           {Array.from({ length: 3 }).map((_, i) => (
             <div
               key={i}
-              className="border border-[#1e3a4a] rounded-sm p-5 bg-[#111827] h-48 animate-pulse"
+              className="border border-[#1e3a4a] rounded-sm p-5 bg-deep h-48 animate-pulse"
             />
           ))}
         </div>
@@ -82,7 +82,7 @@ function ProjectsPage() {
           ))}
         </div>
       ) : (
-        <p className="text-[#8899aa] font-mono text-sm">
+        <p className="text-fog font-mono text-sm">
           Nenhum contrato encontrado.
         </p>
       )}

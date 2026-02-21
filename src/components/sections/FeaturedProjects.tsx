@@ -9,16 +9,16 @@ export function FeaturedProjects() {
     <section id="projetos" className="py-24 px-6 max-w-5xl mx-auto">
       <div className="flex items-end justify-between mb-10">
         <div>
-          <p className="font-mono text-xs text-[#4dd9ac] tracking-widest uppercase mb-2">
-            <span className="text-[#c9a84c]">//</span> os contratos
+          <p className="font-mono text-xs text-biolum tracking-widest uppercase mb-2">
+            <span className="text-witcher">//</span> os contratos
           </p>
-          <h2 className="font-display text-3xl font-bold text-[#e8dcc8]">
+          <h2 className="font-display text-3xl font-bold text-parchment">
             Projetos em Destaque
           </h2>
         </div>
         <Link
           to="/projects"
-          className="text-sm text-[#8899aa] hover:text-[#c9a84c] transition-colors font-mono hidden sm:block"
+          className="text-sm text-fog hover:text-witcher transition-colors font-mono hidden sm:block"
         >
           ver todos →
         </Link>
@@ -29,7 +29,7 @@ export function FeaturedProjects() {
           {Array.from({ length: 3 }).map((_, i) => (
             <div
               key={i}
-              className="border border-[#1e3a4a] rounded-sm p-5 bg-[#111827] h-48 animate-pulse"
+              className="border border-[#1e3a4a] rounded-sm p-5 bg-deep h-48 animate-pulse"
             />
           ))}
         </div>
@@ -44,7 +44,7 @@ export function FeaturedProjects() {
       <div className="mt-6 sm:hidden text-center">
         <Link
           to="/projects"
-          className="text-sm text-[#8899aa] hover:text-[#c9a84c] transition-colors font-mono"
+          className="text-sm text-fog hover:text-witcher transition-colors font-mono"
         >
           ver todos os contratos →
         </Link>
