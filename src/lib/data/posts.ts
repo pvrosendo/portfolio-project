@@ -16,7 +16,7 @@ export const posts: Post[] = [
     content: messagingContent,
     tags: ["arquitetura", "back-end", "microsserviços", "mensageria"],
     publishedAt: "2025-06-25T00:00:00.000Z",
-    readingTimeMin: 6,
+    readingTimeMin: 10,
   },
   {
     id: "2",
@@ -60,7 +60,7 @@ export const posts: Post[] = [
     content: sharkarContent,
     tags: ["projetos", "Front-end", "Back-end", "infraestrutura"],
     publishedAt: "2025-07-15T00:00:00.000Z",
-    readingTimeMin: 7,
+    readingTimeMin: 15,
   },
 ]
 

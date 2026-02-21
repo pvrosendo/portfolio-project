@@ -30,7 +30,7 @@ export const projects: Project[] = [
     tags: ["Angular", "TypeScript", "Bootstrap"],
     repoUrl: "https://github.com/pvrosendo/blog-and-portfolio",
     featured: true,
-    status: "active",
+    status: "archived",
   },
   {
     id: "4",
