@@ -1,204 +1,152 @@
-Welcome to your new TanStack Start app! 
+# Paulo Vitor · O Códex
 
-# Getting Started
+Site pessoal — portfolio e blog com identidade visual temática.
 
-To run this application:
+## Sobre o projeto
+
+Este é um site pessoal com duas funções principais: **showcase de projetos** e **blog técnico**. A identidade visual foge do portfolio genérico e se inspira em três pilares da personalidade do autor: *The Witcher 3*, *tubarões/abismo oceânico* e *computação*.
+
+O tema chama-se **"O Códex"** — uma mistura de dark fantasy, profundezas do oceano e estética tech.
+
+## Stack
+
+| Tecnologia | Função |
+|---|---|
+| [React 19](https://react.dev) | UI |
+| [TanStack Start](https://tanstack.com/start) | Framework SSR (Server-Side Rendering) |
+| [TanStack Router](https://tanstack.com/router) | Roteamento com file-based routing |
+| [TanStack Query](https://tanstack.com/query) | Gerenciamento de estado assíncrono |
+| [Tailwind CSS v4](https://tailwindcss.com) | Estilização utility-first |
+| [Shadcn/ui](https://ui.shadcn.com) | Componentes de UI base |
+| [Vite](https://vite.dev) | Build tool |
+| [Biome](https://biomejs.dev) | Linter + Formatter |
+| [TypeScript](https://www.typescriptlang.org) | Tipagem estática |
+| [Lucide React](https://lucide.dev) | Ícones |
+
+## Estrutura do projeto
+
+```
+src/
+├── routes/
+│   ├── __root.tsx          # Layout raiz: HTML, Navbar, Footer, providers
+│   ├── index.tsx           # Landing page
+│   ├── blog/
+│   │   ├── index.tsx       # Listagem de posts ("As Crônicas")
+│   │   └── $slug.tsx       # Artigo individual
+│   └── projects/
+│       └── index.tsx       # Listagem de projetos ("Os Contratos")
+│
+├── components/
+│   ├── layout/
+│   │   ├── Navbar.tsx      # Navbar com scroll-spy e back-button
+│   │   └── Footer.tsx
+│   ├── sections/           # Seções da landing page
+│   │   ├── Hero.tsx
+│   │   ├── AboutPreview.tsx
+│   │   ├── RecentPosts.tsx
+│   │   └── FeaturedProjects.tsx
+│   ├── cards/
+│   │   ├── BlogCard.tsx
+│   │   └── ProjectCard.tsx
+│   ├── ui/                 # Shadcn/ui (não editar manualmente)
+│   └── NotFound.tsx        # Página 404 temática
+│
+├── hooks/
+│   ├── use-posts.ts        # TanStack Query hooks para posts
+│   └── use-projects.ts     # TanStack Query hooks para projetos
+│
+├── lib/
+│   ├── types.ts            # Interfaces TypeScript: Post, Project, Tag
+│   ├── utils.ts            # cn(), formatDate(), slugify()
+│   └── data/
+│       ├── posts.ts        # Dados estáticos de posts
+│       └── projects.ts     # Dados estáticos de projetos
+│
+└── styles.css              # Tailwind + tema customizado "O Códex"
+```
+
+## Rotas
+
+| Rota | Página | Tema in-universe |
+|---|---|---|
+| `/` | Landing page | O Prólogo |
+| `/blog` | Listagem de artigos | As Crônicas |
+| `/blog/:slug` | Artigo individual | A Crônica |
+| `/projects` | Listagem de projetos | Os Contratos |
+
+## Tema visual
+
+### Paleta de cores
+
+| Nome | Hex | Uso |
+|---|---|---|
+| `abyss` | `#0a0d14` | Background principal |
+| `deep` | `#111827` | Cards e superfícies elevadas |
+| `current` | `#1e3a4a` | Bordas, hover states |
+| `witcher` | `#c9a84c` | Accent primário (dourado) |
+| `biolum` | `#4dd9ac` | Accent secundário (verde-água) |
+| `fog` | `#8899aa` | Texto muted/secundário |
+| `parchment` | `#e8dcc8` | Texto principal |
+
+### Tipografia
+
+- **Cinzel** — headings, display (clima épico/medieval)
+- **Inter** — corpo do texto
+- **JetBrains Mono** — código, labels técnicas
+
+## Como rodar
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm dev        # http://localhost:3000
 ```
 
-# Building For Production
-
-To build this application for production:
+## Build de produção
 
 ```bash
-npm run build
+pnpm build
+pnpm preview
 ```
 
-## Testing
-
-This project uses [Vitest](https://vitest.dev/) for testing. You can run the tests with:
+## Linting e formatação
 
 ```bash
-npm run test
+pnpm check      # lint + format check (Biome)
+pnpm lint       # só lint
+pnpm format     # só format
 ```
 
-## Styling
+## Adicionando conteúdo
 
-This project uses [Tailwind CSS](https://tailwindcss.com/) for styling.
+### Novo post
 
-### Removing Tailwind CSS
+Edite `src/lib/data/posts.ts` e adicione um objeto ao array `posts`:
 
-If you prefer not to use Tailwind CSS:
-
-1. Remove the demo pages in `src/routes/demo/`
-2. Replace the Tailwind import in `src/styles.css` with your own styles
-3. Remove `tailwindcss()` from the plugins array in `vite.config.ts`
-4. Uninstall the packages: `npm install @tailwindcss/vite tailwindcss -D`
-
-## Linting & Formatting
-
-This project uses [Biome](https://biomejs.dev/) for linting and formatting. The following scripts are available:
-
-
-```bash
-npm run lint
-npm run format
-npm run check
-```
-
-
-
-## Routing
-
-This project uses [TanStack Router](https://tanstack.com/router) with file-based routing. Routes are managed as files in `src/routes`.
-
-### Adding A Route
-
-To add a new route to your application just add a new file in the `./src/routes` directory.
-
-TanStack will automatically generate the content of the route file for you.
-
-Now that you have two routes you can use a `Link` component to navigate between them.
-
-### Adding Links
-
-To use SPA (Single Page Application) navigation you will need to import the `Link` component from `@tanstack/react-router`.
-
-```tsx
-import { Link } from "@tanstack/react-router";
-```
-
-Then anywhere in your JSX you can use it like so:
-
-```tsx
-<Link to="/about">About</Link>
-```
-
-This will create a link that will navigate to the `/about` route.
-
-More information on the `Link` component can be found in the [Link documentation](https://tanstack.com/router/v1/docs/framework/react/api/router/linkComponent).
-
-### Using A Layout
-
-In the File Based Routing setup the layout is located in `src/routes/__root.tsx`. Anything you add to the root route will appear in all the routes. The route content will appear in the JSX where you render `{children}` in the `shellComponent`.
-
-Here is an example layout that includes a header:
-
-```tsx
-import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
-
-export const Route = createRootRoute({
-  head: () => ({
-    meta: [
-      { charSet: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { title: 'My App' },
-    ],
-  }),
-  shellComponent: ({ children }) => (
-    <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        <header>
-          <nav>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-          </nav>
-        </header>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  ),
-})
-```
-
-More information on layouts can be found in the [Layouts documentation](https://tanstack.com/router/latest/docs/framework/react/guide/routing-concepts#layouts).
-
-## Server Functions
-
-TanStack Start provides server functions that allow you to write server-side code that seamlessly integrates with your client components.
-
-```tsx
-import { createServerFn } from '@tanstack/react-start'
-
-const getServerTime = createServerFn({
-  method: 'GET',
-}).handler(async () => {
-  return new Date().toISOString()
-})
-
-// Use in a component
-function MyComponent() {
-  const [time, setTime] = useState('')
-  
-  useEffect(() => {
-    getServerTime().then(setTime)
-  }, [])
-  
-  return <div>Server time: {time}</div>
+```ts
+{
+  id: "5",
+  slug: "meu-novo-post",
+  title: "Título do Post",
+  excerpt: "Descrição curta que aparece nos cards.",
+  content: `# Título\n\nConteúdo em markdown simples.`,
+  tags: ["tag1", "tag2"],
+  publishedAt: "2026-03-01T00:00:00.000Z",
+  readingTimeMin: 5,
 }
 ```
 
-## API Routes
+### Novo projeto
 
-You can create API routes by using the `server` property in your route definitions:
+Edite `src/lib/data/projects.ts` e adicione ao array `projects`:
 
-```tsx
-import { createFileRoute } from '@tanstack/react-router'
-import { json } from '@tanstack/react-start'
-
-export const Route = createFileRoute('/api/hello')({
-  server: {
-    handlers: {
-      GET: () => json({ message: 'Hello, World!' }),
-    },
-  },
-})
-```
-
-## Data Fetching
-
-There are multiple ways to fetch data in your application. You can use TanStack Query to fetch data from a server. But you can also use the `loader` functionality built into TanStack Router to load the data for a route before it's rendered.
-
-For example:
-
-```tsx
-import { createFileRoute } from '@tanstack/react-router'
-
-export const Route = createFileRoute('/people')({
-  loader: async () => {
-    const response = await fetch('https://swapi.dev/api/people')
-    return response.json()
-  },
-  component: PeopleComponent,
-})
-
-function PeopleComponent() {
-  const data = Route.useLoaderData()
-  return (
-    <ul>
-      {data.results.map((person) => (
-        <li key={person.name}>{person.name}</li>
-      ))}
-    </ul>
-  )
+```ts
+{
+  id: "5",
+  title: "Nome do Projeto",
+  description: "Descrição do projeto.",
+  tags: ["Go", "PostgreSQL"],
+  repoUrl: "https://github.com/x/projeto",
+  featured: true,
+  status: "active",
 }
 ```
-
-Loaders simplify your data fetching logic dramatically. Check out more information in the [Loader documentation](https://tanstack.com/router/latest/docs/framework/react/guide/data-loading#loader-parameters).
-
-# Demo files
-
-Files prefixed with `demo` can be safely deleted. They are there to provide a starting point for you to play around with the features you've installed.
-
-# Learn More
-
-You can learn more about all of the offerings from TanStack in the [TanStack documentation](https://tanstack.com).
-
-For TanStack Start specific documentation, visit [TanStack Start](https://tanstack.com/start).
