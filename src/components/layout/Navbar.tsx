@@ -3,9 +3,9 @@ import { useEffect, useState } from "react"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
+  { label: "Sobre", href: "/#sobre", scrollId: "sobre" },
   { label: "Blog", href: "/blog", scrollId: "blog" },
   { label: "Projetos", href: "/projects", scrollId: "projetos" },
-  { label: "Sobre", href: "/#sobre", scrollId: "sobre" },
 ]
 
 export function Navbar() {

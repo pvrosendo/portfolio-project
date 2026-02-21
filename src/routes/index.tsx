@@ -11,11 +11,11 @@ function LandingPage() {
     <>
       <Hero />
       <div className="border-t border-[#1e3a4a]/40" />
+      <AboutPreview />
+      <div className="border-t border-[#1e3a4a]/40" />
       <RecentPosts />
       <div className="border-t border-[#1e3a4a]/40" />
       <FeaturedProjects />
-      <div className="border-t border-[#1e3a4a]/40" />
-      <AboutPreview />
     </>
   )
 }

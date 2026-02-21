@@ -22,7 +22,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
     meta: [
       { charSet: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'description', content: 'Paulo Vitor — Desenvolvedor Back-end. Explorando as profundezas da engenharia de software.' },
+      { name: 'description', content: 'Paulo Vitor — Desenvolvedor de Software. Explorando as profundezas da engenharia de software.' },
       { title: 'Paulo Vitor · O Códex' },
     ],
     links: [

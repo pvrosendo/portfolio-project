@@ -1,8 +1,9 @@
 const skills = [
-  { label: "Linguagens", value: "Go · Java · TypeScript · Python · SQL" },
-  { label: "Back-end", value: "REST · gRPC · Mensageria · Clean Arch" },
-  { label: "Infraestrutura", value: "Docker · PostgreSQL · Redis · Linux" },
-  { label: "Atributos extras", value: "The Witcher 3 · Tubarões · Café" },
+  { label: "Linguagens", value: "Go · Java · TypeScript · C++" },
+  { label: "Front-end", value: "React · Angular · Tailwind" },
+  { label: "Back-end", value: "Echo · Spring · SQL · NoSQL · Docker" },
+  { label: "Embarcados", value: "ESP32 · Arduino · Jetson Nano" },
+  { label: "Atributos extras", value: "The Witcher 3 · Tubarões · Música" },
 ]
 
 export function AboutPreview() {
@@ -18,14 +19,12 @@ export function AboutPreview() {
             Quem sou eu?
           </h2>
           <p className="text-fog leading-relaxed mb-4">
-            Meu nome é Paulo Vitor. Desenvolvedor back-end apaixonado por
-            engenharia de software — aquela parte que vai além do "funcionar" e
-            busca o "por que funciona".
+            Meu nome é Paulo Vitor, mas pode me chamar de PV. Desenvolvedor apaixonado por
+            engenharia de software. Busco entender tudo que consigo nesse vasto mundo da tecnologia.
           </p>
           <p className="text-fog leading-relaxed">
-            Nesse espaço compartilho tudo aquilo que aprendo, experimento e
-            construo. Desde arquitetura de sistemas até a filosofia por trás de
-            uma boa abstração.
+            Nesse espaço compartilho aquilo que aprendo, experimento e
+            construo. Desde projetos pessoais, conteúdos técnicos até recomendações e Hobbies.
           </p>
         </div>
 
@@ -50,7 +49,7 @@ export function AboutPreview() {
                 Paulo Vitor
               </p>
               <p className="text-biolum text-xs font-mono">
-                Desenvolvedor Back-end
+                Desenvolvedor de Software
               </p>
             </div>
           </div>

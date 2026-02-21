@@ -116,7 +116,7 @@ export function Hero() {
       <div className="relative z-10 text-center px-6 max-w-3xl">
         {/* Pré-título em monospace */}
         <p className="font-mono text-sm text-biolum mb-4 tracking-widest uppercase">
-          <span className="text-witcher">&gt;</span> desenvolvedor back-end
+          <span className="text-witcher">&gt;</span> desenvolvedor de software
         </p>
 
         {/* main title */}
