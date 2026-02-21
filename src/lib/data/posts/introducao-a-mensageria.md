@@ -1,11 +1,11 @@
 
-<img src="/assets/articles/mensageria/mensageria.png" width="500" alt="mensageriabase">
+![Descrição da imagem](/assets/mensageria/mensageria.png)
 
 ## Entendendo a problemática
 
 Primeiro comecemos imaginando um problema específico e em como poderíamos resolver:
 
-> [!NOTED] Problema
+> [!NOTE] Problema
 > 1. Temos um sistema de vendas online e nele, possuímos um serviço no back-end que armazena produtos em um banco de dados e que precisa integrar informações de preço e quantidade junto ao front-end;
 > 2. O outro serviço que temos é a aplicação front-end, que simplificadamente, mostrará produtos com valores e informações atualizados e também enviará para o back-end informações de venda;
 > 3. O sistema realiza operações constantemente, resultando num fluxo grande de informações diversas.
@@ -13,7 +13,8 @@ Primeiro comecemos imaginando um problema específico e em como poderíamos reso
 
 Ilustrando a questão de forma bem básica, ficaria assim:
 
-<img src="/assets/articles/mensageria/mensageria1.png" width="500" alt="mensageriabase">
+
+![Descrição da imagem](/assets/mensageria/mensageria1.png)
 
 Se pararmos e pensarmos rapidamente, parece um problema bem simples, basta montar um controller para realizar as requisições entre o front-end e o back-end junto a persistência dos dados no banco.
 
@@ -36,7 +37,8 @@ E é aí que podemos começar a pensar na mensageria, pois ela nos permitiria cr
 
 Olhe o seguinte diagrama sem eu lhe dar nenhuma informação a mais:
 
-<img src="/assets/articles/mensageria/mensageria2.png" width="500" alt="mensageriabase">
+
+![Descrição da imagem](/assets/mensageria/mensageria2.png)
 
 *Alguma coisa faz sentido? O que seria esse "Message Broker" que está entre os dois serviços? Que tipo de informação é essa de "Event"?*
 
@@ -87,14 +89,16 @@ Depois da explicação acima pode ser que você já tenha até entendido o que e
 
 Uma visualização mais bem elaborada pode ser vista abaixo:
 
-<img src="/assets/articles/mensageria/mensageria3.png" width="500" alt="mensageriabase">
+
+![Descrição da imagem](/assets/mensageria/mensageria3.png)
 
 
 ## Avançando na problemática
 
 Voltando, nosso diagrama na verdade ficaria mais condizente com algo assim:
 
-<img src="/assets/articles/mensageria/mensageria4.png" width="500" alt="mensageriabase">
+
+![Descrição da imagem](/assets/mensageria/mensageria4.png)
 
 
 Vamos esclarecer agora o fluxo para tentar deixar compreensível o máximo possível.

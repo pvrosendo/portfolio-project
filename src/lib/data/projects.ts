@@ -3,7 +3,7 @@ import type { Project } from "@/lib/types"
 export const projects: Project[] = [
   {
     id: "1",
-    title: "Sharkar",
+    title: "Sharkar V2",
     description:
       "Solução moderna e intuitiva para monitoramento de carros.",
     tags: ["Angular", "Go", "PostgreSQL", "Docker"],

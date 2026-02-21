@@ -1,9 +1,10 @@
 import type { Post } from "@/lib/types"
 
 import messagingContent from "./posts/introducao-a-mensageria.md?raw"
-import rustContent from "./posts/explorando-o-abismo-do-rust.md?raw"
-import postgresContent from "./posts/postgresql-indexes-o-guia-que-eu-precisava.md?raw"
-import dockerContent from "./posts/docker-do-basico-ao-producao.md?raw"
+import cdnContent from "./posts/cdn.md?raw"
+import s3Content from "./posts/hospedando-site-s3.md?raw"
+import lbContent from "./posts/load-balancer.md?raw"
+import sharkarContent from "./posts/sharkar.md?raw"
 
 export const posts: Post[] = [
   {
@@ -14,40 +15,51 @@ export const posts: Post[] = [
       "Meus primeiros passos entendendo a importância da comunicação assíncrona entre sistemas.",
     content: messagingContent,
     tags: ["arquitetura", "back-end", "microsserviços", "mensageria"],
-    publishedAt: "2025-06-15T00:00:00.000Z",
+    publishedAt: "2025-06-25T00:00:00.000Z",
     readingTimeMin: 6,
   },
   {
     id: "2",
-    slug: "explorando-o-abismo-do-rust",
-    title: "Explorando o Abismo do Rust",
+    slug: "content-delivery-network",
+    title: "CDN - Content Delivery Network",
     excerpt:
-      "Minha jornada adentrando nas profundezas de uma das linguagens mais temidas e respeitadas do ecossistema dev.",
-    content: rustContent,
-    tags: ["rust", "linguagens", "sistemas"],
-    publishedAt: "2026-02-01T00:00:00.000Z",
+      "Entendendo como os sites chegam mais rápidos em diversos lugares diferentes.",
+    content: cdnContent,
+    tags: ["web", "redes", "infraestrutura", "cdn"],
+    publishedAt: "2025-07-02T00:00:00.000Z",
     readingTimeMin: 8,
   },
   {
     id: "3",
-    slug: "postgresql-indexes-o-guia-que-eu-precisava",
-    title: "PostgreSQL Indexes: o guia que eu precisava",
+    slug: "hospedando-site-no-aws-s3",
+    title: "Hospedando site no AWS S3",
     excerpt:
-      "Entendendo B-Tree, Hash, GIN e GiST — e quando usar cada um para não destruir a performance.",
-    content: postgresContent,
-    tags: ["postgresql", "banco-de-dados", "performance"],
-    publishedAt: "2026-02-10T00:00:00.000Z",
+      "Hospedando um site no ar de maneira simples e direta.",
+    content: s3Content,
+    tags: ["aws", "cloud", "hospedagem", "infraestrutura"],
+    publishedAt: "2025-07-10T00:00:00.000Z",
     readingTimeMin: 10,
   },
   {
     id: "4",
-    slug: "docker-do-basico-ao-producao",
-    title: "Docker: do básico ao produção",
+    slug: "load-balancer",
+    title: "Load Balancer (Balanceador de Carga)",
     excerpt:
-      "Containers, imagens, volumes e redes — tudo que você precisa pra não sofrer com ambiente de desenvolvimento.",
-    content: dockerContent,
-    tags: ["docker", "devops", "infraestrutura"],
-    publishedAt: "2026-02-18T00:00:00.000Z",
+      "Introdução bem legal sobre balanceamento de carga.",
+    content: lbContent,
+    tags: ["web", "redes", "infraestrutura"],
+    publishedAt: "2025-07-12T00:00:00.000Z",
+    readingTimeMin: 7,
+  },
+  {
+    id: "5",
+    slug: "sharkar",
+    title: "Como construi meu projeto: Sharkar",
+    excerpt:
+      "Como foi construir um projeto fullstack e implementá-lo em diferentes clouds.",
+    content: sharkarContent,
+    tags: ["projetos", "Front-end", "Back-end", "infraestrutura"],
+    publishedAt: "2025-07-15T00:00:00.000Z",
     readingTimeMin: 7,
   },
 ]

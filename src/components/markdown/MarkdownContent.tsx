@@ -58,6 +58,22 @@ const components: Components = {
     </blockquote>
   ),
   hr: () => <hr className="border-current my-8 opacity-20" />,
+  img: ({ src, alt, width, height }) => (
+    <figure className="my-8">
+      <img
+        src={src}
+        alt={alt ?? ""}
+        width={width}
+        height={height}
+        className="rounded-md border border-current/10 max-w-full mx-auto block"
+      />
+      {alt && (
+        <figcaption className="text-center text-xs font-mono text-fog/60 mt-2">
+          {alt}
+        </figcaption>
+      )}
+    </figure>
+  ),
   // biome-ignore lint/suspicious/noExplicitAny: react-markdown types require any here
   code: ({ inline, className, children, ...props }: any) => {
     if (inline) {
