@@ -34,7 +34,7 @@ export function Footer() {
 
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com/pvgrs"
+            href="https://github.com/pvrosendo"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -43,7 +43,7 @@ export function Footer() {
             <Github size={18} />
           </a>
           <a
-            href="https://linkedin.com/in/pvgrs"
+            href="https://linkedin.com/in/paulo-vitor-rosendo/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -52,7 +52,7 @@ export function Footer() {
             <Linkedin size={18} />
           </a>
           <a
-            href="mailto:contato@pvgrs.dev"
+            href="mailto:paulovitor.rsd@gmail.com"
             aria-label="Email"
             className="text-fog hover:text-witcher transition-colors"
           >
