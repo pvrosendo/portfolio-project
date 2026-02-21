@@ -1,6 +1,6 @@
 import type { Post } from "@/lib/types"
 
-import hexagonalContent from "./posts/o-que-aprendi-estudando-arquitetura-hexagonal.md?raw"
+import messagingContent from "./posts/introducao-a-mensageria.md?raw"
 import rustContent from "./posts/explorando-o-abismo-do-rust.md?raw"
 import postgresContent from "./posts/postgresql-indexes-o-guia-que-eu-precisava.md?raw"
 import dockerContent from "./posts/docker-do-basico-ao-producao.md?raw"
@@ -8,13 +8,13 @@ import dockerContent from "./posts/docker-do-basico-ao-producao.md?raw"
 export const posts: Post[] = [
   {
     id: "1",
-    slug: "o-que-aprendi-estudando-arquitetura-hexagonal",
-    title: "O que aprendi estudando Arquitetura Hexagonal",
+    slug: "introducao-a-mensageria",
+    title: "Introdução à Mensageria",
     excerpt:
-      "Ports & Adapters, dependências invertidas e como isso mudou minha forma de pensar sobre design de software.",
-    content: hexagonalContent,
-    tags: ["arquitetura", "back-end", "design-de-software"],
-    publishedAt: "2026-01-15T00:00:00.000Z",
+      "Meus primeiros passos entendendo a importância da comunicação assíncrona entre sistemas.",
+    content: messagingContent,
+    tags: ["arquitetura", "back-end", "microsserviços", "mensageria"],
+    publishedAt: "2025-06-15T00:00:00.000Z",
     readingTimeMin: 6,
   },
   {

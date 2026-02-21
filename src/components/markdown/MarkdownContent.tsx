@@ -1,6 +1,7 @@
 import Markdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import rehypeHighlight from "rehype-highlight"
+import { remarkAlert } from "remark-github-blockquote-alert"
 import type { Components } from "react-markdown"
 
 const components: Components = {
@@ -108,7 +109,7 @@ export function MarkdownContent({ content }: MarkdownContentProps) {
   return (
     <div className="prose-codex">
       <Markdown
-        remarkPlugins={[remarkGfm]}
+        remarkPlugins={[remarkGfm, remarkAlert]}
         rehypePlugins={[rehypeHighlight]}
         components={components}
       >

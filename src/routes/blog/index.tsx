@@ -75,7 +75,9 @@ function BlogPage() {
         <div className="grid md:grid-cols-2 gap-4">
           {filtered.map((post) => (
             <BlogCard key={post.id} post={post} />
-          ))}
+          )).sort(
+            (a,b) => new Date(b.props.post.publishedAt).getTime() - new Date(a.props.post.publishedAt).getTime()
+          )}
         </div>
       ) : (
         <p className="text-fog font-mono text-sm">

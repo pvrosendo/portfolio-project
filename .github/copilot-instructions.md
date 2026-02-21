@@ -2,7 +2,7 @@
 
 ## Sobre o projeto
 
-Site pessoal de Paulo Vitor (PV / pvgrs) — desenvolvedor back-end apaixonado por engenharia de software.
+Site pessoal de Paulo Vitor (PV) — desenvolvedor back-end apaixonado por engenharia de software.
 Este é um site de portfolio e blog pessoal com identidade visual única e temática.
 
 **Repositório:** `portfolio-project/`
@@ -64,6 +64,8 @@ src/
     cards/
       ProjectCard.tsx   # Card estilo "ficha de contrato"
       BlogCard.tsx      # Card estilo "entrada de crônica"
+    markdown/
+      MarkdownContent.tsx  # Renderizador de markdown com tema do Códex
     ui/                 # Shadcn/ui (gerado automaticamente — não editar manualmente)
 
   hooks/
@@ -74,10 +76,11 @@ src/
     types.ts            # Tipos TypeScript: Post, Project, Tag
     utils.ts            # cn(), formatDate(), slugify()
     data/
-      posts.ts          # Array estático de posts (fonte de dados inicial)
+      posts.ts          # Metadados dos posts + imports do conteúdo .md
+      posts/            # Conteúdo dos posts em markdown (um arquivo por post)
       projects.ts       # Array estático de projetos
 
-  styles.css            # Tailwind v4 + tema customizado
+  styles.css            # Tailwind v4 + tema customizado + estilos de alerts markdown
 ```
 
 ---
@@ -179,14 +182,30 @@ export interface Tag {
 
 ---
 
-## Dados Estáticos (fase inicial)
+## Dados Estáticos e Blog
 
-Enquanto não há backend/CMS, os dados vivem em:
-- `src/lib/data/posts.ts` — array de `Post[]`
+Os posts vivem em dois lugares separados:
+- `src/lib/data/posts/*.md` — conteúdo de cada post em markdown puro
+- `src/lib/data/posts.ts` — metadados (`id`, `slug`, `title`, `excerpt`, `tags`, `publishedAt`, `readingTimeMin`) + import do `.md` via `?raw`
 - `src/lib/data/projects.ts` — array de `Project[]`
 
-Os hooks (`use-posts.ts`, `use-projects.ts`) usam TanStack Query com `queryFn` que retorna esses arrays,
-facilitando a migração futura para uma API real sem mudar os componentes.
+O conteúdo `.md` é importado como string pelo Vite (`import content from './posts/slug.md?raw'`) sem nenhum plugin extra.
+
+**Para criar um novo post:**
+1. Crie `src/lib/data/posts/meu-slug.md`
+2. Em `posts.ts`, adicione `import content from './posts/meu-slug.md?raw'` e um objeto no array
+
+Os hooks (`use-posts.ts`, `use-projects.ts`) usam TanStack Query com `queryFn` que retorna esses dados, facilitando a migração futura para uma API real sem mudar os componentes.
+
+### Markdown
+
+O componente `MarkdownContent` (`src/components/markdown/MarkdownContent.tsx`) renderiza o conteúdo dos posts com:
+- **`react-markdown`** — parser principal
+- **`remark-gfm`** — tabelas, strikethrough, task lists, links automáticos
+- **`rehype-highlight`** + **`highlight.js`** — syntax highlighting (tema `github-dark`)
+- **`remark-github-blockquote-alert`** — alertas estilo GitHub (`> [!NOTE]`, `> [!WARNING]`, etc.)
+
+Os alertas suportados são: `NOTE`, `TIP`, `IMPORTANT`, `WARNING`, `CAUTION`.
 
 ---
 
@@ -210,3 +229,17 @@ facilitando a migração futura para uma API real sem mudar os componentes.
 - Textos de UI em **pt-BR** (exceto termos técnicos universais como "GitHub", "tags", etc.)
 - Não usar Bootstrap — apenas Tailwind + Shadcn/ui
 - TanStack Start está configurado com SSR — aproveitar `loader` nas rotas quando possível
+
+---
+
+## Regra de Documentação
+
+**Toda implementação ou alteração relevante no projeto deve ser registrada no `INSTRUCTIONS_FILE.md`.**
+
+Ao implementar uma feature, instalar um pacote, refatorar um componente ou mudar uma convenção, adicione ou atualize a seção correspondente no `INSTRUCTIONS_FILE.md`. O arquivo serve como relatório técnico e material de estudo — deve refletir o estado atual do projeto.
+
+Exemplos do que documentar:
+- Novo pacote instalado → adicionar seção explicando o pacote, como ele foi integrado e por que foi escolhido
+- Novo componente criado → documentar sua responsabilidade, props e padrões usados
+- Convenção alterada → atualizar a seção relevante e marcar a mudança
+- "Próximos Passos" concluídos → marcar como ✅ Feito com ~~strikethrough~~
