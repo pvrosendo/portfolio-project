@@ -6,7 +6,7 @@ export const projects: Project[] = [
     title: "Sharkar",
     description:
       "Solução moderna e intuitiva para monitoramento de carros.",
-    tags: ["React", "Go", "PostgreSQL", "Docker"],
+    tags: ["Angular", "Go", "PostgreSQL", "Docker"],
     demoUrl: "https://www.sharkar-pv.com/",
     featured: true,
     status: "in-progress",

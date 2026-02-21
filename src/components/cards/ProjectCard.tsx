@@ -1,7 +1,6 @@
 import { ExternalLink, Github } from "lucide-react"
 import { cn } from "@/lib/utils"
 import type { Project } from "@/lib/types"
-import { Separator } from "../ui"
 
 const statusConfig = {
   active: { label: "Ativo", color: "text-[#4dd9ac] bg-[#4dd9ac]/10" },

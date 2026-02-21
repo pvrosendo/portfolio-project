@@ -1,6 +1,7 @@
 import { createFileRoute, notFound } from "@tanstack/react-router"
 import { formatDate } from "@/lib/utils"
 import { getPostBySlug } from "@/lib/data/posts"
+import { MarkdownContent } from "@/components/markdown/MarkdownContent"
 
 export const Route = createFileRoute("/blog/$slug")({
   loader: ({ params }) => {
@@ -50,43 +51,7 @@ function ArticlePage() {
       </div>
 
       {/* Content */}
-      <div className="prose-codex">
-        {post.content.split("\n").map((line, i) => {
-          if (line.startsWith("# "))
-            return (
-              <h1
-                key={i}
-                className="font-display text-2xl font-bold text-parchment mt-10 mb-4"
-              >
-                {line.slice(2)}
-              </h1>
-            )
-          if (line.startsWith("## "))
-            return (
-              <h2
-                key={i}
-                className="font-display text-xl font-semibold text-witcher mt-8 mb-3"
-              >
-                {line.slice(3)}
-              </h2>
-            )
-          if (line.startsWith("- "))
-            return (
-              <li
-                key={i}
-                className="text-fog ml-4 leading-relaxed list-disc"
-              >
-                {line.slice(2)}
-              </li>
-            )
-          if (line.trim() === "") return <br key={i} />
-          return (
-            <p key={i} className="text-fog leading-relaxed mb-2">
-              {line}
-            </p>
-          )
-        })}
-      </div>
+      <MarkdownContent content={post.content} />
     </article>
   )
 }
