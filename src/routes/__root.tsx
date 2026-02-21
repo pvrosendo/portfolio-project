@@ -6,12 +6,12 @@ import {
 } from '@tanstack/react-router'
 import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
 import { TanStackDevtools } from '@tanstack/react-devtools'
-
-import TanStackQueryDevtools from '../integrations/tanstack-query/devtools'
-
-import appCss from '../styles.css?url'
-
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import TanStackQueryDevtools from '../integrations/tanstack-query/devtools'
+import { Navbar } from '../components/layout/Navbar'
+import { Footer } from '../components/layout/Footer'
+import { NotFound } from '../components/NotFound'
+import appCss from '../styles.css?url'
 
 interface MyRouterContext {
   queryClient: QueryClient
@@ -20,47 +20,42 @@ interface MyRouterContext {
 export const Route = createRootRouteWithContext<MyRouterContext>()({
   head: () => ({
     meta: [
-      {
-        charSet: 'utf-8',
-      },
-      {
-        name: 'viewport',
-        content: 'width=device-width, initial-scale=1',
-      },
-      {
-        title: 'TanStack Start Starter',
-      },
+      { charSet: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'description', content: 'Paulo Vitor — Desenvolvedor Back-end. Explorando as profundezas da engenharia de software.' },
+      { title: 'Paulo Vitor · O Códex' },
     ],
     links: [
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossOrigin: 'anonymous' },
       {
         rel: 'stylesheet',
-        href: appCss,
+        href: 'https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap',
       },
+      { rel: 'stylesheet', href: appCss },
     ],
   }),
+  notFoundComponent: NotFound,
   shellComponent: RootDocument,
 })
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   const { queryClient } = useRouteContext({ from: '__root__' })
-  
+
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <HeadContent />
       </head>
       <body>
         <QueryClientProvider client={queryClient}>
-          {children}
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
           <TanStackDevtools
-            config={{
-              position: 'bottom-right',
-            }}
+            config={{ position: 'bottom-right' }}
             plugins={[
-              {
-                name: 'Tanstack Router',
-                render: <TanStackRouterDevtoolsPanel />,
-              },
+              { name: 'Tanstack Router', render: <TanStackRouterDevtoolsPanel /> },
               TanStackQueryDevtools,
             ]}
           />
