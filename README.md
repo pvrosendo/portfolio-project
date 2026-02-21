@@ -1,10 +1,10 @@
-# Paulo Vitor · O Códex
+# O Códex
 
 Site pessoal — portfolio e blog com identidade visual temática.
 
 ## Sobre o projeto
 
-Este é um site pessoal com duas funções principais: **showcase de projetos** e **blog técnico**. A identidade visual foge do portfolio genérico e se inspira em três pilares da personalidade do autor: *The Witcher 3*, *tubarões/abismo oceânico* e *computação*.
+Esse é um site pessoal com duas funções principais: **demo de projetos** e **blog pessoal**. A identidade visual se inspira em três pilares: *The Witcher 3*, *tubarões/abismo oceânico* e *computação*.
 
 O tema chama-se **"O Códex"** — uma mistura de dark fantasy, profundezas do oceano e estética tech.
 
@@ -48,7 +48,7 @@ src/
 │   ├── cards/
 │   │   ├── BlogCard.tsx
 │   │   └── ProjectCard.tsx
-│   ├── ui/                 # Shadcn/ui (não editar manualmente)
+│   ├── ui/                 # Shadcn/ui
 │   └── NotFound.tsx        # Página 404 temática
 │
 ├── hooks/
@@ -97,30 +97,33 @@ src/
 ## Como rodar
 
 ```bash
-pnpm install
-pnpm dev        # http://localhost:3000
+make install
+make dev        # http://localhost:3000
 ```
 
 ## Build de produção
 
 ```bash
-pnpm build
-pnpm preview
+make build
+make preview
 ```
 
 ## Linting e formatação
 
 ```bash
-pnpm check      # lint + format check (Biome)
-pnpm lint       # só lint
-pnpm format     # só format
+make check      # lint + format check (Biome)
+make lint       # só lint
+make format     # só format
 ```
 
 ## Adicionando conteúdo
 
 ### Novo post
 
-Edite `src/lib/data/posts.ts` e adicione um objeto ao array `posts`:
+**Como criar um novo post:**
+1. Criar `src/lib/data/posts/meu-novo-post.md` com o conteúdo markdown
+2. Em `posts.ts`, adicione `import content from './posts/meu-novo-post.md?raw'`
+3. Adicionar o objeto de metadados no array `posts[]`:
 
 ```ts
 {
@@ -137,7 +140,7 @@ Edite `src/lib/data/posts.ts` e adicione um objeto ao array `posts`:
 
 ### Novo projeto
 
-Edite `src/lib/data/projects.ts` e adicione ao array `projects`:
+Editar `src/lib/data/projects.ts` e adicionar ao array `projects`:
 
 ```ts
 {
@@ -145,7 +148,7 @@ Edite `src/lib/data/projects.ts` e adicione ao array `projects`:
   title: "Nome do Projeto",
   description: "Descrição do projeto.",
   tags: ["Go", "PostgreSQL"],
-  repoUrl: "https://github.com/x/projeto",
+  repoUrl: "https://github.com/x/projeto", //ou demoUrl para links diretos
   featured: true,
   status: "active",
 }

@@ -82,7 +82,8 @@ Já que o Blog seria com a vercel e eu não teria muitos desafios com isso, deci
 
 #### Front-end
 
-> [!noted] Colocando o site no ar
+> [!NOTE]
+> Colocando o site no ar
 
 Considerei diversas opções como Vercel, Render, S3 e até EC2 (uma VPS). Perguntando para o Gemini e pesquisando diretamente, fui considerando preço (se era free), dificuldade, curva de aprendizado e minha intenção pessoal.
 
@@ -92,7 +93,8 @@ No final das contas observei que uma boa escolha seria o AWS Simple Storage Serv
 
 Caso você queira ver como fazer esse processo de implantação do site no S3, acesse: https://pvrosendo.vercel.app/article/hospedando-site-s3.
 
-> [!noted] Descobrindo sobre CDN
+> [!NOTE]
+> Descobrindo sobre CDN
 
 Depois de fazer a implantação acabei descobrindo e entendendo um pouco sobre [CDN](https://pvrosendo.is-a.dev/blog/content-delivery-network) e percebi que eu precisaria desse cara para o meu site ficar no ar e de fácil acesso para o máximo de pessoas possível. E ele também me ajudaria com a questão da segurança do site (certificado SSL/TSL e HTTPS) - que era algo que eu já tinha noção -, então era ótimo.
 
@@ -100,7 +102,8 @@ Agora precisava entender como eu criava uma distribuição para o meu site e uti
 
 Caso você queira ver como fazer esse processo de criação da distribuição no CloudFront: [Hospedando site no S3](https://pvrosendo.is-a.dev/blog/hospedando-site-no-aws-s3)
 
-> [!noted] Criando a pipeline com GitHub Actions
+> [!NOTE]
+> Criando a pipeline com GitHub Actions
 
 Eu já tinha noção desde o começo que eu iria querer aplicar um workflow dentro de toda a implantação do projeto, eu só não sabia como fazer. Já tinha visto uma pipeline rodando dentro da Cloud da Azure, mas nunca tinha chegado ao ponto de encostar, fazer ou saber como era feito.
 
@@ -127,7 +130,8 @@ e estava pronto.
 
 Para concluir que estava configurado tudo certo e rodando, além de criar o próprio banco, usei o DBeaver para me conectar na instância.
 
-> [!danger] Gastos que eu tive
+> [!CAUTION]
+> Gastos que eu tive
 
 Algo que eu acabei me ferrando foi no custo desse cara. Eu achava que a configuração que eu tinha setado limitava a apenas consumir exatamente o Free-Tier que a AWS disponibiliza. 
 

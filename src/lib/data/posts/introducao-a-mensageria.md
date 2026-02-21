@@ -5,7 +5,7 @@
 
 Primeiro comecemos imaginando um problema específico e em como poderíamos resolver:
 
-> [!NOTE] Problema
+> [!NOTE]
 > 1. Temos um sistema de vendas online e nele, possuímos um serviço no back-end que armazena produtos em um banco de dados e que precisa integrar informações de preço e quantidade junto ao front-end;
 > 2. O outro serviço que temos é a aplicação front-end, que simplificadamente, mostrará produtos com valores e informações atualizados e também enviará para o back-end informações de venda;
 > 3. O sistema realiza operações constantemente, resultando num fluxo grande de informações diversas.
@@ -51,7 +51,7 @@ E para isso surge a ideia do que estamos falando aqui. O objetivo principal é t
 
 Mesmo que seja bem claro, quando me refiro a "coisa X" ou "coisa Y", estou falando dos serviços.
 
-> [!question] Questionamento
+> [!TIP]
 > *Ué, mas os serviços não se comunicam? Eles não devem depender diretamente um do outro?*
 
 Sim e não. Eles se comunicam, mas **eles não precisam necessariamente serem síncronos**. Eles não precisam estar trocando informações exatamente a todo momento para que funcione corretamente. Na verdade isso poderia resultar facilmente em problema de perda de dados e informações - que é exatamente o que estamos querendo tratar aqui.

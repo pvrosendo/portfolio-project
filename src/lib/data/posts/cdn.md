@@ -39,8 +39,8 @@ Como já comentado anteriormente, o fato de termos servidores espalhados geograf
 
 Pode ser que esteja ainda bem abstrato essa ideia, então peguemos por exemplo:
 
-> [!noted] Esquema:
-> Você quer hospedar o seu portfólio e já pensou em utilizar o AWS S3 para armazenar os arquivos da build do seu projeto.
+> [!NOTE]
+> Esquema: Você quer hospedar o seu portfólio e já pensou em utilizar o AWS S3 para armazenar os arquivos da build do seu projeto.
 
 A ideia é boa e realmente muito utilizada, a grande questão é que esse bucket que você está utilizando é de um servidor físico em algum lugar específico que a amazon disponibilizou.
 
@@ -87,8 +87,8 @@ Justamente por fornecer em cache, não há uma necessidade de se comunicar a tod
 
 Comentei bastante sobre os casos de uso e vantagem de se ter uma cdn administrando a distribuição do seu site, mas assim como tudo, nem sempre é realmente necessário aplicar esse web service.
 
-> [!noted] Vamos com um caso
-> Imagina que uma escola pretende usar um site para que seus alunos possam conferir as suas respectivas notas e atualizações sobre a escola. 
+> [!NOTE]
+> Vamos com um caso: Imagina que uma escola pretende usar um site para que seus alunos possam conferir as suas respectivas notas e atualizações sobre a escola.
 
 Nesse caso nós não precisamos ter uma CDN, pois a escola já sabe que apenas os alunos acessarão aquele site e eles são a prioridade. Então, com certeza eles receberão com mais velocidade e qualidade.
 
