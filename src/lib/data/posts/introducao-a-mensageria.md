@@ -10,9 +10,7 @@ Primeiro comecemos imaginando um problema específico e em como poderíamos reso
 > 2. O outro serviço que temos é a aplicação front-end, que simplificadamente, mostrará produtos com valores e informações atualizados e também enviará para o back-end informações de venda;
 > 3. O sistema realiza operações constantemente, resultando num fluxo grande de informações diversas.
 
-
 Ilustrando a questão de forma bem básica, ficaria assim:
-
 
 ![Descrição da imagem](/assets/mensageria/mensageria1.png)
 
@@ -26,8 +24,8 @@ O grande ponto vem se começarmos a analisar pontos de possíveis problemas, poi
 Existem diversas possibilidades de problemáticas para esse caso. E claro, você pode pensar em diversas resoluções também, mas aqui nós focaremos na utilização da mensageria.
 
 Voltando ao ponto: algumas das possibilidades que poderíamos abordar o problema são:
-1. Analisar o retorno do status code [[HTTP]] e fazer uma tratativa em cima disso
-2. Tentar utilizar algum framework de [[Retry]] para continuar realizando tentativas
+1. Analisar o retorno do status code *HTTP* e fazer uma tratativa em cima disso
+2. Tentar utilizar algum framework de *Retry* para continuar realizando tentativas
 
 > Mas por que não agimos antes do problema acontecer, ao invés de esperar ele acontecer para realizar uma ação?
 
@@ -82,18 +80,26 @@ O message broker é um servidor de mensagens. É o cara que vai guardar as mensa
 
 Depois da explicação acima pode ser que você já tenha até entendido o que eles fazem, mas para garantir, segue:
 
-**Producer**: o cara que envia a mensagem para o message broker, ou seja, a aplicação que lança na queue.
+- **Producer**: o cara que envia a mensagem para o message broker, ou seja, a aplicação que lança na queue.
 
-**Consumer**: o cara que vai ao message broker e verifica se existe alguma mensagem para que ele consuma e execute alguma ação.
-
+- **Consumer**: o cara que vai ao message broker e verifica se existe alguma mensagem para que ele consuma e execute alguma ação.
 
 Uma visualização mais bem elaborada pode ser vista abaixo:
 
-
 ![Descrição da imagem](/assets/mensageria/mensageria3.png)
 
+#### Filas (Queues) vs Tópicos (Pub/Sub)
+
+Quando falamos de mensageria, existem dois padrões principais de como essas mensagens são distribuídas pelo Message Broker:
+
+- **Padrão Ponto-a-Ponto (Filas/Queues)**: uma mensagem é enviada para uma fila e consumida por apenas um Consumer. É como um ticket de suporte: assim que um atendente pega, a mensagem some da fila para que outro não faça o mesmo trabalho em duplicidade. Ideal para processamento de tarefas (ex: redimensionar uma imagem, processar um pagamento).
+
+- **Padrão Publish/Subscribe (Tópicos)**: a mensagem (frequentemente chamada de Evento) é enviada para um Tópico. Múltiplos Consumers podem "assinar" esse tópico e todos eles recebem uma cópia da mesma mensagem. É como um alto-falante no shopping avisando que uma criança se perdeu: vários seguranças ouvem a mesma mensagem e agem simultaneamente. Ideal para notificar o sistema de que algo aconteceu (ex: "Venda Realizada" dispara o serviço de email, o serviço de nota fiscal e o serviço de estoque ao mesmo tempo).
 
 ## Avançando na problemática
+
+>[!NOTE]
+> Para ajudar no entendimento, o exemplo que eu estou usando ilustra os serviços trocando mensagens diretamente. Só que, em aplicações reais, aplicações Front-end (navegadores ou apps) não se comunicam diretamente com o Message Broker por questões de segurança e protocolos de rede. O fluxo correto costuma ser: o Front-end faz uma requisição HTTP tradicional para uma API (Backend A), e este Backend A atua como Producer, enviando a mensagem para o broker para que um Backend B (o Consumer) a processe depois.
 
 Voltando, nosso diagrama na verdade ficaria mais condizente com algo assim:
 
@@ -114,16 +120,39 @@ Trazendo para um exemplo prático:
 - Imagine que uma venda foi realizada e o estoque de um produto deve ser alterado no banco, mas o nosso serviço back-end ficou fora do ar. Num cenário clássico teríamos nossa informação possivelmente sendo perdida ou até teríamos que montar tratamentos para isso.
 - Com nosso sistema implementado, essa informação de alteração do estoque ficaria na fila até que o serviço de back-end voltasse ao normal. Quando voltasse ao normal, buscaria ele busca a informação na fila e executa normalmente o procedimento.
 
+Como o Broker sabe que deu certo? (O conceito de ACK)
+
+> Você deve estar se perguntando: e se o Consumer buscar a mensagem na fila, começar a processar a baixa no estoque, mas o servidor dele der erro na metade do caminho? A mensagem foi perdida para sempre?
+
+Como deve imaginar, a resposta é não. Os Message Brokers utilizam um mecanismo chamado **Acknowledgement (ACK)**, que é basicamente um "recibo de confirmação".
+
+O fluxo funciona assim: 
+
+- => o Consumer lê a mensagem, mas a fila não a deleta imediatamente; 
+- => ela apenas a "esconde" (torna invisível para outros consumers); 
+- => Somente após o Consumer terminar o trabalho com sucesso, ele envia um ACK para o broker, dizendo "Terminei, pode apagar"; 
+- => Se der erro, ele envia um NACK (Negative ACK), ou simplesmente não responde dentro de um tempo limite, e o broker devolve a mensagem para a fila para ser processada novamente.
+
+
 ### Desacoplamento
 
 O grande ensinamento que podemos colher disso é que as aplicações não precisam saber se a outra está ativa ou não, e isso é a mágica, pois é aí que vem o famoso **desacoplamento**.
 
 Ele é bem importante, pois para contextos onde temos grandes equipes ou até sistemas mais complexos que exigem mais resiliência, ele vem para distribuir as responsabilidades de trabalho. Assim, podemos nos destinar a apenas um serviço específico ao invés de trabalhar com vários.
 
-Você pode descobrir mais sobre entendendo o conceito de [[Microsserviços]].
+Você pode descobrir mais sobre entendendo o conceito de Microsserviços.
+
+### Principais Ferramentas de Mercado
+
+Agora que você entendeu o conceito, vai esbarrar constantemente com essas tecnologias quando o assunto for Message Brokers:
+
+- **RabbitMQ**: Um dos mais tradicionais e amplamente utilizados para o padrão de Filas (Queues). Muito recomendado para garantir que mensagens complexas cheguem ao destino.
+
+- **Apache Kafka**: Focado no padrão de Tópicos/Eventos (Pub/Sub) e processamento de fluxos de dados gigantescos (Streaming). É construído para altíssimo volume de dados.
+
+- **AWS SQS / SNS**: Soluções de mensageria gerenciadas pela nuvem da Amazon. O SQS é focado em Filas, enquanto o SNS é focado em Tópicos (Notificações).
 
 ## Conclusão
-
 
 A Mensageria vem como uma solução robusta para problemas entre comunicações de serviços. Ela pode ser extremamente útil se você precisa de mais resiliência na arquitetura do seu sistema, pois garante mais estabilidade e escalabilidade - com o desacoplamento.
 
