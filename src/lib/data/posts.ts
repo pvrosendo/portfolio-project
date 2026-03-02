@@ -5,6 +5,7 @@ import cdnContent from "./posts/cdn.md?raw"
 import s3Content from "./posts/hospedando-site-s3.md?raw"
 import lbContent from "./posts/load-balancer.md?raw"
 import sharkarContent from "./posts/sharkar.md?raw"
+import themesContent from "./posts/themes.md?raw"
 
 export const posts: Post[] = [
   {
@@ -61,6 +62,17 @@ export const posts: Post[] = [
     tags: ["projetos", "Front-end", "Back-end", "infraestrutura"],
     publishedAt: "2025-07-15T00:00:00.000Z",
     readingTimeMin: 15,
+  },
+  {
+    id: "6",
+    slug: "themes",
+    title: "Recomendações de temas - VS Code",
+    excerpt:
+      "Temas que estou usando atualmente e outros que sugiro dar uma olhada.",
+    content: themesContent,
+    tags: ["Recomendações", "Temas", "tools"],
+    publishedAt: "2026-03-02T00:00:00.000Z",
+    readingTimeMin: 5,
   },
 ]
 
