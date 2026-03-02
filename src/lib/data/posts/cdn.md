@@ -1,4 +1,4 @@
-![Descrição da imagem](/assets/cdn/cdn.png)
+![Mapa ilustrativo do esquema de CDN](/assets/cdn/cdn.png)
 
 ## O que é uma CDN?
 

@@ -1,5 +1,5 @@
 
-![Descrição da imagem](/assets/mensageria/mensageria.png)
+![Ilustração básica de Mensageria](/assets/mensageria/mensageria.png)
 
 ## Entendendo a problemática
 
@@ -12,7 +12,7 @@ Primeiro comecemos imaginando um problema específico e em como poderíamos reso
 
 Ilustrando a questão de forma bem básica, ficaria assim:
 
-![Descrição da imagem](/assets/mensageria/mensageria1.png)
+![Ilustração inicial do Problema](/assets/mensageria/mensageria1.png)
 
 Se pararmos e pensarmos rapidamente, parece um problema bem simples, basta montar um controller para realizar as requisições entre o front-end e o back-end junto a persistência dos dados no banco.
 
@@ -36,7 +36,7 @@ E é aí que podemos começar a pensar na mensageria, pois ela nos permitiria cr
 Olhe o seguinte diagrama sem eu lhe dar nenhuma informação a mais:
 
 
-![Descrição da imagem](/assets/mensageria/mensageria2.png)
+![Esquema do problema com Mensageria incluida](/assets/mensageria/mensageria2.png)
 
 *Alguma coisa faz sentido? O que seria esse "Message Broker" que está entre os dois serviços? Que tipo de informação é essa de "Event"?*
 
@@ -86,7 +86,7 @@ Depois da explicação acima pode ser que você já tenha até entendido o que e
 
 Uma visualização mais bem elaborada pode ser vista abaixo:
 
-![Descrição da imagem](/assets/mensageria/mensageria3.png)
+![Esquema de mensageria mais detalhado](/assets/mensageria/mensageria3.png)
 
 #### Filas (Queues) vs Tópicos (Pub/Sub)
 
@@ -104,7 +104,7 @@ Quando falamos de mensageria, existem dois padrões principais de como essas men
 Voltando, nosso diagrama na verdade ficaria mais condizente com algo assim:
 
 
-![Descrição da imagem](/assets/mensageria/mensageria4.png)
+![Esquema do problema com adição do Message Broker](/assets/mensageria/mensageria4.png)
 
 
 Vamos esclarecer agora o fluxo para tentar deixar compreensível o máximo possível.

@@ -1,4 +1,4 @@
-![Descrição da imagem](/assets/load-balancer/lb.png)
+![Ilustração básica de Load Balancer](/assets/load-balancer/lb.png)
 
 > O load balancer é um dispositivo ou software que vai distribuir o tráfego de rede entre os servidores a fim de não haver sobrecarga.
 
@@ -16,7 +16,7 @@ Ele vai atuar como o ponto único inicial para os clientes se comunicarem com os
 
 | sem load balancer                    | com load balancer                    |
 | ------------------------------------ | ------------------------------------ |
-| ![Descrição da imagem](/assets/load-balancer/1.png) | ![Descrição da imagem](/assets/load-balancer/2.png) |
+| ![](/assets/load-balancer/1.png) | ![](/assets/load-balancer/2.png) |
 
 
 > Você pode se perguntar, já que ele é o ponto único, se ele cair a aplicação quebra? Vejamos abaixo:
@@ -92,7 +92,7 @@ Quando o servidor escolhido receber a solicitação, ele responde ao cliente por
 
 Para a execução da situação acima, temos conceitos e componentes importantes a se ter em mente.
 
-![Descrição da imagem](/assets/load-balancer/3.png)
+![](/assets/load-balancer/3.png)
 
 O **listener**, por exemplo, é o cara que monitora as requisições em uma determinada porta e protocolo e depois encaminha para um grupo de destino.
 

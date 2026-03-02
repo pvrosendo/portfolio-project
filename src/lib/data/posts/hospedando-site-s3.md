@@ -1,7 +1,7 @@
 
 Aqui mostrarei um tutorial simplificado de como hospedar um site estático no bucket S3 da AWS.
 
-![Descrição da imagem](/assets/hospedando-site-s3/balde.png)
+![Balde/bucket](/assets/hospedando-site-s3/balde.png)
 
 ## Implementando o front-end no S3
 
@@ -19,7 +19,7 @@ Gerei o build do projeto com um simples ``ng build`` dentro do projeto, assim, e
 ng build
 ```
 
-![Descrição da imagem](/assets/hospedando-site-s3/1.png)
+![Pasta de build do projeto](/assets/hospedando-site-s3/1.png)
 
 Com os arquivos dentro da pasta, agora podemos nos direcionar ao S3.
 
@@ -30,12 +30,12 @@ Com os arquivos dentro da pasta, agora podemos nos direcionar ao S3.
 
 2. Após isso, partiremos para a seção do S3, acessando a página geral de todos os serviços e vendo ele ali na seção de armazenamento (ou storage).
 
-![Descrição da imagem](/assets/hospedando-site-s3/2.png)
+![Console da AWS com todos os serviços](/assets/hospedando-site-s3/2.png)
 
 
 3. Ao acessar a página você verá os buckets que possui. Se você nunca usou, vai estar vazio, no meu caso o *Sharkar* já está ativo.
 
-![Descrição da imagem](/assets/hospedando-site-s3/3.png)
+![Seção do S3](/assets/hospedando-site-s3/3.png)
 
 4. Vamos criar o bucket novo clicando no botão destacado.
 
@@ -56,7 +56,7 @@ O do sharkar, por exemplo, antes de ajustar o domínio, está assim:
 
 5. Agora com o nome definido vamos aos ajustes de permissão
 
-![Descrição da imagem](/assets/hospedando-site-s3/4.png)
+![Seção de permissões do S3](/assets/hospedando-site-s3/4.png)
 
 Iremos até a seção de acesso e deixaremos a configuração desta forma.
 
@@ -64,7 +64,7 @@ Iremos até a seção de acesso e deixaremos a configuração desta forma.
 
 É basicamente para dizer ao S3 que queremos dar permissão ao bucket de acesso ao público, mas não para alteração, apenas para visualização. Afinal, se colocarmos bloqueado, o site não será visível e poderíamos ter um erro desse estilo:
 
-![Descrição da imagem](/assets/hospedando-site-s3/5.png)
+![](/assets/hospedando-site-s3/5.png)
 
 6. Tendo configurado de acordo, clique em criar e depois clique no nome do bucket para acessar ele.
 
@@ -76,12 +76,12 @@ Não tem muito mistério aqui, você irá apertar em carregar e adicionar os arq
 
 vá para `propriedades => hospedagem de site estático => editar`
 
-![Descrição da imagem](/assets/hospedando-site-s3/6.png)
+![Seção de Hospedagem](/assets/hospedando-site-s3/6.png)
 
 O seu vai estar diferente disso, mas é só na nova página clicar em ativar e deixar a configuração assim:
 
 
-![Descrição da imagem](/assets/hospedando-site-s3/7.png)
+![Edição da Hospedagem](/assets/hospedando-site-s3/7.png)
 
 *Não tem muito mistério.*
 

@@ -42,7 +42,7 @@ Agora já estava mais agradável. Realmente tinha ficado mais legal. No momento 
 
 Vou deixar um registro de como era a página de visualizar (repara no footer quebrado):
 
-![Descrição da imagem](/assets/sharkar/sharkar1.png)
+![Seção de visualização dos carros registrados - primeira versão](/assets/sharkar/sharkar1.png)
 
 #### Conclusão
 
@@ -59,13 +59,13 @@ Com essa mentalidade de facilitar o processo, eu revitalizei tanto a lógica do 
 
 No front-end, que era meu calcanhar de aquiles, conversei bastante com os meus amigos gepeto (ChatGPT) e germínio (Gemini) para tirar dúvidas e ter mais ideias, e assim eu melhorei muito também visualmente o projeto. Foi um processo muito difícil de aprendizado, mas foi legal pra caramba também. Nunca imaginei que faria algo daquele jeito, e foi por causa dele que consegui fazer o projeto no estilo que eu queria já fazer há bastante tempo.
 
-![Descrição da imagem](/assets/sharkar/7.png)
+![Landing page repaginada](/assets/sharkar/7.png)
 
 #### Utilizando API Fipe
 
 Na parte do back-end adicionei toda lógica de consultar a API fipe para apenas precisar selecionar e pesquisar o nome, ano e marca do carro, assim ele puxaria o resto das informações automaticamente.
 
-![Descrição da imagem](/assets/sharkar/4.png)
+![Página de registro de carros repaginada](/assets/sharkar/4.png)
 
 #### Conclusão
 
@@ -78,11 +78,11 @@ Aqui talvez tenha sido a parte mais chatinha, apesar de a mais difícil ter sido
 
 #### Auth
 
-![Descrição da imagem](/assets/sharkar/2.png)
+![Seção de login](/assets/sharkar/2.png)
 
 Puxei o Spring Security e o JWT e implementei no projeto a autenticação via token. Queria algo dahora então implementei o hashing da senha e também os Cookies Http-only, para tentar ser o mais seguro que eu conseguiria. De início estava usando o localstorage, mas fiquei com receio de isso não ser legal em termos de segurança, então voltei na api e no front para implementar isso.
 
-![Descrição da imagem](/assets/sharkar/3.png)
+![Dashboard](/assets/sharkar/3.png)
 
 Assim ficou bem legal e já deu uma nova cara para o projeto. Agora você tinha seção interna e externa utilizando interceptors nas rotas fazendo as rotas seguras e privadas. 
 
@@ -92,7 +92,7 @@ Além disso, implementei algumas funções básicas de login como "esqueceu senh
 
 |                     |                     |
 | ------------------------------------ | ------------------------------------ |
-| ![Descrição da imagem](/assets/sharkar/5.png) | ![Descrição da imagem](/assets/sharkar/6.png) |
+| ![](/assets/sharkar/5.png) | ![](/assets/sharkar/6.png) |
 
 
 #### Deploy
