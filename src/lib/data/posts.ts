@@ -6,6 +6,7 @@ import s3Content from "./posts/hospedando-site-s3.md?raw"
 import lbContent from "./posts/load-balancer.md?raw"
 import sharkarContent from "./posts/sharkar.md?raw"
 import themesContent from "./posts/themes.md?raw"
+import IntroSharksContent from "./posts/shark-environment-correlation.md?raw"
 
 export const posts: Post[] = [
   {
@@ -59,7 +60,7 @@ export const posts: Post[] = [
     excerpt:
       "Como foi construir um projeto fullstack e implementá-lo em diferentes clouds.",
     content: sharkarContent,
-    tags: ["projetos", "Front-end", "Back-end", "infraestrutura"],
+    tags: ["projetos", "fullstack", "cloud"],
     publishedAt: "2025-07-15T00:00:00.000Z",
     readingTimeMin: 15,
   },
@@ -73,6 +74,17 @@ export const posts: Post[] = [
     tags: ["Recomendações", "Temas", "tools"],
     publishedAt: "2026-03-02T00:00:00.000Z",
     readingTimeMin: 5,
+  },
+  {
+    id: "7",
+    slug: "intro-sharks",
+    title: "Correlação do Ecossistema Marinho com os Tubarões",
+    excerpt:
+      "Dê uma olhada em como o ecossistema marinho impacta na vida dos tubarões.",
+    content: IntroSharksContent,
+    tags: ["tubarões", "hobbie"],
+    publishedAt: "2026-03-18T00:00:00.000Z",
+    readingTimeMin: 7,
   },
 ]
 
