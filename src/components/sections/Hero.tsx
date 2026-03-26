@@ -1,7 +1,9 @@
 import { Link } from "@tanstack/react-router"
 import { useEffect, useRef } from "react"
+import { useTranslation } from "react-i18next"
 
 export function Hero() {
+  const { t } = useTranslation("landing")
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
@@ -116,7 +118,7 @@ export function Hero() {
       <div className="relative z-10 text-center px-6 max-w-3xl">
         {/* Pré-título em monospace */}
         <p className="font-mono text-sm text-biolum mb-4 tracking-widest uppercase">
-          <span className="text-witcher">&gt;</span> desenvolvedor de software
+          <span className="text-witcher">&gt;</span> {t("pretitle")}
         </p>
 
         {/* main title */}
@@ -134,9 +136,9 @@ export function Hero() {
 
         {/* Subtitle */}
         <p className="text-fog text-lg md:text-xl max-w-xl mx-auto leading-relaxed mb-10">
-          Explorando as profundezas da engenharia de software.
+          {t("subtitle")}
           <br />
-          Compartilhando tudo aquilo que foi compartilhado comigo.
+          {t("subtitle2")}
         </p>
 
         {/* CTAs */}
@@ -145,13 +147,13 @@ export function Hero() {
             to="/blog"
             className="px-8 py-3 bg-witcher text-abyss font-semibold rounded-sm hover:bg-parchment transition-colors font-display tracking-wider text-sm uppercase"
           >
-            As Crônicas
+            {t("ctaBlog")}
           </Link>
           <Link
             to="/projects"
             className="px-8 py-3 border border-[#1e3a4a] text-fog hover:text-parchment hover:border-witcher transition-colors font-display tracking-wider text-sm uppercase rounded-sm"
           >
-            Os Contratos
+            {t("ctaProjects")}
           </Link>
         </div>
 
@@ -159,7 +161,7 @@ export function Hero() {
         <div className="mt-16 flex flex-col items-center gap-2 text-[#1e3a4a]">
           <div className="w-px h-12 bg-linear-to-b from-transparent to-[#1e3a4a]" />
           <span className="text-xs tracking-widest uppercase font-mono">
-            role
+            {t("scrollHint")}
           </span>
         </div>
       </div>

@@ -2,10 +2,13 @@ import { createFileRoute, notFound } from "@tanstack/react-router"
 import { formatDate } from "@/lib/utils"
 import { getPostBySlug } from "@/lib/data/posts"
 import { MarkdownContent } from "@/components/markdown/MarkdownContent"
+import i18n from "@/lib/i18n"
+import type { SupportedLocale } from "@/lib/types"
 
 export const Route = createFileRoute("/blog/$slug")({
   loader: ({ params }) => {
-    const post = getPostBySlug(params.slug)
+    const locale = (i18n.language as SupportedLocale) || "pt-BR"
+    const post = getPostBySlug(params.slug, locale)
     if (!post) throw notFound()
     return post
   },

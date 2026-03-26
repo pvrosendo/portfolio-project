@@ -7,11 +7,14 @@ import {
 import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
 import { TanStackDevtools } from '@tanstack/react-devtools'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { useTranslation } from 'react-i18next'
 import TanStackQueryDevtools from '../integrations/tanstack-query/devtools'
 import { Navbar } from '../components/layout/Navbar'
 import { Footer } from '../components/layout/Footer'
 import { NotFound } from '../components/NotFound'
+import { DynamicMeta } from '../components/DynamicMeta'
 import appCss from '../styles.css?url'
+import '../lib/i18n'
 
 interface MyRouterContext {
   queryClient: QueryClient
@@ -41,14 +44,16 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   const { queryClient } = useRouteContext({ from: '__root__' })
+  const { i18n } = useTranslation()
 
   return (
-    <html lang="pt-BR">
+    <html lang={i18n.language || 'pt-BR'}>
       <head>
         <HeadContent />
       </head>
       <body>
         <QueryClientProvider client={queryClient}>
+          <DynamicMeta />
           <Navbar />
           <main>{children}</main>
           <Footer />

@@ -1,8 +1,10 @@
 import { Link } from "@tanstack/react-router"
+import { useTranslation } from "react-i18next"
 import { ProjectCard } from "@/components/cards/ProjectCard"
 import { useFeaturedProjects } from "@/hooks/use-projects"
 
 export function FeaturedProjects() {
+  const { t } = useTranslation("landing")
   const { data: projects, isLoading } = useFeaturedProjects()
 
   return (
@@ -10,17 +12,18 @@ export function FeaturedProjects() {
       <div className="flex items-end justify-between mb-10">
         <div>
           <p className="font-mono text-xs text-biolum tracking-widest uppercase mb-2">
-            <span className="text-witcher">//</span> os contratos
+            <span className="text-witcher">//</span>{" "}
+            {t("featuredProjects.pretitle")}
           </p>
           <h2 className="font-display text-3xl font-bold text-parchment">
-            Projetos em Destaque
+            {t("featuredProjects.title")}
           </h2>
         </div>
         <Link
           to="/projects"
           className="text-sm text-fog hover:text-witcher transition-colors font-mono hidden sm:block"
         >
-          ver todos →
+          {t("featuredProjects.viewAll")}
         </Link>
       </div>
 
@@ -46,7 +49,7 @@ export function FeaturedProjects() {
           to="/projects"
           className="text-sm text-fog hover:text-witcher transition-colors font-mono"
         >
-          ver todos os contratos →
+          {t("featuredProjects.viewAllMobile")}
         </Link>
       </div>
     </section>

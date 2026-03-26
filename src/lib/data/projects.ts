@@ -22,7 +22,7 @@ export const projects: Project[] = [
     featured: true,
     status: "active",
   },
-  { //TODO: add in github.io and link here
+  {
     id: "3",
     title: "Portfolio & Blog v1",
     description:

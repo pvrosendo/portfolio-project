@@ -1,8 +1,10 @@
 import { Link } from "@tanstack/react-router"
+import { useTranslation } from "react-i18next"
 import { BlogCard } from "@/components/cards/BlogCard"
 import { useRecentPosts } from "@/hooks/use-posts"
 
 export function RecentPosts() {
+  const { t } = useTranslation("landing")
   const { data: posts, isLoading } = useRecentPosts(3)
 
   return (
@@ -10,17 +12,17 @@ export function RecentPosts() {
       <div className="flex items-end justify-between mb-10">
         <div>
           <p className="font-mono text-xs text-biolum tracking-widest uppercase mb-2">
-            <span className="text-witcher">//</span> as crônicas
+            <span className="text-witcher">//</span> {t("recentPosts.pretitle")}
           </p>
           <h2 className="font-display text-3xl font-bold text-parchment">
-            Últimas Publicações
+            {t("recentPosts.title")}
           </h2>
         </div>
         <Link
           to="/blog"
           className="text-sm text-fog hover:text-witcher transition-colors font-mono hidden sm:block"
         >
-          ver todas →
+          {t("recentPosts.viewAll")}
         </Link>
       </div>
 
@@ -44,7 +46,7 @@ export function RecentPosts() {
           to="/blog"
           className="text-sm text-fog hover:text-witcher transition-colors font-mono"
         >
-          ver todas as crônicas →
+          {t("recentPosts.viewAllMobile")}
         </Link>
       </div>
     </section>

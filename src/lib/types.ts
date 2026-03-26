@@ -1,3 +1,5 @@
+export type SupportedLocale = "pt-BR" | "en"
+
 export interface Post {
   id: string
   slug: string
@@ -8,6 +10,7 @@ export interface Post {
   publishedAt: string
   readingTimeMin: number
   coverImage?: string
+  locale: SupportedLocale
 }
 
 export interface Project {

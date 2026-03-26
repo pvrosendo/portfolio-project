@@ -1,20 +1,20 @@
 import { createFileRoute } from "@tanstack/react-router"
 import { useState } from "react"
+import { useTranslation } from "react-i18next"
 import { ProjectCard } from "@/components/cards/ProjectCard"
 import { useProjects } from "@/hooks/use-projects"
 import type { Project } from "@/lib/types"
 
 export const Route = createFileRoute("/projects/")({ component: ProjectsPage })
 
-const statusLabels: Record<Project["status"], string> = {
-  active: "ativo",
-  "in-progress": "em progresso",
-  archived: "arquivado",
-}
-
 function ProjectsPage() {
+  const { t } = useTranslation("projects")
   const { data: projects, isLoading } = useProjects()
-  const [activeStatus, setActiveStatus] = useState<Project["status"] | null>(null)
+  const [activeStatus, setActiveStatus] = useState<Project["status"] | null>(
+    null,
+  )
+
+  const statusKeys: Project["status"][] = ["active", "in-progress", "archived"]
 
   const filtered = activeStatus
     ? projects?.filter((p) => p.status === activeStatus)
@@ -25,15 +25,12 @@ function ProjectsPage() {
       {/* Header */}
       <div className="mb-12">
         <p className="font-mono text-xs text-biolum tracking-widest uppercase mb-3">
-          <span className="text-witcher">//</span> os contratos
+          <span className="text-witcher">//</span> {t("pretitle")}
         </p>
         <h1 className="font-display text-4xl md:text-5xl font-black text-parchment mb-4">
-          Registro de Contratos
+          {t("title")}
         </h1>
-        <p className="text-fog max-w-xl">
-          Projetos aceitos e concluídos. Cada um com seus desafios, sua stack e
-          seus aprendizados.
-        </p>
+        <p className="text-fog max-w-xl">{t("description")}</p>
       </div>
 
       {/* Status filter */}
@@ -47,9 +44,9 @@ function ProjectsPage() {
               : "border border-[#1e3a4a] text-fog hover:text-parchment"
           }`}
         >
-          todos
+          {t("filterAll")}
         </button>
-        {(Object.keys(statusLabels) as Project["status"][]).map((status) => (
+        {statusKeys.map((status) => (
           <button
             key={status}
             type="button"
@@ -60,7 +57,7 @@ function ProjectsPage() {
                 : "border border-[#1e3a4a] text-fog hover:text-parchment"
             }`}
           >
-            {statusLabels[status]}
+            {t(`status.${status}`)}
           </button>
         ))}
       </div>
@@ -82,9 +79,7 @@ function ProjectsPage() {
           ))}
         </div>
       ) : (
-        <p className="text-fog font-mono text-sm">
-          Nenhum contrato encontrado.
-        </p>
+        <p className="text-fog font-mono text-sm">{t("noResults")}</p>
       )}
     </div>
   )

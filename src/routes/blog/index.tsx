@@ -1,11 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router"
 import { useState } from "react"
+import { useTranslation } from "react-i18next"
 import { BlogCard } from "@/components/cards/BlogCard"
 import { usePosts } from "@/hooks/use-posts"
 
 export const Route = createFileRoute("/blog/")({ component: BlogPage })
 
 function BlogPage() {
+  const { t } = useTranslation("blog")
   const { data: posts, isLoading } = usePosts()
   const [activeTag, setActiveTag] = useState<string | null>(null)
 
@@ -19,15 +21,12 @@ function BlogPage() {
       {/* Header */}
       <div className="mb-12">
         <p className="font-mono text-xs text-biolum tracking-widest uppercase mb-3">
-          <span className="text-witcher">//</span> as crônicas
+          <span className="text-witcher">//</span> {t("pretitle")}
         </p>
         <h1 className="font-display text-4xl md:text-5xl font-black text-parchment mb-4">
-          Arquivo de Crônicas
+          {t("title")}
         </h1>
-        <p className="text-fog max-w-xl">
-          Registros de tudo aquilo que aprendi, experimentei e construí ao
-          longo da jornada.
-        </p>
+        <p className="text-fog max-w-xl">{t("description")}</p>
       </div>
 
       {/* Tags Filter */}
@@ -42,7 +41,7 @@ function BlogPage() {
                 : "border border-[#1e3a4a] text-fog hover:text-parchment"
             }`}
           >
-            todos
+            {t("filterAll")}
           </button>
           {allTags.map((tag) => (
             <button
@@ -73,16 +72,16 @@ function BlogPage() {
         </div>
       ) : filtered && filtered.length > 0 ? (
         <div className="grid md:grid-cols-2 gap-4">
-          {filtered.map((post) => (
-            <BlogCard key={post.id} post={post} />
-          )).sort(
-            (a,b) => new Date(b.props.post.publishedAt).getTime() - new Date(a.props.post.publishedAt).getTime()
-          )}
+          {filtered
+            .map((post) => <BlogCard key={post.id} post={post} />)
+            .sort(
+              (a, b) =>
+                new Date(b.props.post.publishedAt).getTime() -
+                new Date(a.props.post.publishedAt).getTime(),
+            )}
         </div>
       ) : (
-        <p className="text-fog font-mono text-sm">
-          Nenhuma crônica encontrada.
-        </p>
+        <p className="text-fog font-mono text-sm">{t("noResults")}</p>
       )}
     </div>
   )

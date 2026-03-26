@@ -1,0 +1,14 @@
+{
+  "pretitle": "the contracts",
+  "title": "Contract Registry",
+  "description": "Accepted and completed projects. Each with its challenges, stack, and learnings.",
+  "filterAll": "all",
+  "noResults": "No contracts found.",
+  "status": {
+    "active": "Active",
+    "in-progress": "In progress",
+    "archived": "Archived"
+  },
+  "repository": "Repository",
+  "demo": "Demo"
+}

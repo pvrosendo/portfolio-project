@@ -1,0 +1,25 @@
+{
+  "navbar": {
+    "about": "Sobre",
+    "blog": "Blog",
+    "projects": "Projetos",
+    "back": "Voltar"
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados.",
+    "madeWith": "Feito com",
+    "and": "e",
+    "coffee": "café"
+  },
+  "language": {
+    "label": "Idioma",
+    "pt-BR": "Português",
+    "en": "English"
+  },
+  "readMore": "Ler mais",
+  "viewAll": "Ver todos",
+  "viewProject": "Ver projeto",
+  "viewRepo": "Ver repositório",
+  "readingTime": "{{minutes}} min de leitura",
+  "tags": "Tags"
+}

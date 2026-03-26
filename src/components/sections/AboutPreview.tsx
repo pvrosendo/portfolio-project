@@ -1,31 +1,29 @@
+import { useTranslation } from "react-i18next"
+
 const skills = [
-  { label: "Linguagens", value: "Go · Java · TypeScript · C++" },
-  { label: "Front-end", value: "React · Angular · Tailwind" },
-  { label: "Back-end", value: "Echo · Spring · SQL · NoSQL · Docker" },
-  { label: "Embarcados", value: "ESP32 · Arduino · Jetson Nano" },
-  { label: "Atributos extras", value: "The Witcher 3 · Tubarões · Música" },
+  { key: "languages", value: "Go · Java · TypeScript · C++" },
+  { key: "frontend", value: "React · Angular · Tailwind" },
+  { key: "backend", value: "Echo · Spring · SQL · NoSQL · Docker" },
+  { key: "embedded", value: "ESP32 · Arduino · Jetson Nano" },
+  { key: "extras", value: "The Witcher 3 · Tubarões · Música" },
 ]
 
 export function AboutPreview() {
+  const { t } = useTranslation("landing")
+
   return (
     <section id="sobre" className="py-24 px-6 max-w-5xl mx-auto">
       <div className="grid md:grid-cols-2 gap-12 items-center">
         {/* Text */}
         <div>
           <p className="font-mono text-xs text-biolum tracking-widest uppercase mb-3">
-            <span className="text-witcher">//</span> sobre o explorador
+            <span className="text-witcher">//</span> {t("about.pretitle")}
           </p>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-parchment mb-5">
-            Quem sou eu?
+            {t("about.title")}
           </h2>
-          <p className="text-fog leading-relaxed mb-4">
-            Meu nome é Paulo Vitor, mas pode me chamar de PV. Desenvolvedor apaixonado por
-            engenharia de software. Busco entender tudo que consigo nesse vasto mundo da tecnologia.
-          </p>
-          <p className="text-fog leading-relaxed">
-            Nesse espaço compartilho aquilo que aprendo, experimento e
-            construo. Desde projetos pessoais, conteúdos técnicos até recomendações e Hobbies.
-          </p>
+          <p className="text-fog leading-relaxed mb-4">{t("about.bio1")}</p>
+          <p className="text-fog leading-relaxed">{t("about.bio2")}</p>
         </div>
 
         {/* Character sheet */}
@@ -48,17 +46,15 @@ export function AboutPreview() {
               <p className="text-parchment font-semibold text-sm">
                 Paulo Vitor
               </p>
-              <p className="text-biolum text-xs font-mono">
-                Desenvolvedor de Software
-              </p>
+              <p className="text-biolum text-xs font-mono">{t("about.role")}</p>
             </div>
           </div>
 
           <ul className="space-y-3">
             {skills.map((skill) => (
-              <li key={skill.label} className="flex flex-col gap-0.5">
+              <li key={skill.key} className="flex flex-col gap-0.5">
                 <span className="text-witcher text-xs font-mono uppercase tracking-wider">
-                  {skill.label}
+                  {t(`about.skills.${skill.key}`)}
                 </span>
                 <span className="text-fog text-sm">{skill.value}</span>
               </li>

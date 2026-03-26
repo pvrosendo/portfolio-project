@@ -1,0 +1,44 @@
+{
+  "pretitle": "desenvolvedor de software",
+  "subtitle": "Explorando as profundezas da engenharia de software.",
+  "subtitle2": "Compartilhando tudo aquilo que foi compartilhado comigo.",
+  "ctaBlog": "As Crônicas",
+  "ctaProjects": "Os Contratos",
+  "scrollHint": "role",
+  "about": {
+    "pretitle": "sobre o explorador",
+    "title": "Quem sou eu?",
+    "bio1": "Meu nome é Paulo Vitor, mas pode me chamar de PV. Desenvolvedor apaixonado por engenharia de software. Busco entender tudo que consigo nesse vasto mundo da tecnologia.",
+    "bio2": "Nesse espaço compartilho aquilo que aprendo, experimento e construo. Desde projetos pessoais, conteúdos técnicos até recomendações e Hobbies.",
+    "role": "Desenvolvedor de Software",
+    "skills": {
+      "languages": "Linguagens",
+      "frontend": "Front-end",
+      "backend": "Back-end",
+      "embedded": "Embarcados",
+      "extras": "Atributos extras"
+    }
+  },
+  "recentPosts": {
+    "pretitle": "as crônicas",
+    "title": "Últimas Publicações",
+    "viewAll": "ver todas →",
+    "viewAllMobile": "ver todas as crônicas →"
+  },
+  "featuredProjects": {
+    "pretitle": "os contratos",
+    "title": "Projetos em Destaque",
+    "viewAll": "ver todos →",
+    "viewAllMobile": "ver todos os contratos →"
+  },
+  "footer": {
+    "tagline": "Compartilhando tudo aquilo que foi compartilhado comigo.",
+    "chronicles": "As Crônicas",
+    "contracts": "Os Contratos",
+    "copyright": "Forjado nas profundezas do código"
+  },
+  "meta": {
+    "title": "Paulo Vitor · O Códex",
+    "description": "Paulo Vitor — Desenvolvedor de Software. Explorando as profundezas da engenharia de software."
+  }
+}

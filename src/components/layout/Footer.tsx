@@ -1,7 +1,9 @@
 import { Link } from "@tanstack/react-router"
+import { useTranslation } from "react-i18next"
 import { Github, Linkedin, Mail } from "lucide-react"
 
 export function Footer() {
+  const { t } = useTranslation("landing")
   const currentYear = new Date().getFullYear()
 
   return (
@@ -11,9 +13,7 @@ export function Footer() {
           <span className="font-display text-lg font-bold text-witcher tracking-widest">
             PV
           </span>
-          <p className="text-xs text-fog mt-1">
-            Compartilhando tudo aquilo que foi compartilhado comigo.
-          </p>
+          <p className="text-xs text-fog mt-1">{t("footer.tagline")}</p>
         </div>
 
         <nav className="flex items-center gap-4">
@@ -21,14 +21,14 @@ export function Footer() {
             to="/blog"
             className="text-xs text-fog hover:text-parchment transition-colors"
           >
-            As Crônicas
+            {t("footer.chronicles")}
           </Link>
           <span className="text-[#1e3a4a]">·</span>
           <Link
             to="/projects"
             className="text-xs text-fog hover:text-parchment transition-colors"
           >
-            Os Contratos
+            {t("footer.contracts")}
           </Link>
         </nav>
 
@@ -62,7 +62,7 @@ export function Footer() {
       </div>
 
       <p className="text-center text-xs text-[#1e3a4a] mt-8">
-        © {currentYear} Paulo Vitor · Forjado nas profundezas do código
+        © {currentYear} Paulo Vitor · {t("footer.copyright")}
       </p>
     </footer>
   )

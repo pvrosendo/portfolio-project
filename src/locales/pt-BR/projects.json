@@ -1,0 +1,14 @@
+{
+  "pretitle": "os contratos",
+  "title": "Registro de Contratos",
+  "description": "Projetos aceitos e concluídos. Cada um com seus desafios, sua stack e seus aprendizados.",
+  "filterAll": "todos",
+  "noResults": "Nenhum contrato encontrado.",
+  "status": {
+    "active": "Ativo",
+    "in-progress": "Em progresso",
+    "archived": "Arquivado"
+  },
+  "repository": "Repositório",
+  "demo": "Demo"
+}

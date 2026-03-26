@@ -1,0 +1,44 @@
+{
+  "pretitle": "software developer",
+  "subtitle": "Exploring the depths of software engineering.",
+  "subtitle2": "Sharing everything that was shared with me.",
+  "ctaBlog": "The Chronicles",
+  "ctaProjects": "The Contracts",
+  "scrollHint": "scroll",
+  "about": {
+    "pretitle": "about the explorer",
+    "title": "Who am I?",
+    "bio1": "My name is Paulo Vitor, but you can call me PV. A developer passionate about software engineering. I seek to understand everything I can in this vast world of technology.",
+    "bio2": "In this space I share what I learn, experiment with, and build. From personal projects, technical content to recommendations and hobbies.",
+    "role": "Software Developer",
+    "skills": {
+      "languages": "Languages",
+      "frontend": "Front-end",
+      "backend": "Back-end",
+      "embedded": "Embedded",
+      "extras": "Extra attributes"
+    }
+  },
+  "recentPosts": {
+    "pretitle": "the chronicles",
+    "title": "Latest Publications",
+    "viewAll": "view all →",
+    "viewAllMobile": "view all chronicles →"
+  },
+  "featuredProjects": {
+    "pretitle": "the contracts",
+    "title": "Featured Projects",
+    "viewAll": "view all →",
+    "viewAllMobile": "view all contracts →"
+  },
+  "footer": {
+    "tagline": "Sharing everything that was shared with me.",
+    "chronicles": "The Chronicles",
+    "contracts": "The Contracts",
+    "copyright": "Forged in the depths of code"
+  },
+  "meta": {
+    "title": "Paulo Vitor · The Codex",
+    "description": "Paulo Vitor — Software Developer. Exploring the depths of software engineering."
+  }
+}
