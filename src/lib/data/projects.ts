@@ -3,6 +3,16 @@ import type { Project } from "@/lib/types"
 export const projects: Project[] = [
   {
     id: "1",
+    title: "Learn Sharks",
+    description:
+      "Site interativo para descobrir mais sobre os tubarões.",
+    tags: ["React", "Next.js", "Tailwind CSS", "TypeScript", "GSAP", "Canvas 2D"],
+    demoUrl: "https://learn-sharks.vercel.app/",
+    featured: true,
+    status: "active",
+  },
+  {
+    id: "2",
     title: "Preferred car",
     description:
       "Solução moderna e intuitiva para monitoramento de carros.",
@@ -12,7 +22,7 @@ export const projects: Project[] = [
     status: "in-progress",
   },
   {
-    id: "2",
+    id: "3",
     title: "Portfolio & Blog v2",
     description:
       "Segunda versão do site pessoal. Agora reescrita em React com TanStack.",
@@ -23,7 +33,7 @@ export const projects: Project[] = [
     status: "active",
   },
   {
-    id: "3",
+    id: "4",
     title: "Portfolio & Blog v1",
     description:
       "Site pessoal com blog e projetos. Primeira versão construída em Angular.",
@@ -33,7 +43,7 @@ export const projects: Project[] = [
     status: "archived",
   },
   {
-    id: "4",
+    id: "5",
     title: "Materials Visor",
     description:
       "Projeto de monitoração do envelhecimento de materiais através de quadros de artísticos.",
@@ -43,7 +53,7 @@ export const projects: Project[] = [
     status: "active",
   },
   {
-    id: "5",
+    id: "6",
     title: "Wokwi ESP32 Projects",
     description:
       "Simulações de projetos ESP32 no Wokwi.",
