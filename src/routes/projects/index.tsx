@@ -4,8 +4,20 @@ import { useTranslation } from "react-i18next"
 import { ProjectCard } from "@/components/cards/ProjectCard"
 import { useProjects } from "@/hooks/use-projects"
 import type { Project } from "@/lib/types"
+import { buildPageHead } from "@/lib/seo"
 
-export const Route = createFileRoute("/projects/")({ component: ProjectsPage })
+export const Route = createFileRoute("/projects/")({
+  head: () => {
+    const { meta, links } = buildPageHead({
+      title: "Contratos · Paulo Vitor",
+      description:
+        "Projetos aceitos e concluídos. Cada um com seus desafios, sua stack e seus aprendizados em engenharia de software.",
+      path: "/projects",
+    })
+    return { meta, links }
+  },
+  component: ProjectsPage,
+})
 
 function ProjectsPage() {
   const { t } = useTranslation("projects")
@@ -21,7 +33,10 @@ function ProjectsPage() {
     : projects
 
   return (
-    <div className="min-h-screen pt-24 pb-20 px-6 max-w-5xl mx-auto">
+    <section
+      aria-label={t("title")}
+      className="min-h-screen pt-24 pb-20 px-6 max-w-5xl mx-auto"
+    >
       {/* Header */}
       <div className="mb-12">
         <p className="font-mono text-xs text-biolum tracking-widest uppercase mb-3">
@@ -34,7 +49,7 @@ function ProjectsPage() {
       </div>
 
       {/* Status filter */}
-      <div className="flex flex-wrap gap-2 mb-10">
+      <div className="flex flex-wrap gap-2 mb-10" role="group" aria-label="Filtrar por status">
         <button
           type="button"
           onClick={() => setActiveStatus(null)}
@@ -64,7 +79,7 @@ function ProjectsPage() {
 
       {/* Projects grid */}
       {isLoading ? (
-        <div className="grid md:grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-3 gap-4" aria-busy="true" aria-label="Carregando projetos">
           {Array.from({ length: 3 }).map((_, i) => (
             <div
               key={i}
@@ -81,6 +96,7 @@ function ProjectsPage() {
       ) : (
         <p className="text-fog font-mono text-sm">{t("noResults")}</p>
       )}
-    </div>
+    </section>
   )
 }
+

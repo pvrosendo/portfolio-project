@@ -3,8 +3,20 @@ import { useState } from "react"
 import { useTranslation } from "react-i18next"
 import { BlogCard } from "@/components/cards/BlogCard"
 import { usePosts } from "@/hooks/use-posts"
+import { buildPageHead } from "@/lib/seo"
 
-export const Route = createFileRoute("/blog/")({ component: BlogPage })
+export const Route = createFileRoute("/blog/")({
+  head: () => {
+    const { meta, links } = buildPageHead({
+      title: "As Crônicas · Paulo Vitor",
+      description:
+        "Registros de tudo aquilo que aprendi, experimentei e construí ao longo da jornada. Arquitetura, cloud, web e além.",
+      path: "/blog",
+    })
+    return { meta, links }
+  },
+  component: BlogPage,
+})
 
 function BlogPage() {
   const { t } = useTranslation("blog")
@@ -17,7 +29,10 @@ function BlogPage() {
     : posts
 
   return (
-    <div className="min-h-screen pt-24 pb-20 px-6 max-w-5xl mx-auto">
+    <section
+      aria-label={t("title")}
+      className="min-h-screen pt-24 pb-20 px-6 max-w-5xl mx-auto"
+    >
       {/* Header */}
       <div className="mb-12">
         <p className="font-mono text-xs text-biolum tracking-widest uppercase mb-3">
@@ -31,7 +46,7 @@ function BlogPage() {
 
       {/* Tags Filter */}
       {allTags.length > 0 && (
-        <div className="flex flex-wrap gap-2 mb-10">
+        <div className="flex flex-wrap gap-2 mb-10" role="group" aria-label="Filtrar por tag">
           <button
             type="button"
             onClick={() => setActiveTag(null)}
@@ -62,7 +77,7 @@ function BlogPage() {
 
       {/* Posts list */}
       {isLoading ? (
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid md:grid-cols-2 gap-4" aria-busy="true" aria-label="Carregando posts">
           {Array.from({ length: 4 }).map((_, i) => (
             <div
               key={i}
@@ -83,6 +98,7 @@ function BlogPage() {
       ) : (
         <p className="text-fog font-mono text-sm">{t("noResults")}</p>
       )}
-    </div>
+    </section>
   )
 }
+
