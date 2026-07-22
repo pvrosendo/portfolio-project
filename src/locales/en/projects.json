@@ -10,5 +10,9 @@
     "archived": "Archived"
   },
   "repository": "Repository",
-  "demo": "Link"
+  "demo": "Link",
+  "meta": {
+    "title": "Contracts · Paulo Vitor",
+    "description": "Accepted and completed projects. Each with its challenges, stack, and learnings in software engineering."
+  }
 }

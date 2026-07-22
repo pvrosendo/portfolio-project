@@ -10,5 +10,9 @@
     "archived": "Arquivado"
   },
   "repository": "Repositório",
-  "demo": "Link"
+  "demo": "Link",
+  "meta": {
+    "title": "Contratos · Paulo Vitor",
+    "description": "Projetos aceitos e concluídos. Cada um com seus desafios, sua stack e seus aprendizados em engenharia de software."
+  }
 }
