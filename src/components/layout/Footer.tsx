@@ -16,7 +16,7 @@ export function Footer() {
           <p className="text-xs text-fog mt-1">{t("footer.tagline")}</p>
         </div>
 
-        <nav className="flex items-center gap-4">
+        <nav aria-label="Links do rodapé" className="flex items-center gap-4">
           <Link
             to="/blog"
             className="text-xs text-fog hover:text-parchment transition-colors"
@@ -32,33 +32,33 @@ export function Footer() {
           </Link>
         </nav>
 
-        <div className="flex items-center gap-4">
+        <address className="not-italic flex items-center gap-4">
           <a
             href="https://github.com/pvrosendo"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="GitHub"
+            aria-label="Perfil no GitHub (abre em nova aba)"
             className="text-fog hover:text-witcher transition-colors"
           >
-            <Github size={18} />
+            <Github size={18} aria-hidden="true" />
           </a>
           <a
             href="https://linkedin.com/in/paulo-vitor-rosendo/"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="LinkedIn"
+            aria-label="Perfil no LinkedIn (abre em nova aba)"
             className="text-fog hover:text-witcher transition-colors"
           >
-            <Linkedin size={18} />
+            <Linkedin size={18} aria-hidden="true" />
           </a>
           <a
             href="mailto:paulovitor.rsd@gmail.com"
-            aria-label="Email"
+            aria-label="Enviar e-mail para paulovitor.rsd@gmail.com"
             className="text-fog hover:text-witcher transition-colors"
           >
-            <Mail size={18} />
+            <Mail size={18} aria-hidden="true" />
           </a>
-        </div>
+        </address>
       </div>
 
       <p className="text-center text-xs text-[#1e3a4a] mt-8">

@@ -35,12 +35,13 @@ export function Navbar() {
 					: "bg-transparent",
 			)}
 		>
-			<nav className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+			<nav aria-label="Navegação principal" className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
 				{isLanding ? (
 					<>
 						<button
 							type="button"
 							onClick={() => scrollTo("hero")}
+							aria-label="Ir para o topo"
 							className="font-display text-xl font-bold text-witcher hover:text-parchment transition-colors tracking-widest cursor-pointer"
 						>
 							PV
