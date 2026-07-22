@@ -70,10 +70,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-xs text-fog hover:text-biolum transition-colors"
-            aria-label={`${t("demo")} - ${project.title}`}
+            aria-label={`${t("Link")} - ${project.title}`}
           >
             <ExternalLink size={14} />
-            <span>{t("demo")}</span>
+            <span>{t("Link")}</span>
           </a>
         )}
       </div>
