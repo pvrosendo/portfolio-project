@@ -62,7 +62,7 @@ export function Footer() {
       </div>
 
       <p className="text-center text-xs text-[#1e3a4a] mt-8">
-        © {currentYear} Paulo Vitor · {t("footer.copyright")}
+        © {currentYear} Paulo Vitor Rosendo.
       </p>
     </footer>
   )
