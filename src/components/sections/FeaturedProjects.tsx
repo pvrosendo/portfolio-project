@@ -38,7 +38,7 @@ export function FeaturedProjects() {
         </div>
       ) : (
         <div className="grid md:grid-cols-3 gap-4">
-          {projects?.map((project) => (
+          {projects?.slice(0, 3).map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
