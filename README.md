@@ -1,10 +1,10 @@
 # O Códex
 
-Site pessoal — portfolio e blog com identidade visual temática.
+Blog técnico independente com identidade visual temática.
 
 ## Sobre o projeto
 
-Esse é um site pessoal com duas funções principais: **demo de projetos** e **blog pessoal**. A identidade visual se inspira em três pilares: *The Witcher 3*, *tubarões/abismo oceânico* e *computação*.
+Esse é um blog técnico independente focado em engenharia de software. A identidade visual se inspira em três pilares: *The Witcher 3*, *tubarões/abismo oceânico* e *computação*.
 
 O tema chama-se **"O Códex"** — uma mistura de dark fantasy, profundezas do oceano e estética tech.
 
@@ -33,9 +33,6 @@ src/
 │   ├── blog/
 │   │   ├── index.tsx       # Listagem de posts ("As Crônicas")
 │   │   └── $slug.tsx       # Artigo individual
-│   └── projects/
-│       └── index.tsx       # Listagem de projetos ("Os Contratos")
-│
 ├── components/
 │   ├── layout/
 │   │   ├── Navbar.tsx      # Navbar com scroll-spy e back-button
@@ -47,20 +44,17 @@ src/
 │   │   └── FeaturedProjects.tsx
 │   ├── cards/
 │   │   ├── BlogCard.tsx
-│   │   └── ProjectCard.tsx
 │   ├── ui/                 # Shadcn/ui
 │   └── NotFound.tsx        # Página 404 temática
 │
 ├── hooks/
 │   ├── use-posts.ts        # TanStack Query hooks para posts
-│   └── use-projects.ts     # TanStack Query hooks para projetos
 │
 ├── lib/
-│   ├── types.ts            # Interfaces TypeScript: Post, Project, Tag
+│   ├── types.ts            # Interfaces TypeScript: Post, Tag
 │   ├── utils.ts            # cn(), formatDate(), slugify()
 │   └── data/
 │       ├── posts.ts        # Dados estáticos de posts
-│       └── projects.ts     # Dados estáticos de projetos
 │
 └── styles.css              # Tailwind + tema customizado "O Códex"
 ```
@@ -72,7 +66,6 @@ src/
 | `/` | Landing page | O Prólogo |
 | `/blog` | Listagem de artigos | As Crônicas |
 | `/blog/:slug` | Artigo individual | A Crônica |
-| `/projects` | Listagem de projetos | Os Contratos |
 
 ## Tema visual
 

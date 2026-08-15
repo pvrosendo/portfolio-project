@@ -5,7 +5,7 @@
 >
   <url>
     <loc>https://pvrosendo.is-a.dev/</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://pvrosendo.is-a.dev/"/>
@@ -14,21 +14,12 @@
   </url>
   <url>
     <loc>https://pvrosendo.is-a.dev/blog</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://pvrosendo.is-a.dev/blog"/>
       <xhtml:link rel="alternate" hreflang="pt-BR" href="https://pvrosendo.is-a.dev/blog"/>
       <xhtml:link rel="alternate" hreflang="en" href="https://pvrosendo.is-a.dev/blog"/>
-  </url>
-  <url>
-    <loc>https://pvrosendo.is-a.dev/projects</loc>
-    <lastmod>2026-07-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-      <xhtml:link rel="alternate" hreflang="x-default" href="https://pvrosendo.is-a.dev/projects"/>
-      <xhtml:link rel="alternate" hreflang="pt-BR" href="https://pvrosendo.is-a.dev/projects"/>
-      <xhtml:link rel="alternate" hreflang="en" href="https://pvrosendo.is-a.dev/projects"/>
   </url>
   <url>
     <loc>https://pvrosendo.is-a.dev/blog/introducao-a-mensageria</loc>

@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState } from "react";
 import { useLocation, useRouter } from "@tanstack/react-router";
 import { Globe } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import type { SupportedLanguage } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
@@ -19,8 +19,7 @@ export function LanguageSwitcher() {
 	const containerRef = useRef<HTMLDivElement>(null);
 
 	const isPostPage =
-		location.pathname.startsWith("/blog/") &&
-		location.pathname !== "/blog";
+		location.pathname.startsWith("/blog/") && location.pathname !== "/blog";
 
 	function handleChange(lang: SupportedLanguage) {
 		i18n.changeLanguage(lang);
@@ -42,8 +41,7 @@ export function LanguageSwitcher() {
 			}
 		}
 		document.addEventListener("mousedown", handleClickOutside);
-		return () =>
-			document.removeEventListener("mousedown", handleClickOutside);
+		return () => document.removeEventListener("mousedown", handleClickOutside);
 	}, []);
 
 	return (
