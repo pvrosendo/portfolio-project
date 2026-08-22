@@ -1,11 +1,10 @@
-# AGENTS.md — Portfolio Pessoal (pvrosendo)
+# AGENTS.md — Blog (pvrosendo)
 
 ## Sobre o Projeto
 
-Site pessoal de Paulo Vitor (PV) — desenvolvedor back-end apaixonado por engenharia de software.
-Portfolio e blog com identidade visual temática chamada **"O Códex"**.
+Blog técnico com identidade visual temática chamada **"O Códex"**.
 
-- **URL:** `https://pvrosendo.is-a.dev`
+- **URL:**
 - **Deploy:** Vercel via Nitro (`nitro/vite` plugin)
 - **Package Manager:** pnpm
 
@@ -168,7 +167,7 @@ O projeto usa **Biome** (não ESLint/Prettier):
 
 - Idiomas suportados: `pt-BR` (padrão/fallback) e `en`
 - Detecção: `localStorage` → `navigator`
-- Namespaces: `common`, `landing`, `blog`, `projects`
+- Namespaces: `common`, `landing`, `blog`
 - Arquivos de tradução: `src/locales/{pt-BR,en}/*.json`
 - Textos de UI em **pt-BR** por padrão (exceto termos técnicos universais)
 

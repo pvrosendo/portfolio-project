@@ -45,7 +45,7 @@ As already mentioned, having servers spread geographically and strategically pla
 This idea might still be a bit abstract, so let's take an example:
 
 > [!NOTE]
-> Scenario: You want to host your portfolio and you've decided to use AWS S3 to store your project's build files.
+> Scenario: You want to host your blog and you've decided to use AWS S3 to store your project's build files.
 
 That's a solid and very commonly used idea. The big catch is that the bucket you're using is tied to a physical server somewhere specific that Amazon made available.
 

@@ -40,8 +40,7 @@ src/
 │   ├── sections/           # Seções da landing page
 │   │   ├── Hero.tsx
 │   │   ├── AboutPreview.tsx
-│   │   ├── RecentPosts.tsx
-│   │   └── FeaturedProjects.tsx
+│   │   └── RecentPosts.tsx
 │   ├── cards/
 │   │   ├── BlogCard.tsx
 │   ├── ui/                 # Shadcn/ui

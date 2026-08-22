@@ -103,7 +103,7 @@ Essa foi a primeira versão que eu decidi subir e aproveitar para aprender mais 
 
 O processo de deploy foi bem interessante, pois eu tinha alguns pensamento e ideias, mas não tinha certeza de nada.
 
-Eu fiz o processo de implantação da primeira versão do blog/portfólio e do Sharkar na mesma época, então eu tinha em mente que poderia fazer algo bem legal para quem não tem experiência/conhecimento com as ferramentas: **explorar todas**.
+Eu fiz o processo de implantação da primeira versão do blog e do Sharkar na mesma época, então eu tinha em mente que poderia fazer algo bem legal para quem não tem experiência/conhecimento com as ferramentas: **explorar todas**.
 
 De início, meu pensamento era de que como o blog não ia ser muito desafiador, preferi deixar logo ele para uma implantação mais tranquila, sendo assim, utilizei a infraestrutura da **Vercel** mesmo, que é bastante consolidada e torna o processo de deploy bizarramente mais fácil. 
 
@@ -192,7 +192,7 @@ Agora, finalmente, tenho tudo apontado para os lugares certos e realmente funcio
 
 Fiquei muito satisfeito da experiência e dos desafios que eu tive em toda essa jornada de implementação, mas acabei tendo alguns problemas inesperados. Como citei antes na parte da implantação do banco, eu não configurei exatamente certo e tive um gasto legal com o RDS. Juntando a isso tive o gasto da compra do domínio e uns gastos com alguns outros serviços para subir a API.
 
-Minha finalidade com o projeto era deixar mais como um projeto pessoal de portfólio e aprender sobre as etapas em geral, então decidi excluir todos os serviços que estavam rodando na AWS e colocar completamente em IaaS que tinham garantia de ser free. Sendo assim, o meu front-end foi para a **Vercel** e a API e o banco foram para o **Render**.
+Minha finalidade com o projeto era deixar mais como um projeto pessoal e aprender sobre as etapas em geral, então decidi excluir todos os serviços que estavam rodando na AWS e colocar completamente em IaaS que tinham garantia de ser free. Sendo assim, o meu front-end foi para a **Vercel** e a API e o banco foram para o **Render**.
 
 Não tive problemas para transferir, como tinha comentado em outros pontos, esses serviços são feitos para dar toda a estrutura para que você se concentre apenas em código. Como eu já tinha essas questões todas prontas, não tive problema.
 

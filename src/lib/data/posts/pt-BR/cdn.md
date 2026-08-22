@@ -45,7 +45,7 @@ Como já comentado anteriormente, o fato de termos servidores espalhados geograf
 Pode ser que esteja ainda bem abstrato essa ideia, então peguemos por exemplo:
 
 > [!NOTE]
-> Esquema: Você quer hospedar o seu portfólio e já pensou em utilizar o AWS S3 para armazenar os arquivos da build do seu projeto.
+> Esquema: Você quer hospedar o seu blog e já pensou em utilizar o AWS S3 para armazenar os arquivos da build do seu projeto.
 
 A ideia é boa e realmente muito utilizada, a grande questão é que esse bucket que você está utilizando é de um servidor físico em algum lugar específico que a amazon disponibilizou.
 
