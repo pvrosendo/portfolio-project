@@ -1,11 +1,10 @@
-# AGENTS.md — Portfolio Pessoal (pvrosendo)
+# AGENTS.md — Blog (pvrosendo)
 
 ## Sobre o Projeto
 
-Site pessoal de Paulo Vitor (PV) — desenvolvedor back-end apaixonado por engenharia de software.
-Portfolio e blog com identidade visual temática chamada **"O Códex"**.
+Blog técnico com identidade visual temática chamada **"O Códex"**.
 
-- **URL:** `https://pvrosendo.is-a.dev`
+- **URL:**
 - **Deploy:** Vercel via Nitro (`nitro/vite` plugin)
 - **Package Manager:** pnpm
 
@@ -75,13 +74,10 @@ src/
     blog/
       index.tsx              # Blog listing — "As Crônicas"
       $slug.tsx              # Artigo individual
-    projects/
-      index.tsx              # Projects listing — "Os Contratos"
-
   components/
     layout/                  # Navbar, Footer
     sections/                # Seções da landing page (Hero, AboutPreview, etc.)
-    cards/                   # BlogCard, ProjectCard
+    cards/                   # BlogCard
     markdown/                # MarkdownContent — renderizador com tema do Códex
     ui/                      # Shadcn/ui (Atomic Design: atoms → molecules → organisms)
       atoms/                 # Componentes primitivos (button, input, label, etc.)
@@ -89,24 +85,23 @@ src/
       organisms/             # Componentes complexos (dialog, sidebar, tabs, etc.)
       index.ts               # Barrel exports
 
-  hooks/                     # Custom hooks (use-posts, use-projects, use-mobile)
+  hooks/                     # Custom hooks (use-posts, use-mobile)
 
   integrations/
     tanstack-query/          # QueryClient setup e devtools
 
   lib/
-    types.ts                 # Tipos TypeScript: Post, Project, Tag
+    types.ts                 # Tipos TypeScript: Post, Tag
     utils.ts                 # cn(), formatDate(), slugify()
     seo.ts                   # Helpers de SEO: OG tags, JSON-LD, canonical, hreflang
     i18n.ts                  # Configuração i18next
     data/
       posts.ts               # Metadados dos posts + imports do .md via ?raw
       posts/                 # Conteúdo markdown dos posts (pt-BR/ e en/)
-      projects.ts            # Array estático de projetos
 
   locales/                   # Traduções i18next
-    pt-BR/                   # common.json, landing.json, blog.json, projects.json
-    en/                      # common.json, landing.json, blog.json, projects.json
+    pt-BR/                   # common.json, landing.json, blog.json
+    en/                      # common.json, landing.json, blog.json
 
   styles.css                 # Tailwind v4 + tema customizado + estilos de alerts
 
@@ -172,7 +167,7 @@ O projeto usa **Biome** (não ESLint/Prettier):
 
 - Idiomas suportados: `pt-BR` (padrão/fallback) e `en`
 - Detecção: `localStorage` → `navigator`
-- Namespaces: `common`, `landing`, `blog`, `projects`
+- Namespaces: `common`, `landing`, `blog`
 - Arquivos de tradução: `src/locales/{pt-BR,en}/*.json`
 - Textos de UI em **pt-BR** por padrão (exceto termos técnicos universais)
 

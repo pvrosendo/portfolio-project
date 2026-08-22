@@ -103,7 +103,7 @@ This was the first version I decided to put online, and I took the opportunity t
 
 The deployment process was pretty interesting, since I had some thoughts and ideas but wasn't sure about any of them.
 
-I did the deployment of the first version of the blog/portfolio and Sharkar around the same time, so I had it in mind that I could do something really educational for people without experience or knowledge of the tools: **explore all of them**.
+I did the deployment of the first version of the blog and Sharkar around the same time, so I had it in mind that I could do something really educational for people without experience or knowledge of the tools: **explore all of them**.
 
 At first, my thinking was that since the blog wasn't going to be very challenging, I'd rather leave it for a simpler deployment — so I used **Vercel**'s infrastructure, which is very established and makes the deployment process ridiculously easy.
 
@@ -192,7 +192,7 @@ Now, finally, everything was pointed to the right places and actually working fu
 
 I was very satisfied with the experience and challenges I had throughout that entire deployment journey, but I ended up running into some unexpected problems. As I mentioned in the database deployment section, I hadn't configured things exactly right and ended up with a decent charge from RDS. On top of that, I had the cost of buying the domain and some other charges from services used to get the API running.
 
-My goal with the project was to keep it more as a personal portfolio project and learn about the stages in general, so I decided to delete all the services running on AWS and put everything completely on IaaS platforms with a free tier guarantee. So my front-end went to **Vercel** and the API and database went to **Render**.
+My goal with the project was to keep it more as a personal project and learn about the stages in general, so I decided to delete all the services running on AWS and put everything completely on IaaS platforms with a free tier guarantee. So my front-end went to **Vercel** and the API and database went to **Render**.
 
 I had no problems transferring — as I mentioned in other parts, these services are built to give you all the structure so you can focus purely on code. Since I already had all of that stuff ready, it wasn't an issue.
 

@@ -13,7 +13,6 @@ export function Navbar() {
 	const navLinks = [
 		{ label: t("navbar.about"), href: "/#sobre", scrollId: "sobre" },
 		{ label: t("navbar.blog"), href: "/blog", scrollId: "blog" },
-		{ label: t("navbar.projects"), href: "/projects", scrollId: "projetos" },
 	];
 
 	useEffect(() => {
@@ -35,7 +34,10 @@ export function Navbar() {
 					: "bg-transparent",
 			)}
 		>
-			<nav aria-label="Navegação principal" className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+			<nav
+				aria-label="Navegação principal"
+				className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between"
+			>
 				{isLanding ? (
 					<>
 						<button
@@ -67,7 +69,7 @@ export function Navbar() {
 									)}
 								</li>
 							))}
-              <LanguageSwitcher />
+							<LanguageSwitcher />
 						</ul>
 					</>
 				) : (
