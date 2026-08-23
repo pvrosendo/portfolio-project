@@ -30,9 +30,9 @@ export function RecentPosts() {
 
 			{isLoading ? (
 				<div className="grid md:grid-cols-3 gap-4">
-					{Array.from({ length: 6 }).map((_, i) => (
+					{[1, 2, 3, 4, 5, 6].map((id) => (
 						<div
-							key={i}
+							key={id}
 							className="border border-[#1e3a4a] rounded-sm p-5 bg-deep h-40 animate-pulse"
 						/>
 					))}

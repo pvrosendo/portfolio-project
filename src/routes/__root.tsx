@@ -26,12 +26,16 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
 	head: () => ({
 		meta: [
 			{ charSet: "utf-8" },
-			{ name: "viewport", content: "width=device-width, initial-scale=1" },
+			{
+				name: "viewport",
+				content: "width=device-width, initial-scale=1",
+			},
 			// Fallback title/description — each route overrides these
 			{ title: SITE_NAME },
 			{
 				name: "description",
-				content: "O Códex - Blog de Paulo Vitor. Explorando as profundezas da engenharia de software e outras aleatoriedades.",
+				content:
+					"O Códex - Blog de Paulo Vitor. Explorando as profundezas da engenharia de software e outras aleatoriedades.",
 			},
 			// Fallback OG — each route overrides these
 			{ property: "og:site_name", content: SITE_NAME },
@@ -73,9 +77,8 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 			<body>
 				<QueryClientProvider client={queryClient}>
 					<Navbar />
-					<main id="main-content" role="main">
-						{children}
-					</main>
+					{/* biome-ignore lint/correctness/useUniqueElementIds: This is a static page section ID for scrolling */}
+					<main id="main-content">{children}</main>
 					<Footer />
 					<TanStackDevtools
 						config={{ position: "bottom-right" }}

@@ -129,7 +129,10 @@ export function PostsGraph() {
 			const ey = getYear(end);
 			const label = sy === ey ? String(sy) : `${sy}–${ey}`;
 
-			return { data: buildWindowActivity(start, end, publishedSet), label };
+			return {
+				data: buildWindowActivity(start, end, publishedSet),
+				label,
+			};
 		});
 
 		const firstDate = sortedDates[0] as Date;
@@ -170,7 +173,10 @@ export function PostsGraph() {
 				<div className="overflow-x-auto">
 					<div className="flex items-start w-max gap-0">
 						{windows.map((win, i) => (
-							<div key={`${win.label}-${i}`} className="flex items-start">
+							<div
+								key={`${win.label}-${i}`}
+								className="flex items-start"
+							>
 								{/* Vertical separator between windows */}
 								{i > 0 && (
 									<div className="flex flex-col items-center self-stretch mx-4 gap-1 pt-5">
@@ -192,7 +198,11 @@ export function PostsGraph() {
 										labels={{ months: monthLabels }}
 									>
 										<ContributionGraphCalendar className="text-fog text-[11px]">
-											{({ activity: act, dayIndex, weekIndex }) => (
+											{({
+												activity: act,
+												dayIndex,
+												weekIndex,
+											}) => (
 												<ContributionGraphBlock
 													activity={act}
 													dayIndex={dayIndex}

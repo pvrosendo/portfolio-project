@@ -25,9 +25,15 @@ export const Route = createFileRoute("/blog/$slug")({
 		return {
 			meta: [
 				...meta,
-				{ property: "article:published_time", content: post.publishedAt },
+				{
+					property: "article:published_time",
+					content: post.publishedAt,
+				},
 				{ property: "article:author", content: "Paulo Vitor Rosendo" },
-				...post.tags.map((tag) => ({ property: "article:tag", content: tag })),
+				...post.tags.map((tag) => ({
+					property: "article:tag",
+					content: tag,
+				})),
 			],
 			links,
 			scripts: [

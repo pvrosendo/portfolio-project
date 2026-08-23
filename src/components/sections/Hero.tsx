@@ -32,12 +32,13 @@ export function Hero() {
 		}
 
 		function initParticles() {
+			if (!canvas) return;
 			particles.length = 0;
-			const count = Math.floor((canvas!.width * canvas!.height) / 18000);
+			const count = Math.floor((canvas.width * canvas.height) / 18000);
 			for (let i = 0; i < count; i++) {
 				particles.push({
-					x: Math.random() * canvas!.width,
-					y: Math.random() * canvas!.height,
+					x: Math.random() * canvas.width,
+					y: Math.random() * canvas.height,
 					vx: (Math.random() - 0.5) * 0.3,
 					vy: (Math.random() - 0.5) * 0.3,
 					radius: Math.random() * 1.5 + 0.5,
@@ -85,6 +86,7 @@ export function Hero() {
 	}, []);
 
 	return (
+		// biome-ignore lint/correctness/useUniqueElementIds: Used for anchor links
 		<section
 			id="hero"
 			className="relative min-h-screen flex items-center justify-center overflow-hidden bg-abyss"
@@ -93,7 +95,6 @@ export function Hero() {
 			<canvas
 				ref={canvasRef}
 				className="absolute inset-0 w-full h-full opacity-60"
-				aria-hidden="true"
 			/>
 
 			{/* Radial depth gradient */}

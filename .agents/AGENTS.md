@@ -79,13 +79,10 @@ src/
     sections/                # Seções da landing page (Hero, AboutPreview, etc.)
     cards/                   # BlogCard
     markdown/                # MarkdownContent — renderizador com tema do Códex
-    ui/                      # Shadcn/ui (Atomic Design: atoms → molecules → organisms)
-      atoms/                 # Componentes primitivos (button, input, label, etc.)
-      molecules/             # Composições simples (card, badge, tooltip, etc.)
-      organisms/             # Componentes complexos (dialog, sidebar, tabs, etc.)
-      index.ts               # Barrel exports
+    ui/                      # Componentes de UI reaproveitáveis (Atomic Design)
+      molecules/             # Composições (ex: contribution-graph)
 
-  hooks/                     # Custom hooks (use-posts, use-mobile)
+  hooks/                     # Custom hooks (use-posts)
 
   integrations/
     tanstack-query/          # QueryClient setup e devtools
@@ -126,18 +123,17 @@ scripts/
 
 O projeto usa **Biome** (não ESLint/Prettier):
 
-- Indent: tabs
+- Indent: tabs (com tamanho 4, `indentWidth: 4`)
 - Quotes: double quotes (`"`)
 - Regras: recommended
 - Escopo: apenas `src/**`, `.vscode/**`, `index.html`, `vite.config.ts`
 - Ignorados: `routeTree.gen.ts`, `styles.css`
 
-### Shadcn/ui
+### Componentes de UI (Shadcn/Atomic)
 
-- Estilo: `new-york`
-- Componentes em `@/components/ui/` organizado por Atomic Design
-- **Nunca editar componentes Shadcn/ui manualmente** — usar `pnpm dlx shadcn@latest add <component>` ou `make ui <component>`
-- Barrel exports em `@/components/ui/index.ts`
+- O projeto segue princípios de **Atomic Design** (atoms, molecules, organisms) em `@/components/ui/`
+- **Minimalismo de Código:** Apenas componentes *realmente utilizados* devem ser mantidos no repositório. Não adicione bibliotecas ou componentes "para o caso de precisar no futuro".
+- Se adicionar componentes do Shadcn/ui via CLI (`make ui` ou `pnpm dlx shadcn@latest add`), faça a limpeza de dependências ou arquivos que não forem efetivamente usados.
 
 ### TypeScript
 

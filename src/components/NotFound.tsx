@@ -25,8 +25,8 @@ export function NotFound() {
 			</h1>
 
 			<p className="text-fog max-w-md leading-relaxed mb-10">
-				Parece que você se aventurou em território desconhecido. Nem os mapas
-				mais antigos registram essa rota.
+				Parece que você se aventurou em território desconhecido. Nem os
+				mapas mais antigos registram essa rota.
 			</p>
 
 			<Link

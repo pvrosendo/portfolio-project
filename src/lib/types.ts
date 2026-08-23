@@ -9,18 +9,16 @@ export type TagSlug =
 	| "tools"
 	| "hobby"
 	| "core concepts"
-	| "languages" 
+	| "languages"
 	| "database"
-	| "observability" 
+	| "observability"
 	| "data-structures"
 	| "authentication"
 	| "books"
-	| "games" 
+	| "games"
 	| "reviews"
 	| "sharks"
-	| "others";  
-
-
+	| "others";
 
 export interface Post {
 	id: string;

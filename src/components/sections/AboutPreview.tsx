@@ -11,13 +11,18 @@ export function AboutPreview() {
 				{/* Text */}
 				<div>
 					<p className="font-mono text-xs text-biolum tracking-widest uppercase mb-3">
-						<span className="text-witcher">{"//"}</span> {t("about.pretitle")}
+						<span className="text-witcher">{"//"}</span>{" "}
+						{t("about.pretitle")}
 					</p>
 					<h2 className="font-display text-3xl md:text-4xl font-bold text-parchment mb-5">
 						{t("about.title")}
 					</h2>
-					<p className="text-fog leading-relaxed mb-4">{t("about.bio1")}</p>
-					<p className="text-fog leading-relaxed">{t("about.bio2")}</p>
+					<p className="text-fog leading-relaxed mb-4">
+						{t("about.bio1")}
+					</p>
+					<p className="text-fog leading-relaxed">
+						{t("about.bio2")}
+					</p>
 				</div>
 
 				{/* Author card */}
@@ -44,7 +49,9 @@ export function AboutPreview() {
 							<p className="text-parchment font-semibold text-base">
 								Paulo Vitor Rosendo
 							</p>
-							<p className="text-biolum text-xs font-mono">{t("about.role")}</p>
+							<p className="text-biolum text-xs font-mono">
+								{t("about.role")}
+							</p>
 						</div>
 					</div>
 
@@ -74,7 +81,10 @@ export function AboutPreview() {
 						>
 							<Mail size={16} aria-hidden="true" />
 						</a>
-						<span className="text-[#1e3a4a] select-none" aria-hidden="true">
+						<span
+							className="text-[#1e3a4a] select-none"
+							aria-hidden="true"
+						>
 							·
 						</span>
 						<a
@@ -85,7 +95,9 @@ export function AboutPreview() {
 							className="flex items-center gap-1.5 text-fog hover:text-witcher transition-colors"
 						>
 							<Briefcase size={16} aria-hidden="true" />
-							<span className="text-xs font-mono">{t("about.portfolio")}</span>
+							<span className="text-xs font-mono">
+								{t("about.portfolio")}
+							</span>
 						</a>
 					</div>
 				</div>

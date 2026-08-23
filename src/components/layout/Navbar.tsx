@@ -50,11 +50,16 @@ export function Navbar() {
 						</button>
 						<ul className="flex items-center gap-6">
 							{navLinks.map((link) => (
-								<li key={link.label} className="flex items-center">
+								<li
+									key={link.label}
+									className="flex items-center"
+								>
 									{link.scrollId ? (
 										<button
 											type="button"
-											onClick={() => scrollTo(link.scrollId)}
+											onClick={() =>
+												scrollTo(link.scrollId)
+											}
 											className="text-sm text-fog hover:text-parchment transition-colors font-medium tracking-wide cursor-pointer"
 										>
 											{link.label}

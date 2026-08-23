@@ -73,7 +73,6 @@ export const TAGS: Tag[] = [
 		slug: "others",
 		labels: { "pt-BR": "Outros", en: "Others" },
 	},
-
 ];
 
 export function getTagBySlug(slug: TagSlug): Tag | undefined {

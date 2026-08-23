@@ -70,7 +70,9 @@ function BlogPage() {
 							key={tag.slug}
 							type="button"
 							disabled={isDisabled}
-							onClick={() => !isDisabled && setActiveTag(tag.slug)}
+							onClick={() =>
+								!isDisabled && setActiveTag(tag.slug)
+							}
 							className={`px-3 py-1 text-xs font-mono rounded-sm transition-colors ${
 								activeTag === tag.slug
 									? "bg-witcher text-abyss"

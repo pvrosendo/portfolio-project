@@ -19,7 +19,8 @@ const postsPtBR: Post[] = [
 		id: "1",
 		slug: "introducao-a-mensageria",
 		title: "Introdução à Mensageria",
-		excerpt: "Meus primeiros passos entendendo a importância da comunicação assíncrona entre sistemas.",
+		excerpt:
+			"Meus primeiros passos entendendo a importância da comunicação assíncrona entre sistemas.",
 		content: messagingContentPtBR,
 		tags: ["system-design", "backend"],
 		publishedAt: "2025-06-25T00:00:00.000Z",
@@ -30,7 +31,8 @@ const postsPtBR: Post[] = [
 		id: "2",
 		slug: "content-delivery-network",
 		title: "CDN - Content Delivery Network",
-		excerpt: "Entendendo como os sites chegam mais rápidos em diversos lugares diferentes.",
+		excerpt:
+			"Entendendo como os sites chegam mais rápidos em diversos lugares diferentes.",
 		content: cdnContentPtBR,
 		tags: ["system-design", "backend"],
 		publishedAt: "2025-07-02T00:00:00.000Z",
@@ -63,7 +65,8 @@ const postsPtBR: Post[] = [
 		id: "5",
 		slug: "themes",
 		title: "Recomendações de temas - VS Code",
-		excerpt: "Temas que estou usando atualmente e outros que sugiro dar uma olhada.",
+		excerpt:
+			"Temas que estou usando atualmente e outros que sugiro dar uma olhada.",
 		content: themesContentPtBR,
 		tags: ["tools"],
 		publishedAt: "2026-03-02T00:00:00.000Z",
@@ -74,7 +77,8 @@ const postsPtBR: Post[] = [
 		id: "6",
 		slug: "intro-sharks",
 		title: "Correlação do Ecossistema Marinho com os Tubarões",
-		excerpt: "Dê uma olhada em como o ecossistema marinho impacta na vida dos tubarões.",
+		excerpt:
+			"Dê uma olhada em como o ecossistema marinho impacta na vida dos tubarões.",
 		content: introSharksContentPtBR,
 		tags: ["hobby", "sharks"],
 		publishedAt: "2026-03-18T00:00:00.000Z",
@@ -88,7 +92,8 @@ const postsEn: Post[] = [
 		id: "1",
 		slug: "intro-to-messaging",
 		title: "Introduction to Messaging",
-		excerpt: "My first steps understanding the importance of asynchronous communication between systems.",
+		excerpt:
+			"My first steps understanding the importance of asynchronous communication between systems.",
 		content: messagingContentEn,
 		tags: ["system-design", "backend"],
 		publishedAt: "2025-06-25T00:00:00.000Z",
@@ -99,7 +104,8 @@ const postsEn: Post[] = [
 		id: "2",
 		slug: "content-delivery-network",
 		title: "CDN - Content Delivery Network",
-		excerpt: "Understanding how websites load faster in different locations.",
+		excerpt:
+			"Understanding how websites load faster in different locations.",
 		content: cdnContentEn,
 		tags: ["system-design"],
 		publishedAt: "2025-07-02T00:00:00.000Z",
@@ -132,7 +138,8 @@ const postsEn: Post[] = [
 		id: "5",
 		slug: "themes",
 		title: "Theme Recommendations - VS Code",
-		excerpt: "Themes I'm currently using and others I suggest checking out.",
+		excerpt:
+			"Themes I'm currently using and others I suggest checking out.",
 		content: themesContentEn,
 		tags: ["tools"],
 		publishedAt: "2026-03-02T00:00:00.000Z",
@@ -179,7 +186,8 @@ export function getRecentPosts(count = 3, locale: SupportedLocale): Post[] {
 	return [...getPostsByLocale(locale)]
 		.sort(
 			(a, b) =>
-				new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
+				new Date(b.publishedAt).getTime() -
+				new Date(a.publishedAt).getTime(),
 		)
 		.slice(0, count);
 }

@@ -17,13 +17,13 @@ O tema chama-se **"O Códex"** — uma mistura de dark fantasy, profundezas do o
 | [TanStack Router](https://tanstack.com/router) | Roteamento com file-based routing |
 | [TanStack Query](https://tanstack.com/query) | Gerenciamento de estado assíncrono |
 | [Tailwind CSS v4](https://tailwindcss.com) | Estilização utility-first |
-| [Shadcn/ui](https://ui.shadcn.com) | Componentes de UI base |
-| [Kibo/ui](https://www.kibo-ui.com/) | Componente Extra |
 | [Vite](https://vite.dev) | Build tool |
+| [Nitro](https://nitro.unjs.io/) | Engine de deploy (Vercel) |
 | [Biome](https://biomejs.dev) | Linter + Formatter |
 | [TypeScript](https://www.typescriptlang.org) | Tipagem estática |
 | [Lucide React](https://lucide.dev) | Ícones |
-| [i18next](https://www.i18next.com/) | Internacionalização |
+| [i18next](https://www.i18next.com/) | Internacionalização (i18n) |
+| [React Markdown](https://github.com/remarkjs/react-markdown) | Renderização de conteúdo |
 
 ## Estrutura do projeto
 
@@ -41,21 +41,24 @@ src/
 │   │   └── Footer.tsx
 │   ├── sections/           # Seções da landing page
 │   │   ├── Hero.tsx
-│   │   ├── AboutPreview.tsx
-│   │   └── RecentPosts.tsx
+│   │   └── ...
 │   ├── cards/
-│   │   ├── BlogCard.tsx
-│   ├── ui/                 # Shadcn e Kibo
-│   └── NotFound.tsx        # Página 404 temática
+│   ├── markdown/           # Renderizador de markdown customizado
+│   └── ui/                 # Componentes de UI reaproveitáveis (Shadcn/Atomic)
 │
 ├── hooks/
-│   ├── use-posts.ts        # TanStack Query hooks para posts
+│   └── use-posts.ts        # TanStack Query hooks para posts
 │
 ├── lib/
 │   ├── types.ts            # Interfaces TypeScript: Post, Tag
-│   ├── utils.ts            # cn(), formatDate(), slugify()
+│   ├── utils.ts            # Helpers variados
+│   ├── seo.ts              # Utilitários robustos de SEO
+│   ├── i18n.ts             # Configuração do i18next
 │   └── data/
-│       ├── posts.ts        # Dados estáticos de posts
+│       ├── posts.ts        # Metadados dos posts
+│       └── posts/          # Markdown dos posts em PT-BR e EN
+│
+├── locales/                # Arquivos JSON de tradução (i18n)
 │
 └── styles.css              # Tailwind + tema customizado "O Códex"
 ```

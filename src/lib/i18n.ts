@@ -25,8 +25,7 @@ export const resources = {
 	},
 } as const;
 
-i18n
-	.use(LanguageDetector)
+i18n.use(LanguageDetector)
 	.use(initReactI18next)
 	.init({
 		resources,
