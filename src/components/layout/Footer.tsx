@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Briefcase, Github, Linkedin, Mail } from "lucide-react";
 
 export function Footer() {
 	const currentYear = new Date().getFullYear();
@@ -13,7 +13,7 @@ export function Footer() {
 				</div>
 				<p className="text-center text-xs text-[#1e3a4a]">
 					© {currentYear} Paulo Vitor Rosendo.
-				</p>	
+				</p>
 				<address className="not-italic flex items-center gap-4">
 					<a
 						href="https://github.com/pvrosendo"
@@ -39,6 +39,15 @@ export function Footer() {
 						className="text-fog hover:text-witcher transition-colors"
 					>
 						<Mail size={18} aria-hidden="true" />
+					</a>
+					<a
+						href="https://pvrosendo.is-a.dev/"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="Portfólio (abre em nova aba)"
+						className="text-fog hover:text-witcher transition-colors"
+					>
+						<Briefcase size={18} aria-hidden="true" />
 					</a>
 				</address>
 			</div>

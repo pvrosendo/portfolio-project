@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Briefcase, Github, Linkedin, Mail } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 export function AboutPreview() {
@@ -32,21 +32,21 @@ export function AboutPreview() {
 						aria-hidden="true"
 					/>
 
-					<div className="flex items-center gap-3 mb-5 pb-4 border-b border-[#1e3a4a]">
-						<div className="w-10 h-10 rounded-full bg-[#1e3a4a] flex items-center justify-center font-display font-bold text-witcher text-sm">
-							PV
-						</div>
+					<div className="flex items-center gap-4 mb-6">
+						<img
+							src="https://avatars.githubusercontent.com/u/111819809?v=4"
+							alt="Foto de Paulo Vitor"
+							width={96}
+							height={96}
+							className="rounded-full border-2 border-[#1e3a4a] hover:border-witcher transition-colors shrink-0"
+						/>
 						<div>
-							<p className="text-parchment font-semibold text-sm">
-								Paulo Vitor
+							<p className="text-parchment font-semibold text-base">
+								Paulo Vitor Rosendo
 							</p>
 							<p className="text-biolum text-xs font-mono">{t("about.role")}</p>
 						</div>
 					</div>
-
-					<p className="text-fog text-sm leading-relaxed mb-5">
-						{t("about.authorBio")}
-					</p>
 
 					<div className="flex items-center gap-4 pt-4 border-t border-[#1e3a4a]">
 						<a
@@ -73,6 +73,19 @@ export function AboutPreview() {
 							className="text-fog hover:text-witcher transition-colors"
 						>
 							<Mail size={16} aria-hidden="true" />
+						</a>
+						<span className="text-[#1e3a4a] select-none" aria-hidden="true">
+							·
+						</span>
+						<a
+							href="https://pvrosendo.is-a.dev/"
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="Portfólio"
+							className="flex items-center gap-1.5 text-fog hover:text-witcher transition-colors"
+						>
+							<Briefcase size={16} aria-hidden="true" />
+							<span className="text-xs font-mono">Portfólio</span>
 						</a>
 					</div>
 				</div>

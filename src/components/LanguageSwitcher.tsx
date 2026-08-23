@@ -54,9 +54,6 @@ export function LanguageSwitcher() {
 				aria-haspopup="listbox"
 			>
 				<Globe size={16} />
-				{/* <span className="hidden sm:inline font-mono uppercase text-sm text-fog hover:text-parchment transition-colors font-medium">
-					{currentLang === "pt-BR" ? "PT" : "EN"}
-				</span> */}
 			</button>
 
 			{open && (
