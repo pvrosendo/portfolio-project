@@ -1,10 +1,10 @@
-# AGENTS.md — Blog (pvrosendo)
+# AGENTS.md — Blog de Paulo Vitor
 
 ## Sobre o Projeto
 
-Blog técnico com identidade visual temática chamada **"O Códex"**.
+Blog com identidade visual temática chamada **"O Códex"**.
 
-- **URL:**
+- **URL:** https://blog.pvrosendo.is-a.dev
 - **Deploy:** Vercel via Nitro (`nitro/vite` plugin)
 - **Package Manager:** pnpm
 

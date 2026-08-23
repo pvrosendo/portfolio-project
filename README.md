@@ -1,10 +1,10 @@
 # O Códex
 
-Blog técnico independente com identidade visual temática.
+Blog com identidade visual temática.
 
 ## Sobre o projeto
 
-Esse é um blog técnico independente focado em engenharia de software. A identidade visual se inspira em três pilares: *The Witcher 3*, *tubarões/abismo oceânico* e *computação*.
+Esse é um blog pessoal com uma identidade visual que se inspira em três pilares: *The Witcher 3*, *tubarões/abismo oceânico* e *computação*.
 
 O tema chama-se **"O Códex"** — uma mistura de dark fantasy, profundezas do oceano e estética tech.
 
@@ -18,10 +18,12 @@ O tema chama-se **"O Códex"** — uma mistura de dark fantasy, profundezas do o
 | [TanStack Query](https://tanstack.com/query) | Gerenciamento de estado assíncrono |
 | [Tailwind CSS v4](https://tailwindcss.com) | Estilização utility-first |
 | [Shadcn/ui](https://ui.shadcn.com) | Componentes de UI base |
+| [Kibo/ui](https://www.kibo-ui.com/) | Componente Extra |
 | [Vite](https://vite.dev) | Build tool |
 | [Biome](https://biomejs.dev) | Linter + Formatter |
 | [TypeScript](https://www.typescriptlang.org) | Tipagem estática |
 | [Lucide React](https://lucide.dev) | Ícones |
+| [i18next](https://www.i18next.com/) | Internacionalização |
 
 ## Estrutura do projeto
 
@@ -43,7 +45,7 @@ src/
 │   │   └── RecentPosts.tsx
 │   ├── cards/
 │   │   ├── BlogCard.tsx
-│   ├── ui/                 # Shadcn/ui
+│   ├── ui/                 # Shadcn e Kibo
 │   └── NotFound.tsx        # Página 404 temática
 │
 ├── hooks/
