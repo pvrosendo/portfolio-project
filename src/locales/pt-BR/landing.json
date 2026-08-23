@@ -21,7 +21,9 @@
 	"postsGraph": {
 		"pretitle": "atividade",
 		"title": "Frequência de Publicação",
-		"totalCount": "{{count}} publicações em {{year}}"
+		"subtitle": "desafiando a mim mesmo a publicar mais",
+		"total": "{{count}} publicações ao todo",
+		"status": "status:"
 	},
 	"footer": {
 		"tagline": "Compartilhando tudo aquilo que foi compartilhado comigo.",

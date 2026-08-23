@@ -21,7 +21,9 @@
 	"postsGraph": {
 		"pretitle": "activity",
 		"title": "Publishing Frequency",
-		"totalCount": "{{count}} posts in {{year}}"
+		"subtitle": "challenging myself to write more",
+		"total": "{{count}} posts overall",
+		"status": "status:"
 	},
 	"footer": {
 		"tagline": "Sharing everything that was shared with me.",
