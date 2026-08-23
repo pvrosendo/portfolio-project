@@ -31,8 +31,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
 			{ title: SITE_NAME },
 			{
 				name: "description",
-				content:
-					"O Códex — Blog técnico sobre engenharia de software por Paulo Vitor.",
+				content: "O Códex - Blog de Paulo Vitor. Explorando as profundezas da engenharia de software e outras aleatoriedades.",
 			},
 			// Fallback OG — each route overrides these
 			{ property: "og:site_name", content: SITE_NAME },

@@ -4,7 +4,7 @@ import { Hero } from "@/components/sections/Hero";
 import { RecentPosts } from "@/components/sections/RecentPosts";
 import { buildPageHead, buildPersonWebsiteJsonLd } from "@/lib/seo";
 
-const HOME_TITLE = "O Códex — Blog de Engenharia de Software";
+const HOME_TITLE = "O Códex - Blog do PV";
 const HOME_DESCRIPTION =
 	"O Códex — Blog técnico de Paulo Vitor. Explorando as profundezas da engenharia de software e compartilhando tudo aquilo que foi compartilhado comigo.";
 

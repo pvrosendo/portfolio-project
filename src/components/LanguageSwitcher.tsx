@@ -30,7 +30,6 @@ export function LanguageSwitcher() {
 		}
 	}
 
-	// Fecha o dropdown ao clicar fora
 	useEffect(() => {
 		function handleClickOutside(e: MouseEvent) {
 			if (
@@ -55,9 +54,9 @@ export function LanguageSwitcher() {
 				aria-haspopup="listbox"
 			>
 				<Globe size={16} />
-				<span className="hidden sm:inline font-mono uppercase text-sm text-fog hover:text-parchment transition-colors font-medium">
+				{/* <span className="hidden sm:inline font-mono uppercase text-sm text-fog hover:text-parchment transition-colors font-medium">
 					{currentLang === "pt-BR" ? "PT" : "EN"}
-				</span>
+				</span> */}
 			</button>
 
 			{open && (

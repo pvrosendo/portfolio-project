@@ -1,9 +1,6 @@
-import { Link } from "@tanstack/react-router";
 import { Github, Linkedin, Mail } from "lucide-react";
-import { useTranslation } from "react-i18next";
 
 export function Footer() {
-	const { t } = useTranslation("landing");
 	const currentYear = new Date().getFullYear();
 
 	return (
@@ -13,18 +10,10 @@ export function Footer() {
 					<span className="font-display text-lg font-bold text-witcher tracking-widest">
 						O Códex
 					</span>
-					<p className="text-xs text-fog mt-1">{t("footer.tagline")}</p>
 				</div>
-
-				<nav aria-label="Links do rodapé" className="flex items-center gap-4">
-					<Link
-						to="/blog"
-						className="text-xs text-fog hover:text-parchment transition-colors"
-					>
-						{t("footer.chronicles")}
-					</Link>
-				</nav>
-
+				<p className="text-center text-xs text-[#1e3a4a]">
+					© {currentYear} Paulo Vitor Rosendo.
+				</p>	
 				<address className="not-italic flex items-center gap-4">
 					<a
 						href="https://github.com/pvrosendo"
@@ -53,10 +42,6 @@ export function Footer() {
 					</a>
 				</address>
 			</div>
-
-			<p className="text-center text-xs text-[#1e3a4a] mt-8">
-				© {currentYear} Paulo Vitor Rosendo.
-			</p>
 		</footer>
 	);
 }

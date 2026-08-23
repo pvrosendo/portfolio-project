@@ -1,15 +1,15 @@
 {
-	"pretitle": "autor do blog",
-	"subtitle": "Notas de um explorador de software.",
+	"pretitle": "Paulo Vitor Rosendo",
+	"subtitle": "Notas de um explorador.",
 	"subtitle2": "Compartilhando tudo aquilo que foi compartilhado comigo.",
 	"ctaBlog": "As Crônicas",
 	"scrollHint": "role",
 	"about": {
 		"pretitle": "sobre o explorador",
 		"title": "Quem sou eu?",
-		"bio1": "Meu nome é Paulo Vitor, mas pode me chamar de PV. Desenvolvedor apaixonado por engenharia de software e autor deste blog.",
-		"bio2": "Nesse espaço compartilho aquilo que aprendo e as crônicas da minha jornada pela tecnologia.",
-		"role": "Autor / Desenvolvedor"
+		"bio1": "Meu nome é Paulo Vitor, mas pode me chamar de PV. Desenvolvedor, autor deste blog, fã de tubarão, amante de The Witcher e muitas outras coisas.",
+		"bio2": "Nesse espaço compartilho aquilo que me der na telha, seja relacionado a software, hobbies, curiosidades, ou qualquer outra coisa que me interesse.",
+		"role": "Autor"
 	},
 	"recentPosts": {
 		"pretitle": "as crônicas",
@@ -22,7 +22,7 @@
 		"chronicles": "As Crônicas"
 	},
 	"meta": {
-		"title": "O Códex — Blog de Engenharia de Software",
-		"description": "O Códex — Blog técnico de Paulo Vitor. Explorando as profundezas da engenharia de software."
+		"title": "O Códex - Blog do PV",
+		"description": "O Códex - Blog de Paulo Vitor. Explorando as profundezas da engenharia de software e outras aleatoriedades."
 	}
 }
