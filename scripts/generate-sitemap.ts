@@ -11,7 +11,7 @@ import { resolve, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const SITE_URL = 'https://pvrosendo.is-a.dev'
+const SITE_URL = "https://blog.pvrosendo.is-a.dev";
 const OUTPUT_PATH = resolve(__dirname, '../public/sitemap.xml')
 
 // ─── Static routes ────────────────────────────────────────────────────────────

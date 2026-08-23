@@ -126,16 +126,16 @@ I considered various options like Vercel, Render, S3, and even EC2 (a VPS). Rese
 
 In the end, I decided that a good choice would be AWS Simple Storage Service (S3), since it was a simple storage service, free (for what I wanted to use), and with a very interesting option: static website hosting. That was exactly what I wanted — to host Sharkar's front-end, knowing it wouldn't have any very critical function beyond communicating with the API.
 
-If you want to see how to do this S3 deployment process, check it out here: [Hosting a website on S3](https://pvrosendo.is-a.dev/blog/hospedando-site-no-aws-s3).
+If you want to see how to do this S3 deployment process, check it out here: [Hosting a website on S3](https://blog.pvrosendo.is-a.dev/blog/hospedando-site-no-aws-s3).
 
 > [!NOTE]
 > Discovering CDN
 
-After doing the deployment I ended up discovering and learning a bit about [CDN](https://pvrosendo.is-a.dev/blog/content-delivery-network) and realized I'd need it to keep my site up and easily accessible to as many people as possible. It would also help me with site security (SSL/TLS certificate and HTTPS) — which was something I already had knowledge of — so it was great.
+After doing the deployment I ended up discovering and learning a bit about [CDN](https://blog.pvrosendo.is-a.dev/blog/content-delivery-network) and realized I'd need it to keep my site up and easily accessible to as many people as possible. It would also help me with site security (SSL/TLS certificate and HTTPS) — which was something I already had knowledge of — so it was great.
 
 Now I needed to understand how to create a distribution for my site and, using my buddy Gemini, I asked it what the best option would be. It promptly recommended taking advantage of CloudFront, since I intended to learn as much as possible about AWS Cloud.
 
-If you want to see how to do this CloudFront distribution setup, there's a section showing it in the article: [Hosting a website on S3](https://pvrosendo.is-a.dev/blog/hospedando-site-no-aws-s3)
+If you want to see how to do this CloudFront distribution setup, there's a section showing it in the article: [Hosting a website on S3](https://blog.pvrosendo.is-a.dev/blog/hospedando-site-no-aws-s3)
 
 > [!NOTE]
 > Building the pipeline with GitHub Actions
@@ -178,7 +178,7 @@ With everything built, all that was left was to integrate it all. What does inte
 
 First I bought a domain because I wanted to see what the process looked like. I used AWS's own service, Route 53. With the domain purchased, I went to the ACM service to request certificates for the API and front-end domains.
 
-It was at that point that I researched more about [Load Balancer](https://pvrosendo.is-a.dev/blog/load-balancer) and found it interesting to apply to the project to see how it worked, especially since I had bought a domain.
+It was at that point that I researched more about [Load Balancer](https://blog.pvrosendo.is-a.dev/blog/load-balancer) and found it interesting to apply to the project to see how it worked, especially since I had bought a domain.
 
 I decided to use an Application Load Balancer from ELB (AWS Elastic Load Balancing) and started by creating a target group — at that point I added a health checker to the API (used Spring Actuator) — and the ALB.
 

@@ -61,7 +61,7 @@ A CDN vem com o papel de pegar esses arquivos que estão no S3 e disponibilizar 
 
 É importante ressaltar que não é apenas isso que faz ela ser rápida, temos também:
 
-- otimizações a nível de hardware e software para fazer um [load balancer](https://pvrosendo.is-a.dev/blog/load-balancer), 
+- otimizações a nível de hardware e software para fazer um [load balancer](https://blog.pvrosendo.is-a.dev/blog/load-balancer), 
 - a utilização de táticas de minificação para reduzir e compactar arquivos e melhorar a transferência
 - e por fim, temos também a aceleração dos sites que utilizam certificado TLS/SSL otimizando a conexão.
 

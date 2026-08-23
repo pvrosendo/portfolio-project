@@ -2,7 +2,7 @@ import type { Post } from "@/lib/types";
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 
-export const SITE_URL = "https://pvrosendo.is-a.dev";
+export const SITE_URL = "https://blog.pvrosendo.is-a.dev";
 export const SITE_NAME = "O Códex";
 export const SITE_AUTHOR = "Paulo Vitor Rosendo";
 export const SITE_TWITTER = "@pvrosendo";

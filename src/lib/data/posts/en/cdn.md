@@ -61,7 +61,7 @@ The CDN steps in to take those files from S3 and distribute them to all the serv
 
 It's worth pointing out that this isn't the only thing that makes it fast. We also have:
 
-- hardware and software optimizations to enable [load balancing](https://pvrosendo.is-a.dev/blog/load-balancer),
+- hardware and software optimizations to enable [load balancing](https://blog.pvrosendo.is-a.dev/blog/load-balancer),
 - the use of minification tactics to reduce and compress files and improve transfer speeds
 - and finally, site acceleration for sites using TLS/SSL certificates, optimizing the connection.
 

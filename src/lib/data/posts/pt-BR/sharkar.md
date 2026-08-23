@@ -126,16 +126,16 @@ Considerei diversas opções como Vercel, Render, S3 e até EC2 (uma VPS). Pesqu
 
 No final das contas observei que uma boa escolha seria o AWS Simple Storage Service (S3), pois era um serviço simples de armazenamento, sem custos (para o que eu queria usar) e com uma opção muito interessante que era a de hospedagem de site estático. Isso era exatamente o que eu queria, hospedar o front-end do Sharkar sabendo que ele não teria nenhuma função muito importante a não ser se comunicar com a API.
 
-Caso você queira ver como fazer esse processo de implantação do site no S3, só ver em: [Hospedando site no S3](https://pvrosendo.is-a.dev/blog/hospedando-site-no-aws-s3).
+Caso você queira ver como fazer esse processo de implantação do site no S3, só ver em: [Hospedando site no S3](https://blog.pvrosendo.is-a.dev/blog/hospedando-site-no-aws-s3).
 
 > [!NOTE]
 > Descobrindo sobre CDN
 
-Depois de fazer a implantação acabei descobrindo e entendendo um pouco sobre [CDN](https://pvrosendo.is-a.dev/blog/content-delivery-network) e percebi que eu precisaria desse cara para o meu site ficar no ar e de fácil acesso para o máximo de pessoas possível. E ele também me ajudaria com a questão da segurança do site (certificado SSL/TSL e HTTPS) - que era algo que eu já tinha noção -, então era ótimo.
+Depois de fazer a implantação acabei descobrindo e entendendo um pouco sobre [CDN](https://blog.pvrosendo.is-a.dev/blog/content-delivery-network) e percebi que eu precisaria desse cara para o meu site ficar no ar e de fácil acesso para o máximo de pessoas possível. E ele também me ajudaria com a questão da segurança do site (certificado SSL/TSL e HTTPS) - que era algo que eu já tinha noção -, então era ótimo.
 
 Agora precisava entender como eu criava uma distribuição para o meu site e utilizando meu amigão Gemini perguntei para ele qual seria a melhor opção. Ele de prontidão me recomendou aproveitar o CloudFront, já que eu tinha a pretensão de entender o máximo possível da Cloud da AWS. 
 
-Caso você queira ver como fazer esse processo de criação da distribuição no CloudFront, tem uma seção onde mostro no artigo: [Hospedando site no S3](https://pvrosendo.is-a.dev/blog/hospedando-site-no-aws-s3)
+Caso você queira ver como fazer esse processo de criação da distribuição no CloudFront, tem uma seção onde mostro no artigo: [Hospedando site no S3](https://blog.pvrosendo.is-a.dev/blog/hospedando-site-no-aws-s3)
 
 > [!NOTE]
 > Criando a pipeline com GitHub Actions
@@ -178,7 +178,7 @@ Tendo tudo montado, falta apenas integrar tudo. O que seria integrar? Seria conf
 
 De início comprei um domínio porque queria verificar como seria o processo de uso. Usei o serviço próprio da AWS, o Route 53. Com o domínio comprado, fui no serviço ACM para solicitar os certificados para os domínios da api e do front-end.
 
-Foi nesse ponto que pesquisei mais sobre [Load Balancer](https://pvrosendo.is-a.dev/blog/load-balancer) e achei interessante aplicar no projeto para ver sua funcionalidade, aproveitando que eu tinha comprado um domínio.
+Foi nesse ponto que pesquisei mais sobre [Load Balancer](https://blog.pvrosendo.is-a.dev/blog/load-balancer) e achei interessante aplicar no projeto para ver sua funcionalidade, aproveitando que eu tinha comprado um domínio.
 
 Decidi usar um application load balancer do ELB (AWS Elastic Load Balancing) e comecei criando um target group - nesse ponto coloquei um health checker na API (usei o spring actuator) - e o ALB.
 
