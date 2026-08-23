@@ -177,7 +177,7 @@ export function PostsGraph() {
 										<div className="w-px flex-1 bg-[#1e3a4a]/60" />
 									</div>
 								)}
-								<div className="flex-shrink-0">
+								<div className="shrink-0">
 									{/* Year label — only when there are multiple windows */}
 									{windows.length > 1 && (
 										<p className="font-mono text-[10px] text-fog mb-2 tracking-widest">

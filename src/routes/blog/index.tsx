@@ -3,7 +3,9 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { BlogCard } from "@/components/cards/BlogCard";
 import { usePosts } from "@/hooks/use-posts";
+import { TAGS } from "@/lib/data/tags";
 import { buildPageHead } from "@/lib/seo";
+import type { SupportedLocale, TagSlug } from "@/lib/types";
 
 export const Route = createFileRoute("/blog/")({
 	head: () => {
@@ -19,11 +21,12 @@ export const Route = createFileRoute("/blog/")({
 });
 
 function BlogPage() {
-	const { t } = useTranslation("blog");
+	const { t, i18n } = useTranslation("blog");
+	const locale = i18n.language as SupportedLocale;
 	const { data: posts, isLoading } = usePosts();
-	const [activeTag, setActiveTag] = useState<string | null>(null);
+	const [activeTag, setActiveTag] = useState<TagSlug | null>(null);
 
-	const allTags = [...new Set(posts?.flatMap((p) => p.tags) ?? [])];
+	const activeSlugs = new Set(posts?.flatMap((p) => p.tags) ?? []);
 	const filtered = activeTag
 		? posts?.filter((p) => p.tags.includes(activeTag))
 		: posts;
@@ -45,49 +48,52 @@ function BlogPage() {
 			</div>
 
 			{/* Tags Filter */}
-			{allTags.length > 0 && (
-				<div
-					className="flex flex-wrap gap-2 mb-10"
-					role="group"
-					aria-label="Filtrar por tag"
+			<fieldset
+				className="flex flex-wrap gap-2 mb-10 border-none p-0 m-0"
+				aria-label="Filtrar por tag"
+			>
+				<button
+					type="button"
+					onClick={() => setActiveTag(null)}
+					className={`px-3 py-1 text-xs font-mono rounded-sm transition-colors ${
+						activeTag === null
+							? "bg-witcher text-abyss"
+							: "border border-[#1e3a4a] text-fog hover:text-parchment"
+					}`}
 				>
-					<button
-						type="button"
-						onClick={() => setActiveTag(null)}
-						className={`px-3 py-1 text-xs font-mono rounded-sm transition-colors ${
-							activeTag === null
-								? "bg-witcher text-abyss"
-								: "border border-[#1e3a4a] text-fog hover:text-parchment"
-						}`}
-					>
-						{t("filterAll")}
-					</button>
-					{allTags.map((tag) => (
+					{t("filterAll")}
+				</button>
+				{TAGS.map((tag) => {
+					const isDisabled = !activeSlugs.has(tag.slug);
+					return (
 						<button
-							key={tag}
+							key={tag.slug}
 							type="button"
-							onClick={() => setActiveTag(tag)}
+							disabled={isDisabled}
+							onClick={() => !isDisabled && setActiveTag(tag.slug)}
 							className={`px-3 py-1 text-xs font-mono rounded-sm transition-colors ${
-								activeTag === tag
+								activeTag === tag.slug
 									? "bg-witcher text-abyss"
-									: "border border-[#1e3a4a] text-fog hover:text-parchment"
+									: isDisabled
+										? "border border-[#1e3a4a] text-fog/40 cursor-not-allowed"
+										: "border border-[#1e3a4a] text-fog hover:text-parchment"
 							}`}
 						>
-							#{tag}
+							#{tag.labels[locale]}
 						</button>
-					))}
-				</div>
-			)}
+					);
+				})}
+			</fieldset>
 
 			{/* Posts list */}
 			{isLoading ? (
 				<div
 					className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"
 					aria-busy="true"
-					aria-label="Carregando posts"
 				>
 					{Array.from({ length: 4 }).map((_, i) => (
 						<div
+							// biome-ignore lint/suspicious/noArrayIndexKey: static skeleton placeholders with no reordering
 							key={i}
 							className="border border-[#1e3a4a] rounded-sm p-5 bg-deep h-44 animate-pulse"
 						/>

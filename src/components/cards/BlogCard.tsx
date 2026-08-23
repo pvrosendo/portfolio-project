@@ -1,5 +1,7 @@
 import { Link } from "@tanstack/react-router";
-import type { Post } from "@/lib/types";
+import { useTranslation } from "react-i18next";
+import { getTagLabel } from "@/lib/data/tags";
+import type { Post, SupportedLocale } from "@/lib/types";
 import { formatDate } from "@/lib/utils";
 
 interface BlogCardProps {
@@ -7,6 +9,9 @@ interface BlogCardProps {
 }
 
 export function BlogCard({ post }: BlogCardProps) {
+	const { i18n } = useTranslation();
+	const locale = i18n.language as SupportedLocale;
+
 	return (
 		<Link
 			to="/blog/$slug"
@@ -36,12 +41,12 @@ export function BlogCard({ post }: BlogCardProps) {
 
 			{/* Tags */}
 			<div className="flex flex-wrap gap-2">
-				{post.tags.map((tag) => (
+				{post.tags.map((slug) => (
 					<span
-						key={tag}
+						key={slug}
 						className="px-2 py-0.5 text-xs font-mono bg-[#1e3a4a]/60 text-biolum rounded-sm"
 					>
-						#{tag}
+						#{getTagLabel(slug, locale)}
 					</span>
 				))}
 			</div>
