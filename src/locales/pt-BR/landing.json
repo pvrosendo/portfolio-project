@@ -18,6 +18,11 @@
 		"viewAll": "ver todas →",
 		"viewAllMobile": "ver todas as crônicas →"
 	},
+	"postsGraph": {
+		"pretitle": "atividade",
+		"title": "Frequência de Publicação",
+		"totalCount": "{{count}} publicações em {{year}}"
+	},
 	"footer": {
 		"tagline": "Compartilhando tudo aquilo que foi compartilhado comigo.",
 		"chronicles": "As Crônicas"

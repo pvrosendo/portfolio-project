@@ -18,6 +18,11 @@
 		"viewAll": "view all →",
 		"viewAllMobile": "view all chronicles →"
 	},
+	"postsGraph": {
+		"pretitle": "activity",
+		"title": "Publishing Frequency",
+		"totalCount": "{{count}} posts in {{year}}"
+	},
 	"footer": {
 		"tagline": "Sharing everything that was shared with me.",
 		"chronicles": "The Chronicles"

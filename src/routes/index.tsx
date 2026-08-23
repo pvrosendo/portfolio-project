@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { AboutPreview } from "@/components/sections/AboutPreview";
 import { Hero } from "@/components/sections/Hero";
+import { PostsGraph } from "@/components/sections/PostsGraph";
 import { RecentPosts } from "@/components/sections/RecentPosts";
 import { buildPageHead, buildPersonWebsiteJsonLd } from "@/lib/seo";
 
@@ -37,6 +38,8 @@ function LandingPage() {
 			<AboutPreview />
 			<div className="border-t border-[#1e3a4a]/40" />
 			<RecentPosts />
+			<div className="border-t border-[#1e3a4a]/40" />
+			<PostsGraph />
 		</>
 	);
 }
