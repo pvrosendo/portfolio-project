@@ -9,7 +9,8 @@
 		"title": "Who am I?",
 		"bio1": "My name is Paulo Vitor, but you can call me PV. A developer passionate about software engineering and author of this blog.",
 		"bio2": "In this space I share what I learn and the chronicles of my journey through technology.",
-		"role": "Author / Developer"
+		"role": "Author / Developer",
+		"portfolio": "Portfolio"
 	},
 	"recentPosts": {
 		"pretitle": "the chronicles",

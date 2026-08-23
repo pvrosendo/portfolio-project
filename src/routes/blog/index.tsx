@@ -82,7 +82,7 @@ function BlogPage() {
 			{/* Posts list */}
 			{isLoading ? (
 				<div
-					className="grid md:grid-cols-2 gap-4"
+					className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"
 					aria-busy="true"
 					aria-label="Carregando posts"
 				>
@@ -94,7 +94,7 @@ function BlogPage() {
 					))}
 				</div>
 			) : filtered && filtered.length > 0 ? (
-				<div className="grid md:grid-cols-2 gap-4">
+				<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
 					{filtered
 						.map((post) => <BlogCard key={post.id} post={post} />)
 						.sort(

@@ -9,7 +9,8 @@
 		"title": "Quem sou eu?",
 		"bio1": "Meu nome é Paulo Vitor, mas pode me chamar de PV. Desenvolvedor, autor deste blog, fã de tubarão, amante de The Witcher e muitas outras coisas.",
 		"bio2": "Nesse espaço compartilho aquilo que me der na telha, seja relacionado a software, hobbies, curiosidades, ou qualquer outra coisa que me interesse.",
-		"role": "Autor"
+		"role": "Autor",
+		"portfolio": "Portfólio"
 	},
 	"recentPosts": {
 		"pretitle": "as crônicas",

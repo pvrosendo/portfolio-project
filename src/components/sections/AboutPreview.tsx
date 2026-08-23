@@ -85,7 +85,7 @@ export function AboutPreview() {
 							className="flex items-center gap-1.5 text-fog hover:text-witcher transition-colors"
 						>
 							<Briefcase size={16} aria-hidden="true" />
-							<span className="text-xs font-mono">Portfólio</span>
+							<span className="text-xs font-mono">{t("about.portfolio")}</span>
 						</a>
 					</div>
 				</div>
