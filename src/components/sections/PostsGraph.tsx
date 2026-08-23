@@ -14,7 +14,7 @@ import {
 	ContributionGraph,
 	ContributionGraphBlock,
 	ContributionGraphCalendar,
-} from "@/components/kibo-ui/contribution-graph";
+} from "@/components/ui/molecules/contribution-graph";
 import { usePosts } from "@/hooks/use-posts";
 import { cn } from "@/lib/utils";
 

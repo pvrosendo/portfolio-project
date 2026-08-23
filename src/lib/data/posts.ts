@@ -61,20 +61,8 @@ const postsPtBR: Post[] = [
 		readingTimeMin: 7,
 		locale: "pt-BR",
 	},
-	// {
-	//   id: "5",
-	//   slug: "sharkar",
-	//   title: "Como construi meu projeto: Sharkar",
-	//   excerpt:
-	//     "Como foi construir um projeto fullstack e implementá-lo em diferentes clouds.",
-	//   content: sharkarContentPtBR,
-	//   tags: ["projetos", "fullstack", "cloud"],
-	//   publishedAt: "2025-07-15T00:00:00.000Z",
-	//   readingTimeMin: 15,
-	//   locale: "pt-BR",
-	// },
 	{
-		id: "6",
+		id: "5",
 		slug: "themes",
 		title: "Recomendações de temas - VS Code",
 		excerpt:
@@ -86,7 +74,7 @@ const postsPtBR: Post[] = [
 		locale: "pt-BR",
 	},
 	{
-		id: "7",
+		id: "6",
 		slug: "intro-sharks",
 		title: "Correlação do Ecossistema Marinho com os Tubarões",
 		excerpt:
@@ -145,20 +133,8 @@ const postsEn: Post[] = [
 		readingTimeMin: 7,
 		locale: "en",
 	},
-	// {
-	//   id: "5",
-	//   slug: "sharkar",
-	//   title: "How I Built My Project: Sharkar",
-	//   excerpt:
-	//     "How I built a fullstack project and deployed it across different clouds.",
-	//   content: sharkarContentEn,
-	//   tags: ["projects", "fullstack", "cloud"],
-	//   publishedAt: "2025-07-15T00:00:00.000Z",
-	//   readingTimeMin: 15,
-	//   locale: "en",
-	// },
 	{
-		id: "6",
+		id: "5",
 		slug: "themes",
 		title: "Theme Recommendations - VS Code",
 		excerpt: "Themes I'm currently using and others I suggest checking out.",
@@ -169,7 +145,7 @@ const postsEn: Post[] = [
 		locale: "en",
 	},
 	{
-		id: "7",
+		id: "6",
 		slug: "intro-sharks",
 		title: "Marine Ecosystem Correlation with Sharks",
 		excerpt: "Take a look at how the marine ecosystem impacts shark life.",
