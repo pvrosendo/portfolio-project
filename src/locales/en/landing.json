@@ -1,15 +1,15 @@
 {
-	"pretitle": "blog author",
-	"subtitle": "Notes from a software explorer.",
+	"pretitle": "Paulo Vitor's Blog",
+	"subtitle": "Notes from a explorer.",
 	"subtitle2": "Sharing everything that was shared with me.",
 	"ctaBlog": "The Chronicles",
 	"scrollHint": "scroll",
 	"about": {
 		"pretitle": "about the explorer",
 		"title": "Who am I?",
-		"bio1": "My name is Paulo Vitor, but you can call me PV. A developer passionate about software engineering and author of this blog.",
-		"bio2": "In this space I share what I learn and the chronicles of my journey through technology.",
-		"role": "Author / Developer",
+		"bio1": "My name is Paulo Vitor, but you can call me PV. Developer, author of this blog, shark enthusiast, The Witcher lover, and many other things.",
+		"bio2": "In this space I share whatever comes to mind, whether it's related to software, hobbies, curiosities, or anything else that catches my interest.",
+		"role": "Author",
 		"portfolio": "Portfolio"
 	},
 	"recentPosts": {
@@ -25,12 +25,8 @@
 		"total": "{{count}} posts overall",
 		"status": "status:"
 	},
-	"footer": {
-		"tagline": "Sharing everything that was shared with me.",
-		"chronicles": "The Chronicles"
-	},
 	"meta": {
-		"title": "The Codex — Software Engineering Blog",
-		"description": "The Codex — Technical blog by Paulo Vitor. Exploring the depths of software engineering."
+		"title": "The Codex — Paulo Vitor's Blog",
+		"description": "The Codex — Blog by Paulo Vitor. Sharing thoughts and experiences."
 	}
 }
