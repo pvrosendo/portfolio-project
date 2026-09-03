@@ -23,10 +23,13 @@ The author writes like a knowledgeable friend explaining something over coffee �
 - Use colloquial phrasing even when explaining complex topics
 - Mix technical terms with casual transitions
 - Write as if talking to a peer, not lecturing a student
+- Pass technical concepts in a light, simple way ("conteúdo técnico de forma light")
+- Insert casual personal reactions or self-aware humor in italic blockquotes (`> *...*`)
 
 **Don't:**
-- Sound stiff, corporate, or overly formal
-- Over-explain obvious things
+- Sound stiff, corporate, academic, or overly formal
+- Dump excessive textbook jargon, Latin names, or academic minutiae when a simpler explanation works better
+- Over-explain obvious things or create robotic ASCII diagrams for non-code topics
 - Use passive voice more than necessary
 
 ---

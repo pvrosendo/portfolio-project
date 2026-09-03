@@ -47,6 +47,12 @@ const posts: PostMeta[] = [
   { slug: 'load-balancer', locale: 'pt-BR', publishedAt: '2025-07-12' },
   { slug: 'themes', locale: 'pt-BR', publishedAt: '2026-03-02' },
   { slug: 'intro-sharks', locale: 'pt-BR', publishedAt: '2026-03-18' },
+  { slug: 'anatomia-dos-tubaroes', locale: 'pt-BR', publishedAt: '2026-04-02' },
+  { slug: 'sentidos-dos-tubaroes', locale: 'pt-BR', publishedAt: '2026-04-16' },
+  { slug: 'comportamento-dos-tubaroes', locale: 'pt-BR', publishedAt: '2026-04-30' },
+  { slug: 'evolucao-e-reproducao-dos-tubaroes', locale: 'pt-BR', publishedAt: '2026-05-14' },
+  { slug: 'taxonomia-dos-tubaroes', locale: 'pt-BR', publishedAt: '2026-05-28' },
+  { slug: 'tubaroes-e-humanos', locale: 'pt-BR', publishedAt: '2026-06-11' },
   // en posts
   { slug: 'intro-to-messaging', locale: 'en', publishedAt: '2025-06-25' },
   { slug: 'content-delivery-network', locale: 'en', publishedAt: '2025-07-02' },
@@ -54,6 +60,12 @@ const posts: PostMeta[] = [
   { slug: 'load-balancer', locale: 'en', publishedAt: '2025-07-12' },
   { slug: 'themes', locale: 'en', publishedAt: '2026-03-02' },
   { slug: 'intro-sharks', locale: 'en', publishedAt: '2026-03-18' },
+  { slug: 'shark-anatomy', locale: 'en', publishedAt: '2026-04-02' },
+  { slug: 'shark-senses', locale: 'en', publishedAt: '2026-04-16' },
+  { slug: 'shark-behavior', locale: 'en', publishedAt: '2026-04-30' },
+  { slug: 'shark-evolution-and-reproduction', locale: 'en', publishedAt: '2026-05-14' },
+  { slug: 'shark-taxonomy', locale: 'en', publishedAt: '2026-05-28' },
+  { slug: 'sharks-and-humans', locale: 'en', publishedAt: '2026-06-11' },
 ]
 
 // ─── XML builders ─────────────────────────────────────────────────────────────

@@ -65,4 +65,7 @@ Não é novidade que o homem quer destruir tudo pra construir prédio, mas deixa
 
 Trouxe esses pontos, porque são muito interessantes para se observar como o ambiente marinho impacta completamente no comportamento desses animais. A forma com que a natureza se desenha caminha diretamente ao lado da evolução deles. Eu trouxe diversas coisas que vou me aprofundar futuramente, mas que é bem legal de ter uma noção inicial para conectar as coisas depois.
 
+> [!NOTE]
+> Inclusive, montei um projeto de hobby enquanto testava algumas tecnologias e subi na Vercel mesmo: é uma jornada interativa para aprender mais sobre tubarões. Se quiser dar uma olhada: [learn-sharks.vercel.app](https://learn-sharks.vercel.app/).
+
 Vlw, tmj!

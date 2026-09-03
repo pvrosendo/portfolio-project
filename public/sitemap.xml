@@ -5,7 +5,7 @@
 >
   <url>
     <loc>https://blog.pvrosendo.is-a.dev/</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.pvrosendo.is-a.dev/"/>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://blog.pvrosendo.is-a.dev/blog</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
       <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.pvrosendo.is-a.dev/blog"/>
@@ -76,6 +76,60 @@
       <xhtml:link rel="alternate" hreflang="en" href="https://blog.pvrosendo.is-a.dev/blog/intro-sharks"/>
   </url>
   <url>
+    <loc>https://blog.pvrosendo.is-a.dev/blog/anatomia-dos-tubaroes</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.pvrosendo.is-a.dev/blog/anatomia-dos-tubaroes"/>
+      <xhtml:link rel="alternate" hreflang="pt-BR" href="https://blog.pvrosendo.is-a.dev/blog/anatomia-dos-tubaroes"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://blog.pvrosendo.is-a.dev/blog/anatomia-dos-tubaroes"/>
+  </url>
+  <url>
+    <loc>https://blog.pvrosendo.is-a.dev/blog/sentidos-dos-tubaroes</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.pvrosendo.is-a.dev/blog/sentidos-dos-tubaroes"/>
+      <xhtml:link rel="alternate" hreflang="pt-BR" href="https://blog.pvrosendo.is-a.dev/blog/sentidos-dos-tubaroes"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://blog.pvrosendo.is-a.dev/blog/sentidos-dos-tubaroes"/>
+  </url>
+  <url>
+    <loc>https://blog.pvrosendo.is-a.dev/blog/comportamento-dos-tubaroes</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.pvrosendo.is-a.dev/blog/comportamento-dos-tubaroes"/>
+      <xhtml:link rel="alternate" hreflang="pt-BR" href="https://blog.pvrosendo.is-a.dev/blog/comportamento-dos-tubaroes"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://blog.pvrosendo.is-a.dev/blog/comportamento-dos-tubaroes"/>
+  </url>
+  <url>
+    <loc>https://blog.pvrosendo.is-a.dev/blog/evolucao-e-reproducao-dos-tubaroes</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.pvrosendo.is-a.dev/blog/evolucao-e-reproducao-dos-tubaroes"/>
+      <xhtml:link rel="alternate" hreflang="pt-BR" href="https://blog.pvrosendo.is-a.dev/blog/evolucao-e-reproducao-dos-tubaroes"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://blog.pvrosendo.is-a.dev/blog/evolucao-e-reproducao-dos-tubaroes"/>
+  </url>
+  <url>
+    <loc>https://blog.pvrosendo.is-a.dev/blog/taxonomia-dos-tubaroes</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.pvrosendo.is-a.dev/blog/taxonomia-dos-tubaroes"/>
+      <xhtml:link rel="alternate" hreflang="pt-BR" href="https://blog.pvrosendo.is-a.dev/blog/taxonomia-dos-tubaroes"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://blog.pvrosendo.is-a.dev/blog/taxonomia-dos-tubaroes"/>
+  </url>
+  <url>
+    <loc>https://blog.pvrosendo.is-a.dev/blog/tubaroes-e-humanos</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.pvrosendo.is-a.dev/blog/tubaroes-e-humanos"/>
+      <xhtml:link rel="alternate" hreflang="pt-BR" href="https://blog.pvrosendo.is-a.dev/blog/tubaroes-e-humanos"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://blog.pvrosendo.is-a.dev/blog/tubaroes-e-humanos"/>
+  </url>
+  <url>
     <loc>https://blog.pvrosendo.is-a.dev/blog/intro-to-messaging</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -92,5 +146,59 @@
       <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.pvrosendo.is-a.dev/blog/hosting-site-on-aws-s3"/>
       <xhtml:link rel="alternate" hreflang="pt-BR" href="https://blog.pvrosendo.is-a.dev/blog/hosting-site-on-aws-s3"/>
       <xhtml:link rel="alternate" hreflang="en" href="https://blog.pvrosendo.is-a.dev/blog/hosting-site-on-aws-s3"/>
+  </url>
+  <url>
+    <loc>https://blog.pvrosendo.is-a.dev/blog/shark-anatomy</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.pvrosendo.is-a.dev/blog/shark-anatomy"/>
+      <xhtml:link rel="alternate" hreflang="pt-BR" href="https://blog.pvrosendo.is-a.dev/blog/shark-anatomy"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://blog.pvrosendo.is-a.dev/blog/shark-anatomy"/>
+  </url>
+  <url>
+    <loc>https://blog.pvrosendo.is-a.dev/blog/shark-senses</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.pvrosendo.is-a.dev/blog/shark-senses"/>
+      <xhtml:link rel="alternate" hreflang="pt-BR" href="https://blog.pvrosendo.is-a.dev/blog/shark-senses"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://blog.pvrosendo.is-a.dev/blog/shark-senses"/>
+  </url>
+  <url>
+    <loc>https://blog.pvrosendo.is-a.dev/blog/shark-behavior</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.pvrosendo.is-a.dev/blog/shark-behavior"/>
+      <xhtml:link rel="alternate" hreflang="pt-BR" href="https://blog.pvrosendo.is-a.dev/blog/shark-behavior"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://blog.pvrosendo.is-a.dev/blog/shark-behavior"/>
+  </url>
+  <url>
+    <loc>https://blog.pvrosendo.is-a.dev/blog/shark-evolution-and-reproduction</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.pvrosendo.is-a.dev/blog/shark-evolution-and-reproduction"/>
+      <xhtml:link rel="alternate" hreflang="pt-BR" href="https://blog.pvrosendo.is-a.dev/blog/shark-evolution-and-reproduction"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://blog.pvrosendo.is-a.dev/blog/shark-evolution-and-reproduction"/>
+  </url>
+  <url>
+    <loc>https://blog.pvrosendo.is-a.dev/blog/shark-taxonomy</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.pvrosendo.is-a.dev/blog/shark-taxonomy"/>
+      <xhtml:link rel="alternate" hreflang="pt-BR" href="https://blog.pvrosendo.is-a.dev/blog/shark-taxonomy"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://blog.pvrosendo.is-a.dev/blog/shark-taxonomy"/>
+  </url>
+  <url>
+    <loc>https://blog.pvrosendo.is-a.dev/blog/sharks-and-humans</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://blog.pvrosendo.is-a.dev/blog/sharks-and-humans"/>
+      <xhtml:link rel="alternate" hreflang="pt-BR" href="https://blog.pvrosendo.is-a.dev/blog/sharks-and-humans"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://blog.pvrosendo.is-a.dev/blog/sharks-and-humans"/>
   </url>
 </urlset>

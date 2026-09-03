@@ -1,18 +1,32 @@
 import type { Post, SupportedLocale } from "@/lib/types";
+
+// en posts
 import cdnContentEn from "./posts/en/cdn.md?raw";
 import s3ContentEn from "./posts/en/hosting-site-s3.md?raw";
-// en posts
 import messagingContentEn from "./posts/en/intro-to-messaging.md?raw";
 import lbContentEn from "./posts/en/load-balancer.md?raw";
+import sharkAnatomyContentEn from "./posts/en/shark-anatomy.md?raw";
+import sharkBehaviorContentEn from "./posts/en/shark-behavior.md?raw";
 import introSharksContentEn from "./posts/en/shark-environment-correlation.md?raw";
+import sharkEvolutionContentEn from "./posts/en/shark-evolution-and-reproduction.md?raw";
+import sharkSensesContentEn from "./posts/en/shark-senses.md?raw";
+import sharkTaxonomyContentEn from "./posts/en/shark-taxonomy.md?raw";
+import sharksAndHumansContentEn from "./posts/en/sharks-and-humans.md?raw";
 import themesContentEn from "./posts/en/themes.md?raw";
-import cdnContentPtBR from "./posts/pt-BR/cdn.md?raw";
-import s3ContentPtBR from "./posts/pt-BR/hospedando-site-s3.md?raw";
+
 // pt-BR posts
+import sharkAnatomyContentPtBR from "./posts/pt-BR/anatomia-dos-tubaroes.md?raw";
+import cdnContentPtBR from "./posts/pt-BR/cdn.md?raw";
+import sharkBehaviorContentPtBR from "./posts/pt-BR/comportamento-dos-tubaroes.md?raw";
+import sharkEvolutionContentPtBR from "./posts/pt-BR/evolucao-e-reproducao-dos-tubaroes.md?raw";
+import s3ContentPtBR from "./posts/pt-BR/hospedando-site-s3.md?raw";
 import messagingContentPtBR from "./posts/pt-BR/introducao-a-mensageria.md?raw";
 import lbContentPtBR from "./posts/pt-BR/load-balancer.md?raw";
+import sharkSensesContentPtBR from "./posts/pt-BR/sentidos-dos-tubaroes.md?raw";
 import introSharksContentPtBR from "./posts/pt-BR/shark-environment-correlation.md?raw";
+import sharkTaxonomyContentPtBR from "./posts/pt-BR/taxonomia-dos-tubaroes.md?raw";
 import themesContentPtBR from "./posts/pt-BR/themes.md?raw";
+import sharksAndHumansContentPtBR from "./posts/pt-BR/tubaroes-e-humanos.md?raw";
 
 const postsPtBR: Post[] = [
 	{
@@ -85,6 +99,78 @@ const postsPtBR: Post[] = [
 		readingTimeMin: 7,
 		locale: "pt-BR",
 	},
+	{
+		id: "7",
+		slug: "anatomia-dos-tubaroes",
+		title: "Anatomia dos Tubarões: O Predador Desossado",
+		excerpt:
+			"Como a cartilagem, dentes em esteira rolante e fígados gigantes cheios de óleo criaram predadores sem ossos imbatíveis.",
+		content: sharkAnatomyContentPtBR,
+		tags: ["hobby", "sharks"],
+		publishedAt: "2026-04-02T00:00:00.000Z",
+		readingTimeMin: 10,
+		locale: "pt-BR",
+	},
+	{
+		id: "8",
+		slug: "sentidos-dos-tubaroes",
+		title: "Os Sentidos dos Tubarões: Radar Vivo e Eletrorrecepção",
+		excerpt:
+			"Do olfato estéreo às ampolas de Lorenzini: como os tubarões enxergam, ouvem e sentem campos bioelétricos na escuridão do oceano.",
+		content: sharkSensesContentPtBR,
+		tags: ["hobby", "sharks"],
+		publishedAt: "2026-04-16T00:00:00.000Z",
+		readingTimeMin: 7,
+		locale: "pt-BR",
+	},
+	{
+		id: "9",
+		slug: "comportamento-dos-tubaroes",
+		title: "Comportamento dos Tubarões: Além do Mito da Máquina Assassina",
+		excerpt:
+			"Hierarquia social, curiosidade, cooperação e sono: desmontando de vez o mito de que tubarões são máquinas assassinas sem cérebro.",
+		content: sharkBehaviorContentPtBR,
+		tags: ["hobby", "sharks"],
+		publishedAt: "2026-04-30T00:00:00.000Z",
+		readingTimeMin: 7,
+		locale: "pt-BR",
+	},
+	{
+		id: "10",
+		slug: "evolucao-e-reproducao-dos-tubaroes",
+		title: "Evolução e Reprodução dos Tubarões: 450 Milhões de Anos no Topo",
+		excerpt:
+			"Mais antigos que as árvores e que os anéis de Saturno: entenda como a seleção K e 450 milhões de anos de evolução moldaram os tubarões.",
+		content: sharkEvolutionContentPtBR,
+		tags: ["hobby", "sharks"],
+		publishedAt: "2026-05-14T00:00:00.000Z",
+		readingTimeMin: 6,
+		locale: "pt-BR",
+	},
+	{
+		id: "11",
+		slug: "taxonomia-dos-tubaroes",
+		title: "A Árvore Genealógica dos Tubarões: As 8 Ordens Explicadas",
+		excerpt:
+			"De relíquias do abismo com 7 guelras a gigantes filtradores: o guia completo para entender as 8 ordens viventes de tubarões.",
+		content: sharkTaxonomyContentPtBR,
+		tags: ["hobby", "sharks"],
+		publishedAt: "2026-05-28T00:00:00.000Z",
+		readingTimeMin: 7,
+		locale: "pt-BR",
+	},
+	{
+		id: "12",
+		slug: "tubaroes-e-humanos",
+		title: "Tubarões e Humanos: Estatísticas, Mitos e o Verdadeiro Predador",
+		excerpt:
+			"O que as estatísticas do ISAF realmente revelam sobre ataques, o impacto da histeria do filme Tubarão e a tragédia do shark finning.",
+		content: sharksAndHumansContentPtBR,
+		tags: ["hobby", "sharks"],
+		publishedAt: "2026-06-11T00:00:00.000Z",
+		readingTimeMin: 7,
+		locale: "pt-BR",
+	},
 ];
 
 const postsEn: Post[] = [
@@ -154,6 +240,78 @@ const postsEn: Post[] = [
 		content: introSharksContentEn,
 		tags: ["hobby", "sharks"],
 		publishedAt: "2026-03-18T00:00:00.000Z",
+		readingTimeMin: 7,
+		locale: "en",
+	},
+	{
+		id: "7",
+		slug: "shark-anatomy",
+		title: "Shark Anatomy: The Boneless Predator",
+		excerpt:
+			"How cartilage, a conveyor belt of teeth, and giant oil-filled livers shaped boneless predators that rule the oceans.",
+		content: sharkAnatomyContentEn,
+		tags: ["hobby", "sharks"],
+		publishedAt: "2026-04-02T00:00:00.000Z",
+		readingTimeMin: 10,
+		locale: "en",
+	},
+	{
+		id: "8",
+		slug: "shark-senses",
+		title: "Shark Senses: Living Radar and Electroreception in the Ocean",
+		excerpt:
+			"From stereo smell to the ampullae of Lorenzini: how sharks track, hear, and feel micro-electric fields in the ocean.",
+		content: sharkSensesContentEn,
+		tags: ["hobby", "sharks"],
+		publishedAt: "2026-04-16T00:00:00.000Z",
+		readingTimeMin: 7,
+		locale: "en",
+	},
+	{
+		id: "9",
+		slug: "shark-behavior",
+		title: "Shark Behavior: Beyond the Brainless Killing Machine Myth",
+		excerpt:
+			"Social hierarchy, curiosity, cooperative hunting, and sleep: busting the myth that sharks are just mindless eating machines.",
+		content: sharkBehaviorContentEn,
+		tags: ["hobby", "sharks"],
+		publishedAt: "2026-04-30T00:00:00.000Z",
+		readingTimeMin: 7,
+		locale: "en",
+	},
+	{
+		id: "10",
+		slug: "shark-evolution-and-reproduction",
+		title: "Shark Evolution and Reproduction: 450 Million Years at the Top",
+		excerpt:
+			"Older than trees and Saturn's rings: how K-selected reproduction and 450 million years of evolution shaped modern sharks.",
+		content: sharkEvolutionContentEn,
+		tags: ["hobby", "sharks"],
+		publishedAt: "2026-05-14T00:00:00.000Z",
+		readingTimeMin: 6,
+		locale: "en",
+	},
+	{
+		id: "11",
+		slug: "shark-taxonomy",
+		title: "The Shark Family Tree: All 8 Living Orders Explained",
+		excerpt:
+			"From seven-gilled deep-sea relicts to giant filter feeders: the ultimate breakdown of all 8 living shark orders.",
+		content: sharkTaxonomyContentEn,
+		tags: ["hobby", "sharks"],
+		publishedAt: "2026-05-28T00:00:00.000Z",
+		readingTimeMin: 7,
+		locale: "en",
+	},
+	{
+		id: "12",
+		slug: "sharks-and-humans",
+		title: "Sharks and Humans: Statistics, Myths, and the True Predator",
+		excerpt:
+			"What ISAF data actually tells us about shark encounters, the Jaws mass hysteria, and the silent massacre of shark finning.",
+		content: sharksAndHumansContentEn,
+		tags: ["hobby", "sharks"],
+		publishedAt: "2026-06-11T00:00:00.000Z",
 		readingTimeMin: 7,
 		locale: "en",
 	},

@@ -65,4 +65,7 @@ It's no secret that humans want to tear everything down to build skyscrapers —
 
 I brought these points up because they're very interesting for observing how the marine environment completely impacts the behavior of these animals. The way nature designs itself walks directly alongside their evolution. I've touched on several things that I'll go deeper into later, but it's really great to have an initial sense of these topics to connect the dots down the road.
 
+> [!NOTE]
+> By the way, I put together a little hobby project while testing out some technologies and deployed it straight on Vercel: it's an interactive journey to learn more about sharks. If you want to check it out: [learn-sharks.vercel.app](https://learn-sharks.vercel.app/).
+
 Cheers!
