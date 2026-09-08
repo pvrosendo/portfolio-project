@@ -33,6 +33,8 @@ Most smaller species only have a single layer. But in large species that need to
 
 On top of that, a shark's upper jaw isn't fused to its skull. When it attacks, the jaw actually slides forward and downward, practically jumping out of the head during the strike. That gives it a devastating bite angle and lets it carve out massive chunks of food.
 
+> *Watching the upper jaw detach and shoot forward in slow motion looks straight out of Alien. Pure nightmare-fuel biomechanics.*
+
 ---
 
 ## Teeth: the endless conveyor belt
@@ -105,6 +107,8 @@ Sharks solved this with two neat adaptations:
 
 ### 1. Gastric eversion (puking inside out)
 When a shark swallows something its stomach simply can't digest, it doesn't get normal heartburn. It literally pushes its stomach out through its mouth, rinses it clean in seawater to dump the stuck debris, and snaps it back inside in a few seconds.
+
+> *Imagine just casually turning your stomach inside out, giving it a quick rinse in seawater, and pulling it back in like it's no big deal. Nature is wild.*
 
 ### 2. The spiral valve
 While mammals need dozens of meters of intestines coiled inside their belly to absorb food nutrients, a shark’s intestine is surprisingly short.

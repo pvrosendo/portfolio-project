@@ -18,7 +18,7 @@ de pvrosendo. Siga os passos na ordem exata descrita abaixo.
 
 Antes de executar esta skill, leia obrigatoriamente:
 
-- [`pvrosendo-writing-voice`](../pvrosendo-writing-voice/SKILL.md) — tom, voz e estilo do autor
+- `pvrosendo-writing-voice` (skill global em `~/.agents/skills/` e `~/.gemini/antigravity-cli/skills/`) — tom, voz e estilo do autor
 - [`AGENTS.md`](../../AGENTS.md) — convenções gerais do projeto
 
 ---

@@ -21,6 +21,8 @@ Tem um mito antigo de que tubarões seriam quase cegos e dependeriam só do olfa
 > **Como eles protegem os olhos na mordida?** 
 > Na hora de morder uma presa que está se debatendo, espécies como o tubarão-tigre puxam uma pálpebra branca e grossa chamada membrana nictitante, que fecha o olho como uma persiana. Já o tubarão-branco não tem essa pálpebra; a solução dele é mais bizarra: **ele simplesmente rola os olhos para dentro da cabeça**, mostrando só a parte branca de trás para não machucar a córnea.
 
+> *Imagina o bicho chegando em velocidade máxima, virando os olhos pro fundo da cabeça e atacando às cegas puramente guiado por eletricidade. É o tipo de detalhe que parece pesadelo saído de um conto de terror.*
+
 ---
 
 ## 2. Olfato estéreo: a história da gota de sangue
@@ -85,6 +87,8 @@ Com essas ampolas, o tubarão consegue:
 > [!NOTE]
 > **E o tubarão-martelo?**
 > Aquele formato estranho de cabeça do tubarão-martelo serve exatamente para isso. Ao espalhar esses sensores por uma área muito mais larga e reta, ele varre o fundo do mar como se fosse um detector de metal de praia, só que muito mais potente.
+
+> *A cabeça do tubarão-martelo sempre me pareceu uma piada estranha de design biológico na infância, mas entender que é literalmente uma antena de radar gigante varrendo o chão me fez respeitar demais a criatividade da evolução.*
 
 ---
 

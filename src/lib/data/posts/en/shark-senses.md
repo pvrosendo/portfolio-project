@@ -21,6 +21,8 @@ There’s an old myth that sharks are basically blind and rely entirely on smell
 > **How do they protect their eyes during a bite?**
 > When striking prey that's thrashing around wildly, species like the tiger shark pull up a tough, whitish eyelid called a nictitating membrane that snaps shut like a window blind. Great whites don't have that eyelid; their solution is even weirder: **they literally roll their eyeballs backward into their head**, showing only the tough white back to protect the cornea from getting clawed or bitten.
 
+> *Imagine charging in at top speed, rolling your eyes into the back of your skull, and striking completely blind guided purely by bioelectricity. Straight out of a horror novel.*
+
 ---
 
 ## 2. Stereo smell: the drop of blood story
@@ -85,6 +87,8 @@ With these sensors, a shark can:
 > [!NOTE]
 > **What about the hammerhead?**
 > That bizarre wide head on hammerhead sharks serves this exact purpose. By spreading those electrical sensors across a much wider, flatter surface, it sweeps the seabed like a beach metal detector, just way more powerful.
+
+> *The hammerhead’s skull always looked like a weird biological design gag when I was a kid, but learning that it's literally a giant radar array sweeping the sea floor made me respect evolution's sheer creativity.*
 
 ---
 

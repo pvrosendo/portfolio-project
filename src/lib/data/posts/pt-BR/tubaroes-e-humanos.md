@@ -38,6 +38,8 @@ Agora olha essa comparação rápida com coisas do nosso dia a dia:
 
 A chance matemática de você ser mordido por um tubarão na vida é de cerca de **1 em 11,5 milhões**. A chance de morrer por isso é de **1 em 264 milhões**. É literalmente mais fácil você ser atingido por um raio duas vezes ou a torradeira da sua cozinha pegar fogo do que um tubarão te morder no mar.
 
+> *Olhar pra esses números e ver que você tem trinta vezes mais chance de morrer por causa de um coco caindo na sua cabeça na praia do que por uma mordida de tubarão é o retrato perfeito de como o cinema distorceu nosso medo.*
+
 ---
 
 ## Por que os ataques acontecem?
@@ -64,6 +66,8 @@ As populações de tubarões desabaram em várias partes do mundo.
 > **O arrependimento de Peter Benchley:**
 > O escritor do livro que deu origem ao filme ficou tão chocado com o massacre causado pela sua história que passou os últimos 30 anos da sua vida trabalhando como um dos maiores defensores dos tubarões no mundo. Ele chegou a declarar: *"Sabendo o que sei hoje, eu jamais teria escrito aquele livro. Tubarões não caçam humanos por maldade; eles são as verdadeiras vítimas dessa história."*
 
+> *Ver o criador de Tubarão dedicar a vida inteira pra tentar consertar o estrago cultural que a própria obra causou é um soco no estômago. Mostra o peso absurdo que uma narrativa bem contada tem sobre a realidade.*
+
 ---
 
 ## O massacre real: 100 milhões por ano
@@ -81,6 +85,8 @@ Uma grande parte dessa matança vem de uma prática brutal chamada **shark finni
 - Sem as nadadeiras, o tubarão afunda feito pedra no leito do oceano e morre sufocado ou devorado vivo por outros bichos.
 
 E tudo isso para abastecer o mercado da tradicional **sopa de barbatana** na Ásia, usada como símbolo de ostentação em festas chiques. O mais bizarro? A cartilagem da barbatana **não tem gosto de nada**. Ela só dá uma textura gelatinosa para a sopa, que precisa ser temperada com caldo de frango ou carne de porco para ter algum sabor.
+
+> *Matar 100 milhões de predadores de ponta por ano só pra dar textura gelatinosa sem sabor em sopa de festa é de uma futilidade que embrulha o estômago.*
 
 ---
 

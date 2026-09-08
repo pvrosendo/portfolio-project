@@ -55,6 +55,8 @@ Se tem alguém no mar de quem o tubarão-branco realmente tem pavor, são as **o
 > **As orcas caçadoras de fígados:**
 > Na África do Sul, pesquisadores registraram orcas caçando grandes tubarões-brancos de forma assustadoramente inteligente. Elas abalroam o tubarão e o viram de barriga para cima — o que trava o bicho em uma paralisia reflexa chamada imobilidade tônica. Com o tubarão imóvel, a orca abre a lateral do corpo e come cirurgicamente **apenas o fígado**, deixando todo o resto da carcaça afundar. A simples presença dessas orcas faz populações inteiras de tubarões-brancos fugirem de baías por meses seguidos.
 
+> *As orcas arrancando apenas o fígado com precisão cirúrgica parece coisa de máfia no fundo do mar. Se até o grande tubarão-branco foge delas apavorado por meses, quem sou eu pra achar que a cadeia alimentar é simples.*
+
 ---
 
 ## Velocidade: passeio calmo vs. foguete Mako
@@ -78,6 +80,8 @@ Achar que peixe não pensa é puro preconceito nosso. Estudos já mostraram que 
 Mas o que eu acho mais legal é que eles também **brincam**:
 
 Biólogos já filmaram tubarões-sardo repetidamente pegando pedaços de algas flutuantes na boca, soltando, perseguindo a alga de novo e passando de um para o outro, exatamente como cachorros brincando de pegar graveto na praia. Sem comida envolvida, sem briga, só brincando mesmo.
+
+> *Ver predadores de ponta brincando de passar alga pro amiguinho como se fossem labradores d'água desmonta qualquer ideia de que eles são só monstros assassinos sem alma.*
 
 ---
 

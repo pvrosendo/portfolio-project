@@ -33,6 +33,8 @@ Na maioria das espécies menores, existe apenas uma camada. Mas nas espécies de
 
 Além disso, a mandíbula superior dos tubarões não é fundida ao crânio. Quando o animal ataca, a mandíbula se desloca para frente e para baixo, quase saltando para fora da cabeça no momento do bote. Isso permite abocanhar pedaços enormes de carne com um ângulo de abertura devastador.
 
+> *Ver a mandíbula superior se descolando da cabeça em câmera lenta parece saído direto de Alien. É biomecânica pura em modo pesadelo.*
+
 ---
 
 ## Dentes: a esteira rolante infinita
@@ -105,6 +107,8 @@ Os tubarões resolveram isso com dois mecanismos incríveis:
 
 ### 1. Eversão gástrica (o vômito do avesso)
 Quando um tubarão engole algo que seu estômago não consegue digerir, ele não tem refluxo comum como os mamíferos. Ele literalmente projeta o estômago para fora pela boca, enxágua o órgão na água do mar para retirar os resíduos presos e o puxa de volta para dentro com contrações musculares em questão de segundos.
+
+> *Imagina a cena do bicho simplesmente virando o estômago do avesso pra lavar no mar e engolindo de volta como se nada tivesse acontecido. A natureza é um troço bizarro.*
 
 ### 2. A válvula espiral
 Enquanto nós, mamíferos, precisamos de metros e metros de intestino delgado dobrados na barriga para absorver os nutrientes dos alimentos, o intestino dos tubarões é extremamente curto. 

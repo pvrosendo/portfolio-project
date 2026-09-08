@@ -20,6 +20,8 @@ If you want to know what a shark looked like when the very first dinosaurs were 
 - **A single fin:** they only have one dorsal fin on their back (most sharks have two), tucked way back near their tail;
 - **Who's in the club:** the bluntnose sixgill shark (a deep-water beast reaching 5 meters) and the bizarre **frilled shark**, which has a body like a prehistoric sea snake and rows of needle-sharp trident teeth.
 
+> *The frilled shark looks like a living fossil that simply forgot to go extinct. If you ran into one of these things in the dark, there's no way you wouldn't think you're staring at a mythological sea serpent.*
+
 ---
 
 ## 2. Squaliformes: spines and living light in the deep
@@ -63,6 +65,8 @@ A small group found mainly in the Pacific, like the Port Jackson shark and the h
 - **Two-in-one teeth:** sharp little teeth in the front to grab prey, and flat pavement-like molars in the back to grind down tough clams, crabs, and sea urchins;
 - **Corkscrew eggs:** females lay tough egg cases shaped like spiral drill bits. The mother picks the newly laid egg up in her mouth and twists it into rock crevices so waves can’t sweep it away.
 
+> *A mother shark using her own mouth to screw a spiral-threaded egg case into a rock crevice is the kind of thing that makes you go: how on earth did evolution invent this? Incredible stuff.*
+
 ---
 
 ## 6. Orectolobiformes: from living rugs to the ocean's giant
@@ -89,6 +93,8 @@ If you’re looking for raw speed and power, this is where you go. This group br
   - The massive, gentle **basking shark**, filtering plankton along the surface;
   - The weird **goblin shark**, living in the abyss and shooting its jaws outward to snatch deep-sea squid;
   - And the extinct prehistoric titan, the **Megalodon**.
+
+> *If you've never watched a video of a goblin shark slingshotting its jaw forward during a strike, do yourself a favor and look it up. It genuinely looks like a deleted scene from Ridley Scott's Alien.*
 
 ---
 

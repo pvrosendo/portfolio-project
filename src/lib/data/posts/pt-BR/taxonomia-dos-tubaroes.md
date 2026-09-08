@@ -20,6 +20,8 @@ Se você quiser ver como era um tubarão no início da era dos dinossauros, olhe
 - **Nadadeira única:** eles têm só uma nadadeira nas costas (a maioria tem duas), posicionada bem perto da cauda;
 - **Quem faz parte:** o tubarão-albafar (um monstro de águas profundas que chega a 5 metros) e o bizarro **tubarão-cobra**, que tem corpo comprido igual ao de uma cobra marinha e dentes pontiagudos parecendo pequenos tridentes.
 
+> *O tubarão-cobra parece literalmente um fóssil vivo que esqueceu de ser extinto. Se você der de cara com um troço desses no escuro, não tem como não achar que é um monstro mitológico.*
+
 ---
 
 ## 2. Squaliformes: espinhos e luz própria no abismo
@@ -63,6 +65,8 @@ Um grupo pequeno que vive principalmente no Pacífico, como o tubarão-de-Port-J
 - **Dentes dois-em-um:** na frente da boca têm dentes pontiagudos para segurar, e no fundo têm dentes achatados parecendo molares para triturar mariscos duros e ouriços-do-mar;
 - **Ovos saca-rolhas:** as fêmeas botam ovos que parecem parafusos ou hélices em espiral, que a mãe rosqueia com a boca dentro de fendas de pedra para a onda não levar.
 
+> *A fêmea usando a própria boca pra rosquear um ovo em formato de parafuso dentro de uma fenda de pedra é aquele tipo de coisa que me faz pensar: como diabos a evolução chegou nisso? Sensacional.*
+
 ---
 
 ## 6. Orectolobiformes: do tapete vivo ao maior peixe do mundo
@@ -89,6 +93,8 @@ Se você quer velocidade e potência, é aqui que você encontra. Esse grupo re�
   - O pacífico e gigante **tubarão-elefante / peregrino**, que se alimenta de plâncton na superfície;
   - O assustador **tubarão-duende**, que vive nas profundezas e joga a mandíbula para fora da cara para pegar presas;
   - E o extinto titã pré-histórico **Megalodonte**.
+
+> *Se você nunca viu um vídeo do tubarão-duende projetando a mandíbula pra frente na hora do bote, faça um favor a si mesmo e pesquise. Parece uma cena deletada de Ridley Scott.*
 
 ---
 

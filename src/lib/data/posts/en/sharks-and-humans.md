@@ -38,6 +38,8 @@ Now take a look at how that compares to everyday hazards:
 
 The mathematical odds of you ever being bitten by a shark in your lifetime sit at roughly **1 in 11.5 million**. The odds of dying from one are roughly **1 in 264 million**. You are literally far more likely to be struck by lightning twice or have your kitchen toaster catch fire than to get bitten by a shark at the beach.
 
+> *Looking at these numbers and realizing you're thirty times more likely to get taken out by a falling coconut on the beach than by a shark bite is the ultimate proof of how thoroughly cinema warped our perception of risk.*
+
 ---
 
 ## Why do shark bites actually happen?
@@ -64,6 +66,8 @@ Shark populations cratered around the world.
 > **Peter Benchley's lifelong regret:**
 > The author of the book that inspired the movie was so horrified by the real-life slaughter his fictional story caused that he spent the final 30 years of his life working as one of the world's most passionate shark defenders. He publicly stated: *"Knowing what I know now, I could never have written that book today. Sharks don't target humans out of malice; they are the true victims in this story."*
 
+> *Watching the creator of Jaws dedicate the rest of his life to undoing the cultural damage his own book caused is a punch to the gut. It really shows the staggering weight a well-told story can have on the real world.*
+
 ---
 
 ## The real massacre: 100 million dead sharks every year
@@ -81,6 +85,8 @@ A huge portion of this slaughter stems from a brutal practice called **shark fin
 - Without fins, the shark sinks like a rock to the ocean floor and slowly suffocates or gets eaten alive by scavengers.
 
 And all of that just to supply the market for traditional **shark fin soup** in Asia, served as a luxury status symbol at lavish banquets. The most absurd part? Fin cartilage **tastes like absolutely nothing**. It only provides a gelatinous noodle texture to the soup, which has to be heavily seasoned with chicken or pork broth to have any flavor at all.
+
+> *Slaughtering 100 million apex predators every year just to provide a flavorless, jelly-like texture for party soup is the kind of sickening futility that turns your stomach.*
 
 ---
 

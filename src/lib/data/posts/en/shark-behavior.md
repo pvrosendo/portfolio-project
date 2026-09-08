@@ -55,6 +55,8 @@ If there’s one animal in the ocean that great white sharks genuinely dread, it
 > **The liver-hunting orcas:**
 > In South Africa, researchers documented orcas hunting great whites with terrifying intelligence. They ram the shark and flip it upside down — which locks the shark into a reflex paralysis called tonic immobility. With the shark completely immobilized, the orca rips open the side of the body and surgically eats **only the liver**, letting the rest of the carcass sink. The mere presence of these orcas causes entire populations of great whites to abandon bays for months at a time.
 
+> *Orcas surgically plucking out only the liver feels like underwater mob justice. If even great whites clear out in sheer terror for months, who am I to think the food chain is simple.*
+
 ---
 
 ## Speed: leisurely cruise vs. the Mako missile
@@ -78,6 +80,8 @@ Assuming fish don't think is just human prejudice. Studies have proven that many
 And what I find even cooler is that they also **play**:
 
 Marine biologists have repeatedly filmed porbeagle sharks picking up floating pieces of kelp in their mouths, letting them drift, chasing them down again, and passing the seaweed back and forth with buddies, just like dogs playing fetch on the beach. No food involved, no aggression, just pure play.
+
+> *Watching apex predators casually play keep-away with seaweed like waterborne labradors shatters any belief that they're just soulless killing machines.*
 
 ---
 

@@ -40,6 +40,8 @@ Tubarões jogam como os mamíferos:
 > **O recordista da paciência:**
 > O tubarão-limão leva uns 13 a 15 anos para atingir a maturidade sexual. O grande tubarão-branco só começa a cruzar lá pelos 25 a 30 anos. Mas o recorde absoluto de todo o reino animal é o **tubarão-da-Groenlândia**: ele vive **mais de 400 anos** nas águas gélidas do Ártico e só atinge a idade reprodutiva por volta dos **150 anos de idade**!
 
+> *Cento e cinquenta anos só para atingir a puberdade. Enquanto a humanidade já viu impérios caírem e tecnologias inteiras nascerem e morrerem, um tubarão-da-Groenlândia ainda tá se preparando pro primeiro encontro nas profundezas geladas.*
+
 ---
 
 ## O namoro bruto e a pele blindada
@@ -80,6 +82,8 @@ Espécies como o tubarão-azul e o tubarão-martelo têm uma gestação muito pa
 A maioria choca os ovos dentro do corpo da mãe e dá à luz filhotes vivos. Mas no tubarão-mangona (aquele com dentes pontiagudos curvados), a coisa vai para o nível do absurdo:
 
 O primeiro filhote que eclode dentro do útero ganha dentes afiados antes de todo mundo e **caça e devora ativamente os próprios irmãos menores ainda dentro da barriga da mãe**. No final da gravidez, sobra só um único filhote vitorioso de cada lado do útero. Quando ele finalmente nasce no oceano, ele já tem quase 1 metro e é um predador com experiência real de caça antes mesmo de ver a luz do sol.
+
+> *Você mal abre os olhos pro mundo e a primeira missão da vida é travar um Battle Royale brutal contra os próprios irmãos dentro do útero. O Stephen King com certeza teria pesadelos com isso.*
 
 ---
 

@@ -40,6 +40,8 @@ Sharks play the mammal game:
 > **The patience champion:**
 > Lemon sharks take 13 to 15 years to mature. Great whites only start breeding around 25 to 30 years old. But the all-time record across the entire animal kingdom belongs to the **Greenland shark**: it cruises through freezing Arctic waters for **over 400 years** and only reaches breeding age around **150 years old**!
 
+> *A hundred and fifty years just to hit puberty. While human empires rose and fell and entire technologies came and went, a Greenland shark is still just getting ready for its first date in the dark Arctic ice.*
+
 ---
 
 ## Rough courtship and armored hides
@@ -80,6 +82,8 @@ Species like blue sharks and hammerheads carry their young almost exactly like m
 Most species hatch their eggs inside the mother's body and give birth to live pups. But in the sand tiger shark, things get taken to a wild level:
 
 The very first pup to hatch inside the uterus grows sharp teeth before anyone else and **actively hunts down and devours all its smaller brothers and sisters right inside the mother's womb**. By the end of pregnancy, only a single surviving champion remains in each side of the uterus. When it’s finally born into the sea, it already measures nearly a meter long and is an experienced predator before ever seeing the light of day.
+
+> *You barely open your eyes to the world and your very first task in life is fighting a brutal Battle Royale against your own siblings inside the womb. Stephen King would definitely get nightmares from this.*
 
 ---
 
